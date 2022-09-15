@@ -359,7 +359,7 @@ if (!function_exists('navbar_menu_front2')) {
         $menu_body = '';
 
         // active class
-        $active_class_src = 'class="text-white bg-dark-1 -rounded px-20 mx-2" style="border-radius: 24px; border:1px solid #140342"';
+        $active_class_src = 'class="text-white bg-blue-1 -rounded px-20 mx-2" style="border-radius: 24px; border:1px solid #076FB6"';
         foreach ($menus as $m) {
             $menu = (object)$m;
 
@@ -404,7 +404,7 @@ if (!function_exists('navbar_menu_front2')) {
                     </li>
                 HTML;
             } else {
-                $menu_body .= "<li><a data-barba=\"\" href=\"$menu->url\" $active_class>$menu->title</a></li>";
+                $menu_body .= "<li class=\"\"><a data-barba=\"\" href=\"$menu->url\" $active_class>$menu->title</a></li>";
             }
         }
         return $menu_body;

@@ -177,7 +177,7 @@
     --color-red-2: #FCE5E2;
     --color-red-3: #D93025;
     --color-beige-1: #FEFBF4;
-    --color-blue-1: #65C2F9;
+    --color-blue-1: #076FB6;
     --color-blue-2: #EFF9FE;
     --color-blue-3: #1967D2;
     --color-blue-4: #508EF0;
@@ -1232,7 +1232,7 @@ html.-dark-mode .-dark-border-dark-2 {
 }
 
 html.-dark-mode .sidebar.-base-sidebar .sidebar__item.-is-active {
-    color: var(--color-purple-1) !important;
+    color: var(--color-blue-1) !important;
 }
 
 html.-dark-mode .-dark-button-dark-1 {
@@ -1304,7 +1304,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 /* ul,
@@ -3030,7 +3030,7 @@ form.contact-form.-light ::placeholder {
 }
 
 .form-switch .switch input:checked+.switch__slider {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .form-switch .switch input:checked+.switch__slider::before {
@@ -3226,7 +3226,7 @@ form.contact-form.-light ::placeholder {
 }
 
 .nice-select .option.selected {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .nice-select .option.disabled {
@@ -4120,7 +4120,7 @@ h6 {
 }
 
 .coursesCard.-type-3:hover .coursesCard__icon {
-    background-color: var(--color-purple-1) !important;
+    background-color: var(--color-blue-1) !important;
 }
 
 .coursesCard.-type-3:hover .coursesCard__icon .icon {
@@ -4327,7 +4327,7 @@ h6 {
 }
 
 .footer.-type-1 .footer-columns__links a:hover {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .footer.-type-1 .footer-columns .footer-columns-form>div {
@@ -4521,7 +4521,7 @@ h6 {
 }
 
 .header__explore>a:hover {
-    color: var(--color-green-1) !important;
+    color: var(--color-blue-1) !important;
 }
 
 .header__explore>a:hover::before {
@@ -4623,7 +4623,7 @@ h6 {
     }
 
     .header .header-menu .menu__nav>li:hover>a {
-        color: var(--color-green-1);
+        color: var(--color-blue-1);
         background-color: rgba(255, 255, 255, 0.15);
     }
 
@@ -4680,7 +4680,7 @@ h6 {
     }
 
     .header .header-menu .menu .subnav>li>a:hover {
-        color: var(--color-purple-1);
+        color: var(--color-blue-1);
     }
 
     .header .header-menu .menu .subnav .menu__backButton {
@@ -4818,7 +4818,7 @@ h6 {
     }
 
     .header .header-menu .menu__nav a:hover {
-        color: var(--color-purple-1) !important;
+        color: var(--color-blue-1) !important;
         background-color: #F4F2FF;
     }
 
@@ -4856,14 +4856,14 @@ h6 {
     }
 
     .header .header-menu .menu .subnav>li>a:hover {
-        color: var(--color-purple-1) !important;
+        color: var(--color-blue-1) !important;
     }
 
     .header .header-menu .menu .subnav .menu__backButton a {
         justify-content: flex-start !important;
         height: 60px !important;
         font-weight: 600 !important;
-        color: var(--color-purple-1) !important;
+        color: var(--color-blue-1) !important;
         font-size: 16px;
         background-color: var(--color-purple-3);
     }
@@ -4876,7 +4876,7 @@ h6 {
         width: 60vw;
         height: 100vh;
         z-index: -1;
-        background-color: white;
+        background-color: var(--color-blue-4);
     }
 }
 
@@ -4905,7 +4905,7 @@ h6 {
 
     .header .header-menu .mobile-footer .mobile-socials a:hover {
         background-color: var(--color-light-4);
-        color: var(--color-purple-1) !important;
+        color: var(--color-blue-1) !important;
     }
 }
 
@@ -5302,8 +5302,8 @@ h6 {
 }
 
 .sidebar.-base-sidebar .sidebar__item.-is-active {
-    background-color: var(--color-purple-3);
-    color: var(--color-purple-1) !important;
+    background-color: var(--color-blue-3);
+    color: var(--color-blue-1) !important;
 }
 
 .sidebar.-base-sidebar .sidebar__links>div>a {
@@ -5494,7 +5494,7 @@ h6 {
 }
 
 .header .header-menu .mega__menu a:hover {
-    color: var(--color-purple-1) !important;
+    color: var(--color-blue-1) !important;
 }
 
 .header .header-menu .mega .mega-banner {
@@ -6963,7 +6963,7 @@ h6 {
 }
 
 .pagination.-arrows .pagination__item.is-active {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .arrow-left-hover {
@@ -6971,7 +6971,7 @@ h6 {
 }
 
 .arrow-left-hover:hover {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
     transform: translateX(-5px) scale(1.25);
 }
 
@@ -6980,7 +6980,7 @@ h6 {
 }
 
 .arrow-right-hover:hover {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
     transform: translateX(5px) scale(1.25);
 }
 
@@ -7001,7 +7001,7 @@ h6 {
     width: 45px;
     border-radius: 100%;
     background-color: var(--color-light-7);
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
     transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -7010,7 +7010,7 @@ h6 {
 }
 
 .pagination.-buttons .pagination__button:hover {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
     color: white;
 }
 
@@ -7034,13 +7034,13 @@ h6 {
     width: 16px;
     height: 2px;
     transform: translateX(-50%);
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
     transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     opacity: 0;
 }
 
 .pagination.-buttons .pagination__count a.-count-is-active {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .pagination.-buttons .pagination__count a.-count-is-active::after {
@@ -7221,7 +7221,7 @@ h6 {
 }
 
 .eventCard.-type-4:hover .eventCard__date {
-    background-color: var(--color-purple-1) !important;
+    background-color: var(--color-blue-1) !important;
 }
 
 .eventCard.-type-4:hover .eventCard__date span {
@@ -7276,7 +7276,7 @@ h6 {
 }
 
 .categoryCard.-type-2:hover .categoryCard__title {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .categoryCard.-type-3 {
@@ -7312,7 +7312,7 @@ h6 {
 }
 
 .categoryCard.-type-3:hover .categoryCard__icon {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .categoryCard.-type-3:hover .categoryCard__icon .icon {
@@ -7320,7 +7320,7 @@ h6 {
 }
 
 .categoryCard.-type-3:hover .categoryCard__title {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .categoryCard.-type-4 .categoryCard__icon {
@@ -7344,11 +7344,11 @@ h6 {
 }
 
 .categoryCard.-type-4:hover .categoryCard__icon .icon {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .categoryCard.-type-4:hover .categoryCard__title {
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .page-header.-type-1 {
@@ -7875,7 +7875,7 @@ h6 {
     width: 18px;
     height: 18px;
     stroke-width: 2;
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
     transition: all 0.2s ease-out;
 }
 
@@ -7890,7 +7890,7 @@ h6 {
 }
 
 .accordion.-block .accordion__item.is-active .accordion__icon {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .accordion.-block .accordion__item.is-active .accordion__icon .icon {
@@ -8101,13 +8101,13 @@ h6 {
     left: -1px;
     height: 100%;
     width: 2px;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
     transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     opacity: 0;
 }
 
 .tabs.-side .tabs__controls .tabs__button.is-active {
-    color: var(--color-purple-1) !important;
+    color: var(--color-blue-1) !important;
 }
 
 .tabs.-side .tabs__controls .tabs__button.is-active::before {
@@ -8202,7 +8202,7 @@ h6 {
 }
 
 .badge.-light-3:hover {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
     color: white !important;
 }
 
@@ -8672,7 +8672,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
     border-radius: 100%;
 }
 
@@ -8703,7 +8703,7 @@ h6 {
 
 .shopCompleted-info {
     margin-top: 40px;
-    border: 1px dashed var(--color-purple-1);
+    border: 1px dashed var(--color-blue-1);
     border-radius: 8px;
     background-color: var(--accent-light-color);
     padding: 40px 52px;
@@ -8978,7 +8978,7 @@ h6 {
 
 .sidebar.-blog .sidebar-content.-list a:hover {
     font-weight: 500;
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .sidebar.-blog .sidebar-content.-list>*+* {
@@ -9025,7 +9025,7 @@ h6 {
 
 .sidebar.-blog .sidebar-tag a:hover {
     color: white !important;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .sidebar.-blog .sidebar-event {
@@ -9105,7 +9105,7 @@ h6 {
 
 .sidebar.-shop .sidebar-content.-list a:hover {
     font-weight: 500;
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
 }
 
 .sidebar.-shop .sidebar-content.-list>*+* {
@@ -9152,7 +9152,7 @@ h6 {
 
 .sidebar.-shop .sidebar-tag a:hover {
     color: white !important;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .sidebar.-shop .sidebar-event {
@@ -9227,7 +9227,7 @@ h6 {
     left: 0;
     height: 5px;
     border-radius: 14px;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 [data-slider]>div>[data-thumb] {
@@ -9242,7 +9242,7 @@ h6 {
     background-color: #FFF;
     border-radius: 50%;
     outline: none;
-    border: 2px solid var(--color-purple-1);
+    border: 2px solid var(--color-blue-1);
 }
 
 div[data-slider]>input[type=range]::-ms-thumb {
@@ -15899,7 +15899,7 @@ div[data-slider]>input[type=range]::-ms-tooltip {
 }
 
 .-hover-dshb-header-light:hover {
-    color: var(--color-purple-1) !important;
+    color: var(--color-blue-1) !important;
     background-color: var(--color-light-4) !important;
 }
 
@@ -15989,7 +15989,7 @@ div[data-slider]>input[type=range]::-ms-tooltip {
 }
 
 .-featureCard-hover-3:hover .featureCard__content {
-    background-color: var(--color-purple-1) !important;
+    background-color: var(--color-blue-1) !important;
 }
 
 .-featureCard-hover-3:hover .featureCard__title,
@@ -16277,7 +16277,7 @@ div[data-slider]>input[type=range]::-ms-tooltip {
 }
 
 .section-slider-nav.-white:hover {
-    background-color: var(--color-purple-1) !important;
+    background-color: var(--color-blue-1) !important;
     color: white !important;
 }
 
@@ -16748,13 +16748,13 @@ div[data-slider]>input[type=range]::-ms-tooltip {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
     opacity: 0;
     transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .page-nav-menu.-line .page-nav-menu__link.is-active {
-    color: var(--color-purple-1) !important;
+    color: var(--color-blue-1) !important;
 }
 
 .page-nav-menu.-line .page-nav-menu__link.is-active::after {
@@ -16769,7 +16769,7 @@ table.table th {
     padding: 25px;
     font-size: 16px;
     line-height: 1;
-    color: var(--color-purple-1);
+    color: var(--color-blue-1);
     font-weight: 500;
 }
 
@@ -16868,7 +16868,7 @@ table.table td {
 }
 
 .sidebar-calendar__button.-is-active {
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .sidebar-calendar__button.-is-active>div {
@@ -16912,7 +16912,7 @@ table.table td {
     width: 8px;
     height: 8px;
     border-radius: 100%;
-    background-color: var(--color-purple-1);
+    background-color: var(--color-blue-1);
 }
 
 .dot-left.-orange::before {
@@ -16945,7 +16945,7 @@ table.table td {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color: var(--color-purple-1) !important;
+    color: var(--color-blue-1) !important;
     border-radius: 100%;
     background: white;
 }

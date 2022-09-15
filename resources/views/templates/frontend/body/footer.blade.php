@@ -1,4 +1,4 @@
-<footer class="footer -type-1 bg-dark-1 -green-links mt-0">
+<footer class="footer -type-1 bg-blue-1 -green-links mt-0">
     <div class="container">
         <div class="footer-header">
             <div class="row y-gap-20 justify-between items-center">

@@ -62,14 +62,14 @@ class PMenuFrontendsTableSeeder extends Seeder
             array (
                 'id' => 18,
                 'parent_id' => NULL,
-                'title' => 'Contak',
+                'title' => 'Kontak',
                 'icon' => NULL,
                 'route' => 'kontak',
                 'sequence' => 5,
                 'active' => 1,
                 'type' => 1,
                 'created_at' => '2022-08-20 14:47:10',
-                'updated_at' => '2022-09-02 00:45:51',
+                'updated_at' => '2022-09-15 22:14:28',
             ),
             4 => 
             array (
@@ -88,14 +88,27 @@ class PMenuFrontendsTableSeeder extends Seeder
             array (
                 'id' => 20,
                 'parent_id' => NULL,
-                'title' => 'Article',
+                'title' => 'Artikel',
                 'icon' => NULL,
                 'route' => 'artikel',
                 'sequence' => 4,
                 'active' => 1,
                 'type' => 1,
                 'created_at' => '2022-09-02 00:45:45',
-                'updated_at' => '2022-09-02 00:45:51',
+                'updated_at' => '2022-09-15 22:14:20',
+            ),
+            6 => 
+            array (
+                'id' => 21,
+                'parent_id' => 19,
+                'title' => 'Testing',
+                'icon' => NULL,
+                'route' => '#',
+                'sequence' => 7,
+                'active' => 1,
+                'type' => 1,
+                'created_at' => '2022-09-15 22:27:06',
+                'updated_at' => '2022-09-15 22:27:09',
             ),
         ));
         

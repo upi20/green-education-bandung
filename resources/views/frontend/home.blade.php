@@ -1,9 +1,95 @@
 @extends('templates.frontend.master')
 @section('content')
     @php
-    $p = 'setting.home';
-    $k = "$p.hero";
+        $p = 'setting.home';
+        $k = "$p.hero";
     @endphp
+    <section data-anim-wrap class="mainSlider -type-1 js-mainSlider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div data-anim-child="fade" class="mainSlider__bg">
+                    <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div data-anim-child="fade" class="mainSlider__bg">
+                    <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div data-anim-child="fade" class="mainSlider__bg">
+                    <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row justify-center text-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="mainSlider__content">
+                        <h1 data-anim-child="slide-up delay-3" class="mainSlider__title text-white">
+                            Green Education Bandung</span>
+                        </h1>
+
+                        <p data-anim-child="slide-up delay-4" class="mainSlider__text text-white">
+                            Konsultan Lingkungan
+                        </p>
+
+                        <div data-anim-child="slide-up delay-5" class="mainSlider__form">
+                            <input type="text" placeholder="Mau konsultasi sekarang?">
+                            <button class="button -md -purple-1 text-white">
+                                <i class="fab fa-whatsapp mr-15"></i>
+                                Konsultasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-anim-child="slide-up delay-6" class="row y-gap-20 justify-center mainSlider__items">
+
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="mainSlider-item text-center">
+                        <i class="fas fa-book-open text-white text-30"></i>
+                        <h4 class="text-20 fw-500 lh-18 text-white mt-8">100,000 courses</h4>
+                        <p class="text-15 text-white">Explore a variety of fresh topics</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="mainSlider-item text-center">
+                        <i class="fas fa-chalkboard-teacher text-white text-30"></i>
+                        <h4 class="text-20 fw-500 lh-18 text-white mt-8">Expert instruction</h4>
+                        <p class="text-15 text-white">Find the right instructor for you</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="mainSlider-item text-center">
+                        <i class="fas fa-globe-asia text-white text-30"></i>
+                        <h4 class="text-20 fw-500 lh-18 text-white mt-8">Go Green</h4>
+                        <p class="text-15 text-white">Comfortable living green environment</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button
+            class="swiper-prev button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-prev">
+            <i class="icon icon-arrow-left text-24"></i>
+        </button>
+
+        <button
+            class="swiper-next button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-next">
+            <i class="icon icon-arrow-right text-24"></i>
+        </button>
+    </section>
+
     @if (settings()->get("$k.visible"))
         <section data-anim-wrap class="masthead -type-4 bg-light-6  animated pt-30" style="margin-top: 0">
             <div class="container pt-60">
@@ -33,7 +119,7 @@
 
     <!-- galeri kegiatan -->
     @php
-    $k = "$p.galeri_kegiatan";
+        $k = "$p.galeri_kegiatan";
     @endphp
     @if (settings()->get("$k.visible"))
         <section class="layout-pt-lg layout-pb-lg bg-light-3" data-anim-wrap>
@@ -100,7 +186,7 @@
 
                                             <div class="eventCard__button">
                                                 <a href="{{ route('galeri.detail', $galery->slug) }}"
-                                                    class="button -sm -rounded -purple-1 text-white px-25">Lihat</a>
+                                                    class="button -sm -rounded -blue-1 text-white px-25">Lihat</a>
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +198,7 @@
 
                 <div class="row pt-60 lg:pt-40" data-anim="slide-right delay-3">
                     <div class="col-auto">
-                        <a href="{{ route('galeri') }}" class="button -icon -outline-purple-1 text-purple-1 fw-500">
+                        <a href="{{ route('galeri') }}" class="button -icon -outline-blue-1 text-blue-1 fw-500">
                             {{ settings()->get("$k.button_text") }}
                             <span class="icon-arrow-top-right text-14 ml-10"></span>
                         </a>
@@ -124,7 +210,7 @@
 
     <!-- blog dan artikel -->
     @php
-    $k = "$p.artikel";
+        $k = "$p.artikel";
     @endphp
     @if (settings()->get("$k.visible"))
         <section class="layout-pt-md layout-pb-lg">
@@ -138,7 +224,7 @@
                     </div>
 
                     <div class="col-auto" data-anim-child="slide-left delay-3">
-                        <a href="{{ route('artikel') }}" class="button -icon -purple-3 text-purple-1">
+                        <a href="{{ route('artikel') }}" class="button -icon -blue-3 text-white">
                             {{ settings()->get("$k.button_text") }}
                             <i class="icon-arrow-top-right text-13 ml-10"></i>
                         </a>
@@ -163,12 +249,12 @@
                                 </div>
                                 <div class="blogCard__content">
                                     @if ($a->kategori)
-                                        <a href="{{ url("artikel?kategori=$a->kategori_slug") }}"
-                                            class="blogCard__category" title="Kategori {{ $a->kategori }}">
+                                        <a href="{{ url("artikel?kategori=$a->kategori_slug") }}" class=" text-blue-1"
+                                            title="Kategori {{ $a->kategori }}">
                                             {{ $a->kategori }}
                                         </a>
                                     @elseif ($a->tag)
-                                        <a href="{{ url("artikel?tag=$a->tag_slug") }}" class="blogCard__category"
+                                        <a href="{{ url("artikel?tag=$a->tag_slug") }}" class=" text-blue-1"
                                             title="tag {{ $a->tag }}">
                                             {{ $a->tag }}
                                         </a>
@@ -201,20 +287,20 @@
                                         <div class="eventCard__content">
                                             @if ($a->kategori)
                                                 {{-- <a href="{{ url("?kategori=$a->kategori_slug") }}"
-                                                    class="text-13 lh-1 fw-500 uppercase text-purple-1"
+                                                    class="text-13 lh-1 fw-500 uppercase text-blue-1"
                                                     title="Kategori {{ $a->kategori }}">
                                                     {{ $a->kategori }}
                                                     </a> --}}
-                                                <div class="text-13 lh-1 fw-500 uppercase text-purple-1">
+                                                <div class="text-13 lh-1 fw-500 uppercase text-blue-1">
                                                     {{ $a->kategori }}
                                                 </div>
                                             @elseif ($a->tag)
                                                 {{-- <a href="{{ url("?tag=$a->tag_slug") }}"
-                                                    class="text-13 lh-1 fw-500 uppercase text-purple-1"
+                                                    class="text-13 lh-1 fw-500 uppercase text-blue-1"
                                                     title="tag {{ $a->tag }}">
                                                     {{ $a->tag }}
                                                     </a> --}}
-                                                <div class="text-13 lh-1 fw-500 uppercase text-purple-1">
+                                                <div class="text-13 lh-1 fw-500 uppercase text-blue-1">
                                                     {{ $a->tag }}
                                                 </div>
                                             @endif

@@ -78,7 +78,7 @@
 
                                     <div class="eventCard__button">
                                         <a href="{{ route('galeri.detail', $galery->slug) }}"
-                                            class="button -sm -rounded -purple-1 text-white px-25">Lihat</a>
+                                            class="button -sm -rounded -blue-1 text-white px-25">Lihat</a>
                                     </div>
                                 </div>
                             </div>

@@ -1,7 +1,7 @@
 {
-    "name": "KARMAPACK",
-    "short_name": "karmapack",
-    "description": "Karmapack - Keluarga Mahasiswa dan Pelajar Cianjur Kidul",
+    "name": "Green Education Bandung",
+    "short_name": "GreenEducBDG",
+    "description": "Green Education Bandung - Yayasan Pendididkan Bandung Hijau",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

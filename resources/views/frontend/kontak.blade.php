@@ -47,7 +47,7 @@
                                 placeholder="{{ settings()->get('setting.contact.message.message_placeholder') }}" required></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" name="submit" id="submit" class="button -md -purple-1 text-white">
+                            <button type="submit" name="submit" id="submit" class="button -md -blue-1 text-white">
                                 {{ settings()->get('setting.contact.message.button_text') }}
                             </button>
                         </div>

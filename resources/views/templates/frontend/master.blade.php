@@ -137,7 +137,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
     <!-- preloader -->
     @if ($page_attr->loader)
         <div id="preloader">
-            <div class="d-flex justify-content-center align-items-center flex-column bg-dark-1"
+            <div class="d-flex justify-content-center align-items-center flex-column bg-blue-1"
                 style="height: 100vh;">
                 <img src="{{ asset(settings()->get(set_front('app.foto_light_mode'))) }}" style="max-width: 80px;"
                     alt="logo" />
@@ -159,7 +159,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
                 @include('templates.frontend.body.footer', $compact)
             </div>
             <div style="display: none">
-                <div id="back-to-top" class="span bg-dark-1 p-20">
+                <div id="back-to-top" class="span bg-blue-1 p-20">
                     <i class="fas fa-arrow-up" style="font-size: 1.5em"></i>
                 </div>
             </div>
@@ -179,7 +179,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
         $(window).on('load', function() {
             "use strict";
             preload_container.delay(750).fadeOut('slow');
-            refresh_margin_top();
+            // refresh_margin_top();
         });
 
         (function pulse(back) {
@@ -203,7 +203,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
 
             // document height
             const d_height = $(document).height() - $(window).height();
-            refresh_margin_top();
+            // refresh_margin_top();
         });
 
         btn_scroll.click(() => {
