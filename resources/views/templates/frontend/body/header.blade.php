@@ -90,7 +90,7 @@
                                                             style="cursor: pointer"></div>
                                                         <input type="search"
                                                             class="col-12 text-18 lh-12 text-dark-1 fw-500"
-                                                            placeholder="Kata kunci pencarian anggota." name="search"
+                                                            placeholder="Masukan kata kunci pencarian." name="search"
                                                             value="{{ request()->query('search') }}">
 
                                                         <button
@@ -262,7 +262,7 @@
                                                         style="cursor: pointer"></div>
                                                     <input type="search"
                                                         class="col-12 text-18 lh-12 text-dark-1 fw-500"
-                                                        placeholder="Kata kunci pencarian anggota." name="search"
+                                                        placeholder="Masukan kata kunci pencarian." name="search"
                                                         value="{{ request()->query('search') }}">
 
                                                     <button
