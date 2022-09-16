@@ -4327,7 +4327,7 @@ h6 {
 }
 
 .footer.-type-1 .footer-columns__links a:hover {
-    color: var(--color-blue-1);
+    color: var(--color-orange-1);
 }
 
 .footer.-type-1 .footer-columns .footer-columns-form>div {
@@ -4521,7 +4521,7 @@ h6 {
 }
 
 .header__explore>a:hover {
-    color: var(--color-blue-1) !important;
+    color: var(--color-orange-1) !important;
 }
 
 .header__explore>a:hover::before {
@@ -4623,8 +4623,9 @@ h6 {
     }
 
     .header .header-menu .menu__nav>li:hover>a {
-        color: var(--color-blue-1);
-        background-color: rgba(255, 255, 255, 0.15);
+        color: var(--color-white);
+        background-color: var(--color-orange-1);
+        /* border-radius: 24px; */
     }
 
     .header .header-menu .menu__nav>li>.subnav::before {
@@ -4680,7 +4681,7 @@ h6 {
     }
 
     .header .header-menu .menu .subnav>li>a:hover {
-        color: var(--color-blue-1);
+        color: var(--color-orange-1);
     }
 
     .header .header-menu .menu .subnav .menu__backButton {
@@ -4818,7 +4819,7 @@ h6 {
     }
 
     .header .header-menu .menu__nav a:hover {
-        color: var(--color-blue-1) !important;
+        color: var(--color-orange-1) !important;
         background-color: #F4F2FF;
     }
 
@@ -4856,14 +4857,14 @@ h6 {
     }
 
     .header .header-menu .menu .subnav>li>a:hover {
-        color: var(--color-blue-1) !important;
+        color: var(--color-orange-1) !important;
     }
 
     .header .header-menu .menu .subnav .menu__backButton a {
         justify-content: flex-start !important;
         height: 60px !important;
         font-weight: 600 !important;
-        color: var(--color-blue-1) !important;
+        color: var(--color-orange-1) !important;
         font-size: 16px;
         background-color: var(--color-purple-3);
     }
@@ -4905,7 +4906,7 @@ h6 {
 
     .header .header-menu .mobile-footer .mobile-socials a:hover {
         background-color: var(--color-light-4);
-        color: var(--color-blue-1) !important;
+        color: var(--color-orange-1) !important;
     }
 }
 
@@ -5302,8 +5303,8 @@ h6 {
 }
 
 .sidebar.-base-sidebar .sidebar__item.-is-active {
-    background-color: var(--color-blue-3);
-    color: var(--color-blue-1) !important;
+    background-color: var(--color-orange-3);
+    color: var(--color-dark-1) !important;
 }
 
 .sidebar.-base-sidebar .sidebar__links>div>a {
@@ -5494,7 +5495,7 @@ h6 {
 }
 
 .header .header-menu .mega__menu a:hover {
-    color: var(--color-blue-1) !important;
+    color: var(--color-orange-1) !important;
 }
 
 .header .header-menu .mega .mega-banner {

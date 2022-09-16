@@ -41,7 +41,7 @@
 
                         <div data-anim-child="slide-up delay-5" class="mainSlider__form">
                             <input type="text" placeholder="Mau konsultasi sekarang?">
-                            <button class="button -md -purple-1 text-white">
+                            <button class="button -md -blue-1 text-white">
                                 <i class="fab fa-whatsapp mr-15"></i>
                                 Konsultasi
                             </button>
