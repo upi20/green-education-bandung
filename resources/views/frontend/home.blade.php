@@ -154,6 +154,227 @@
         </section>
     @endif
 
+    <section class="layout-pt-lg layout-pb-lg" data-anim-wrap>
+        <div class="container">
+            <div class="row y-gap-15 mb-60 justify-between items-end text-center">
+                <div class="sectionTitle ">
+                    <h2 class="sectionTitle__title ">Kenali kami</h2>
+                    <p class="sectionTitle__text ">Mengetahui dan mengenali akan menghilangkan keraguan.</p>
+                </div>
+            </div>
+            <div class="row y-gap-50 justify-between items-center">
+                <div class="col-lg-6 pr-50 sm:pr-15 text-right">
+                    <img src="{{ asset('assets/logo.png') }}" alt="image" style="max-height: 450px">
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="text-30 lh-16">Green Education Bandung, Yayasan Pendidikan Bandung Hijau.</h2>
+                    <p class="text-dark-1 mt-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus
+                        quo deleniti, sit aperiam esse omnis, dolor accusantium aliquid molestiae tenetur temporibus quae,
+                        nobis animi exercitationem laborum fugiat recusandae. Iusto.</p>
+                    <p class="pr-50 lg:pr-0 mt-25">Neque convallis a cras semper auctor. Libero id faucibus nisl tincidunt
+                        egetnvallis a cras semper auctonvallis a cras semper aucto. Neque convallis a cras semper auctor.
+                        Liberoe convallis a cras semper atincidunt egetnval</p>
+                    <div class="d-inline-block">
+                        <a href="signup.html" class="button -md -orange-1 text-white mt-30">Bergabung bersama kami</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="layout-pt-lg layout-pb-lg bg-blue-1">
+        <div class="container">
+            <div class="row justify-center text-center">
+                <div class="col-auto">
+
+                    <div class="sectionTitle ">
+
+                        <h2 class="sectionTitle__title text-green-1">Apa kata mereka</h2>
+
+                        <p class="sectionTitle__text text-white">Lorem ipsum dolor sit amet, consectetur.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-anim-wrap class="js-section-slider pt-50" data-gap="30" data-pagination
+                data-slider-cols="base-3 xl-3 lg-2 md-2 sm-1">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div data-anim-child="slide-left delay-1" class="testimonials -type-1">
+                            <div class="testimonials__content">
+                                <h4 class="testimonials__title">Great Work</h4>
+                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
+                                    Amazing
+                                    design, easy to customize and a design quality superlative account on its cloud platform
+                                    for the
+                                    optimized performance”</p>
+
+                                <div class="testimonials-footer">
+                                    <div class="testimonials-footer__image">
+                                        <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
+                                    </div>
+
+                                    <div class="testimonials-footer__content">
+                                        <div class="testimonials-footer__title">Courtney Henry</div>
+                                        <div class="testimonials-footer__text">Web Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div data-anim-child="slide-left delay-2" class="testimonials -type-1">
+                            <div class="testimonials__content">
+                                <h4 class="testimonials__title">Great Work</h4>
+                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
+                                    Amazing
+                                    design, easy to customize and a design quality superlative account on its cloud platform
+                                    for the
+                                    optimized performance”</p>
+
+                                <div class="testimonials-footer">
+                                    <div class="testimonials-footer__image">
+                                        <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
+                                    </div>
+
+                                    <div class="testimonials-footer__content">
+                                        <div class="testimonials-footer__title">Ronald Richards</div>
+                                        <div class="testimonials-footer__text">President of Sales</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div data-anim-child="slide-left delay-3" class="testimonials -type-1">
+                            <div class="testimonials__content">
+                                <h4 class="testimonials__title">Great Work</h4>
+                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
+                                    Amazing
+                                    design, easy to customize and a design quality superlative account on its cloud platform
+                                    for the
+                                    optimized performance”</p>
+
+                                <div class="testimonials-footer">
+                                    <div class="testimonials-footer__image">
+                                        <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
+                                    </div>
+
+                                    <div class="testimonials-footer__content">
+                                        <div class="testimonials-footer__title">Annette Black</div>
+                                        <div class="testimonials-footer__text">Nursing Assistant</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div data-anim-child="slide-left delay-4" class="testimonials -type-1">
+                            <div class="testimonials__content">
+                                <h4 class="testimonials__title">Great Work</h4>
+                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
+                                    Amazing
+                                    design, easy to customize and a design quality superlative account on its cloud platform
+                                    for the
+                                    optimized performance”</p>
+
+                                <div class="testimonials-footer">
+                                    <div class="testimonials-footer__image">
+                                        <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
+                                    </div>
+
+                                    <div class="testimonials-footer__content">
+                                        <div class="testimonials-footer__title">Courtney Henry</div>
+                                        <div class="testimonials-footer__text">Web Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex x-gap-20 items-center justify-end pt-60 lg:pt-40">
+                    <div class="col-auto">
+                        <button
+                            class="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-prev">
+                            <i class="icon icon-arrow-left text-24"></i>
+                        </button>
+                    </div>
+                    <div class="col-auto">
+                        <button
+                            class="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-next">
+                            <i class="icon icon-arrow-right text-24"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="layout-pt-md layout-pb-lg">
+        <div data-anim-wrap class="container">
+            <div class="row justify-center">
+                <div class="col text-center">
+                    <p class="text-lg text-dark-1">Dipercaya oleh beberapa lembaga.</p>
+                </div>
+            </div>
+
+            <div class="row y-gap-30 justify-between sm:justify-start items-center pt-60 md:pt-50">
+
+                <div data-anim-child="slide-up delay-1" class="col-lg-auto col-md-2 col-sm-3 col-4">
+                    <div class="d-flex justify-center items-center px-4">
+                        <img class="w-1/1" src="{{ asset('assets/clients/1.svg') }}" alt="clients image">
+                    </div>
+                </div>
+
+                <div data-anim-child="slide-up delay-1" class="col-lg-auto col-md-2 col-sm-3 col-4">
+                    <div class="d-flex justify-center items-center px-4">
+                        <img class="w-1/1" src="{{ asset('assets/clients/2.svg') }}" alt="clients image">
+                    </div>
+                </div>
+
+                <div data-anim-child="slide-up delay-1" class="col-lg-auto col-md-2 col-sm-3 col-4">
+                    <div class="d-flex justify-center items-center px-4">
+                        <img class="w-1/1" src="{{ asset('assets/clients/3.svg') }}" alt="clients image">
+                    </div>
+                </div>
+
+                <div data-anim-child="slide-up delay-1" class="col-lg-auto col-md-2 col-sm-3 col-4">
+                    <div class="d-flex justify-center items-center px-4">
+                        <img class="w-1/1" src="{{ asset('assets/clients/4.svg') }}" alt="clients image">
+                    </div>
+                </div>
+
+                <div data-anim-child="slide-up delay-1" class="col-lg-auto col-md-2 col-sm-3 col-4">
+                    <div class="d-flex justify-center items-center px-4">
+                        <img class="w-1/1" src="{{ asset('assets/clients/5.svg') }}" alt="clients image">
+                    </div>
+                </div>
+
+                <div data-anim-child="slide-up delay-1" class="col-lg-auto col-md-2 col-sm-3 col-4">
+                    <div class="d-flex justify-center items-center px-4">
+                        <img class="w-1/1" src="{{ asset('assets/clients/6.svg') }}" alt="clients image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- galeri kegiatan -->
     @php
         $k = "$p.galeri_kegiatan";
