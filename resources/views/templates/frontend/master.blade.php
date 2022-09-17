@@ -102,12 +102,32 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
             z-index: 1031;
         }
 
-        #back-to-top {
-            color: #fff;
+        .bottom-left-container {
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 1030;
+        }
+
+        #back-to-top {
+            color: #fff;
+            height: 50px;
+            width: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-color .1s linear;
+            -moz-transition: background-color .1s linear;
+            -webkit-transition: background-color .1s linear;
+            -o-transition: background-color .1s linear;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: #FFF 3px solid;
+        }
+
+        #whatsapp-container {
             height: 50px;
             width: 50px;
             background-repeat: no-repeat;
@@ -158,9 +178,16 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
                 @yield('content', '')
                 @include('templates.frontend.body.footer', $compact)
             </div>
-            <div style="display: none">
-                <div id="back-to-top" class="span bg-blue-1 p-20">
-                    <i class="fas fa-arrow-up" style="font-size: 1.5em"></i>
+
+            <div class="bottom-left-container">
+                <div class="button -green-5 p-20 text-white fw-bold" id="whatsapp-container">
+                    <i class="fab fa-whatsapp" style="font-size: 1.5em"></i>
+                </div>
+
+                <div style="display: none">
+                    <div id="back-to-top" class="span bg-blue-1 p-20 mt-5">
+                        <i class="fas fa-arrow-up" style="font-size: 1.5em"></i>
+                    </div>
                 </div>
             </div>
 
@@ -179,7 +206,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
         $(window).on('load', function() {
             "use strict";
             preload_container.delay(750).fadeOut('slow');
-            // refresh_margin_top();
+            refresh_margin_top();
         });
 
         (function pulse(back) {
@@ -203,7 +230,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
 
             // document height
             const d_height = $(document).height() - $(window).height();
-            // refresh_margin_top();
+            refresh_margin_top();
         });
 
         btn_scroll.click(() => {

@@ -4,93 +4,96 @@
         $p = 'setting.home';
         $k = "$p.hero";
     @endphp
-    <section data-anim-wrap class="mainSlider -type-1 js-mainSlider">
-        <div class="swiper-wrapper">
+    @if (false)
+        <section data-anim-wrap class="mainSlider -type-1 js-mainSlider">
+            <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-                <div data-anim-child="fade" class="mainSlider__bg">
-                    <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                <div class="swiper-slide">
+                    <div data-anim-child="fade" class="mainSlider__bg">
+                        <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                    </div>
                 </div>
+
+                <div class="swiper-slide">
+                    <div data-anim-child="fade" class="mainSlider__bg">
+                        <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div data-anim-child="fade" class="mainSlider__bg">
+                        <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="swiper-slide">
-                <div data-anim-child="fade" class="mainSlider__bg">
-                    <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
-                </div>
-            </div>
+            <div class="container">
+                <div class="row justify-center text-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="mainSlider__content">
+                            <p data-anim-child="slide-up delay-3"
+                                class="mainSlider__title text-white text-30 lh-18 fw-bold">
+                                Mari ajarkan para generasi muda tentang pentingnya alam untuk masa depan cucu mereka.
+                            </p>
 
-            <div class="swiper-slide">
-                <div data-anim-child="fade" class="mainSlider__bg">
-                    <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
-                </div>
-            </div>
+                            <p data-anim-child="slide-up delay-4" class="mainSlider__text text-white">
+                                Konsultan Lingkungan
+                            </p>
 
-        </div>
-
-        <div class="container">
-            <div class="row justify-center text-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="mainSlider__content">
-                        <h1 data-anim-child="slide-up delay-3" class="mainSlider__title text-white">
-                            Green Education Bandung</span>
-                        </h1>
-
-                        <p data-anim-child="slide-up delay-4" class="mainSlider__text text-white">
-                            Konsultan Lingkungan
-                        </p>
-
-                        <div data-anim-child="slide-up delay-5" class="mainSlider__form">
-                            <input type="text" placeholder="Mau konsultasi sekarang?">
-                            <button class="button -md -blue-1 text-white">
-                                <i class="fab fa-whatsapp mr-15"></i>
-                                Konsultasi
-                            </button>
+                            <div data-anim-child="slide-up delay-5" class="mainSlider__form">
+                                <input type="text" placeholder="Mau konsultasi sekarang?">
+                                <button class="button -md -blue-1 text-white">
+                                    <i class="fab fa-whatsapp mr-15"></i>
+                                    Konsultasi
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div data-anim-child="slide-up delay-6" class="row y-gap-20 justify-center mainSlider__items">
+
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="mainSlider-item text-center">
+                            <i class="fas fa-book-open text-white text-30"></i>
+                            <h4 class="text-20 fw-500 lh-18 text-white mt-8">100,000 courses</h4>
+                            <p class="text-15 text-white">Explore a variety of fresh topics</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="mainSlider-item text-center">
+                            <i class="fas fa-chalkboard-teacher text-white text-30"></i>
+                            <h4 class="text-20 fw-500 lh-18 text-white mt-8">Expert instruction</h4>
+                            <p class="text-15 text-white">Find the right instructor for you</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="mainSlider-item text-center">
+                            <i class="fas fa-globe-asia text-white text-30"></i>
+                            <h4 class="text-20 fw-500 lh-18 text-white mt-8">Go Green</h4>
+                            <p class="text-15 text-white">Comfortable living green environment</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <div data-anim-child="slide-up delay-6" class="row y-gap-20 justify-center mainSlider__items">
+            <button
+                class="swiper-prev button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-prev">
+                <i class="icon icon-arrow-left text-24"></i>
+            </button>
 
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="mainSlider-item text-center">
-                        <i class="fas fa-book-open text-white text-30"></i>
-                        <h4 class="text-20 fw-500 lh-18 text-white mt-8">100,000 courses</h4>
-                        <p class="text-15 text-white">Explore a variety of fresh topics</p>
-                    </div>
-                </div>
+            <button
+                class="swiper-next button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-next">
+                <i class="icon icon-arrow-right text-24"></i>
+            </button>
+        </section>
+    @endif
 
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="mainSlider-item text-center">
-                        <i class="fas fa-chalkboard-teacher text-white text-30"></i>
-                        <h4 class="text-20 fw-500 lh-18 text-white mt-8">Expert instruction</h4>
-                        <p class="text-15 text-white">Find the right instructor for you</p>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="mainSlider-item text-center">
-                        <i class="fas fa-globe-asia text-white text-30"></i>
-                        <h4 class="text-20 fw-500 lh-18 text-white mt-8">Go Green</h4>
-                        <p class="text-15 text-white">Comfortable living green environment</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <button
-            class="swiper-prev button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-prev">
-            <i class="icon icon-arrow-left text-24"></i>
-        </button>
-
-        <button
-            class="swiper-next button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-next">
-            <i class="icon icon-arrow-right text-24"></i>
-        </button>
-    </section>
-
-    @if (settings()->get("$k.visible"))
+    @if (settings()->get("$k.visible") && false)
         <section data-anim-wrap class="masthead -type-4 bg-light-6  animated pt-30" style="margin-top: 0">
             <div class="container pt-60">
                 <div class="row justify-center items-center">
@@ -111,6 +114,40 @@
                             <img src="{{ asset(settings()->get("$k.image")) }}" alt="image"
                                 style="position: relative; top: 1px;">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endif
+
+    @if (true)
+        <section data-anim-wrap class="masthead -type-2" style="min-height: 720px">
+            <div class="masthead__bg" style="left: 0; right: 0; border-radius: 0">
+                <div class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.image")) }}"></div>
+            </div>
+
+            <div class="container">
+                <div class="row y-gap-50 justify-center items-center">
+                    <div class="col-xl-6 col-lg-11">
+                        <div class="masthead__content">
+                            <div data-anim-child="slide-up delay-2"
+                                class="masthead__subtitle fw-500 text-green-1 text-17 lh-15">
+                                Konsultan lingkungan
+                            </div>
+                            <h1 data-anim-child="slide-up delay-3" class="masthead__title text-white mt-10 text-40 lh-17">
+                                Mari ajarkan para generasi muda tentang pentingnya alam untuk masa depan cucu mereka.
+                            </h1>
+                            <div data-anim-child="slide-up delay-4" class="masthead__button mt-20">
+                                <a href="javascript:void(0)" class="button -md -orange-1 text-white">
+                                    <i class="fab fa-whatsapp mr-15"></i>
+                                    Konsultasi Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-11">
+
                     </div>
                 </div>
             </div>
@@ -153,9 +190,9 @@
                     </div>
                 </div>
 
-                <div class="pt-60 lg:pt-40 js-section-slider" data-gap="30" data-pagination="js-events-slider-pagination"
-                    data-nav-prev="js-events-slider-prev" data-nav-next="js-events-slider-next"
-                    data-slider-cols="xl-3 lg-2">
+                <div class="pt-60 lg:pt-40 js-section-slider" data-gap="30"
+                    data-pagination="js-events-slider-pagination" data-nav-prev="js-events-slider-prev"
+                    data-nav-next="js-events-slider-next" data-slider-cols="xl-3 lg-2">
                     <div class="swiper-wrapper">
                         @foreach ($galeri_list as $galery)
                             <div class="swiper-slide">
