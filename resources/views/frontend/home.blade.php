@@ -192,37 +192,49 @@
 
                     <div class="sectionTitle ">
 
-                        <h2 class="sectionTitle__title text-green-1">Apa kata mereka</h2>
+                        <h2 class="sectionTitle__title text-white">Apa kata mereka</h2>
 
-                        <p class="sectionTitle__text text-white">Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p class="sectionTitle__text text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
 
                     </div>
 
                 </div>
             </div>
 
-            <div data-anim-wrap class="js-section-slider pt-50" data-gap="30" data-pagination
-                data-slider-cols="base-3 xl-3 lg-2 md-2 sm-1">
+            <div class="pt-60 lg:pt-50 js-section-slider" data-gap="30" data-pagination data-slider-cols="xl-2"
+                data-anim-wrap>
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <div data-anim-child="slide-left delay-1" class="testimonials -type-1">
-                            <div class="testimonials__content">
-                                <h4 class="testimonials__title">Great Work</h4>
-                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
-                                    Amazing
-                                    design, easy to customize and a design quality superlative account on its cloud platform
-                                    for the
-                                    optimized performance”</p>
-
-                                <div class="testimonials-footer">
-                                    <div class="testimonials-footer__image">
+                        <div data-anim-child="slide-left delay-1" class="testimonials -type-3 sm:px-20 sm:py-40 bg-white">
+                            <div class="row y-gap-30 md:text-center md:justify-center">
+                                <div class="col-md-auto">
+                                    <div class="testimonials__image">
                                         <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
                                     </div>
+                                </div>
 
-                                    <div class="testimonials-footer__content">
-                                        <div class="testimonials-footer__title">Courtney Henry</div>
-                                        <div class="testimonials-footer__text">Web Designer</div>
+                                <div class="col-md">
+                                    <div class="d-flex items-center md:justify-center">
+                                        <span class="text-14 lh-1 text-yellow-1">4.5</span>
+                                        <div class="x-gap-5 px-10">
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                        </div>
+                                        <span class="text-13 lh-1">(1991)</span>
+                                    </div>
+
+                                    <p class="testimonials__text text-16 lh-17 fw-500 mt-15">“I think Educrat is the best
+                                        theme I
+                                        ever seen this year. Amazing design, easy to customize and a design.”</p>
+
+                                    <div class="mt-15">
+                                        <div class="text-15 lh-1 text-dark-1 fw-500">Courtney Henry</div>
+                                        <div class="text-13 lh-1 mt-10">Web Designer</div>
                                     </div>
                                 </div>
                             </div>
@@ -230,23 +242,34 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div data-anim-child="slide-left delay-2" class="testimonials -type-1">
-                            <div class="testimonials__content">
-                                <h4 class="testimonials__title">Great Work</h4>
-                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
-                                    Amazing
-                                    design, easy to customize and a design quality superlative account on its cloud platform
-                                    for the
-                                    optimized performance”</p>
-
-                                <div class="testimonials-footer">
-                                    <div class="testimonials-footer__image">
+                        <div data-anim-child="slide-left delay-2" class="testimonials -type-3 sm:px-20 sm:py-40 bg-white">
+                            <div class="row y-gap-30 md:text-center md:justify-center">
+                                <div class="col-md-auto">
+                                    <div class="testimonials__image">
                                         <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
                                     </div>
+                                </div>
 
-                                    <div class="testimonials-footer__content">
-                                        <div class="testimonials-footer__title">Ronald Richards</div>
-                                        <div class="testimonials-footer__text">President of Sales</div>
+                                <div class="col-md">
+                                    <div class="d-flex items-center md:justify-center">
+                                        <span class="text-14 lh-1 text-yellow-1">4.5</span>
+                                        <div class="x-gap-5 px-10">
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                        </div>
+                                        <span class="text-13 lh-1">(1991)</span>
+                                    </div>
+
+                                    <p class="testimonials__text text-16 lh-17 fw-500 mt-15">“I think Educrat is the best
+                                        theme I
+                                        ever seen this year. Amazing design, easy to customize and a design.”</p>
+
+                                    <div class="mt-15">
+                                        <div class="text-15 lh-1 text-dark-1 fw-500">Courtney Henry</div>
+                                        <div class="text-13 lh-1 mt-10">Web Designer</div>
                                     </div>
                                 </div>
                             </div>
@@ -254,47 +277,34 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div data-anim-child="slide-left delay-3" class="testimonials -type-1">
-                            <div class="testimonials__content">
-                                <h4 class="testimonials__title">Great Work</h4>
-                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
-                                    Amazing
-                                    design, easy to customize and a design quality superlative account on its cloud platform
-                                    for the
-                                    optimized performance”</p>
-
-                                <div class="testimonials-footer">
-                                    <div class="testimonials-footer__image">
+                        <div data-anim-child="slide-left delay-3" class="testimonials -type-3 sm:px-20 sm:py-40 bg-white">
+                            <div class="row y-gap-30 md:text-center md:justify-center">
+                                <div class="col-md-auto">
+                                    <div class="testimonials__image">
                                         <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
-                                    </div>
-
-                                    <div class="testimonials-footer__content">
-                                        <div class="testimonials-footer__title">Annette Black</div>
-                                        <div class="testimonials-footer__text">Nursing Assistant</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div data-anim-child="slide-left delay-4" class="testimonials -type-1">
-                            <div class="testimonials__content">
-                                <h4 class="testimonials__title">Great Work</h4>
-                                <p class="testimonials__text"> “I think Educrat is the best theme I ever seen this year.
-                                    Amazing
-                                    design, easy to customize and a design quality superlative account on its cloud platform
-                                    for the
-                                    optimized performance”</p>
-
-                                <div class="testimonials-footer">
-                                    <div class="testimonials-footer__image">
-                                        <img src="{{ asset('assets/templates/admin/profile.png') }}" alt="image">
+                                <div class="col-md">
+                                    <div class="d-flex items-center md:justify-center">
+                                        <span class="text-14 lh-1 text-yellow-1">4.5</span>
+                                        <div class="x-gap-5 px-10">
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                            <i class="text-11 icon-star text-yellow-1"></i>
+                                        </div>
+                                        <span class="text-13 lh-1">(1991)</span>
                                     </div>
 
-                                    <div class="testimonials-footer__content">
-                                        <div class="testimonials-footer__title">Courtney Henry</div>
-                                        <div class="testimonials-footer__text">Web Designer</div>
+                                    <p class="testimonials__text text-16 lh-17 fw-500 mt-15">“I think Educrat is the best
+                                        theme I
+                                        ever seen this year. Amazing design, easy to customize and a design.”</p>
+
+                                    <div class="mt-15">
+                                        <div class="text-15 lh-1 text-dark-1 fw-500">Courtney Henry</div>
+                                        <div class="text-13 lh-1 mt-10">Web Designer</div>
                                     </div>
                                 </div>
                             </div>
@@ -303,22 +313,21 @@
 
                 </div>
 
-
-                <div class="d-flex x-gap-20 items-center justify-end pt-60 lg:pt-40">
+                <div class="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
                     <div class="col-auto">
-                        <button
-                            class="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-prev">
-                            <i class="icon icon-arrow-left text-24"></i>
+                        <button class="d-flex items-center text-24 arrow-left-hover js-prev">
+                            <i class="icon text-white icon-arrow-left"></i>
                         </button>
                     </div>
                     <div class="col-auto">
-                        <button
-                            class="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-next">
-                            <i class="icon icon-arrow-right text-24"></i>
+                        <div class="pagination -arrows js-pagination"></div>
+                    </div>
+                    <div class="col-auto">
+                        <button class="d-flex items-center text-24 arrow-right-hover js-next">
+                            <i class="icon text-white icon-arrow-right"></i>
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -327,7 +336,7 @@
         <div data-anim-wrap class="container">
             <div class="row justify-center">
                 <div class="col text-center">
-                    <p class="text-lg text-dark-1">Dipercaya oleh beberapa lembaga.</p>
+                    <p class="text-lg text-dark-1">Dipercaya oleh beberapa instansi dan lembaga</p>
                 </div>
             </div>
 
