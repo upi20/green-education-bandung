@@ -67,7 +67,8 @@
     <section data-anim-wrap class="cta -type-1 layout-pt-lg layout-pb-lg bg-dark-1 pb-0" style="padding-top: 460px">
         <div data-parallax="0.6" class="cta__bg">
             <div data-parallax-target class="bg-image js-lazy"
-                data-bg="{{ asset('assets/templates/frontend/img/home/paralax/1.jpg') }}" style="opacity: 0.7;"></div>
+                data-bg="{{ asset('assets/templates/frontend/img/home/paralax/1.jpg') }}"
+                style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
         </div>
         <div class="bg-green-1">
             <div class="container pb-90 pt-60">
@@ -83,7 +84,8 @@
     <section data-anim-wrap class="cta -type-1 layout-pt-lg layout-pb-lg bg-dark-1 pt-0 pb-0">
         <div data-parallax="0.6" class="cta__bg">
             <div data-parallax-target class="bg-image js-lazy"
-                data-bg="{{ asset('assets/templates/frontend/img/home/paralax/2.png') }}" style="opacity: 0.7;"></div>
+                data-bg="{{ asset('assets/templates/frontend/img/home/paralax/2.png') }}"
+                style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
         </div>
         <div class="row">
             <div class="col-lg-6 description-2"></div>
