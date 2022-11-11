@@ -73,10 +73,9 @@
         <div class="bg-green-1">
             <div class="container pb-90 pt-60">
                 <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
-                    GEB (Green Education Bandung) telah banyak memberikan pelatihan pembuatan produk dan karya
-                    seni dari barang bekas serta pelatihan urban farming kepada sekolah-sekolah dan kelompok
-                    masyarakat di berbagai kota, baik diselenggarakan secara mandiri maupun bekerjasama dengan
-                    lembaga pemerintah dan pihak swasta.
+                    Green Education Bandung berdiri sejak tahun 2014, dengan misi utama berperan serta dalam memberikan
+                    edukasi serta contoh nyata dalam giat kepedulian lingkungan hidup kepada masyarakat, melalui kegiatan
+                    Reduce, Reuse, Recycle, serta urban farming.
                 </h2>
             </div>
         </div>
