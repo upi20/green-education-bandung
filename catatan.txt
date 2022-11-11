@@ -1,3 +1,6 @@
-Tambah tomobol whatsapp di bawah samping
-Tambah Produk
-Tambah Layanan
+Galeri ke google drive
+Home top hero pake home 8
+struktur kepengurusan menyesuaikan
+
+keterangan menggunakan paralax di home 2
+struktur menggunakan (Sesuai dengan yang ada di karmapack)

@@ -159,7 +159,7 @@
     --color-purple-3: #F4F1FE;
     --color-purple-4: #7545F0;
     --color-purple-5: #EAE3FD;
-    --color-green-1: #00FF84;
+    --color-green-1: #548235;
     --color-green-2: #DEF5F0;
     --color-green-3: #EEF8F5;
     --color-green-4: #04D697;
@@ -1304,7 +1304,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--color-blue-1);
+    color: var(--color-green-1);
 }
 
 /* ul,
@@ -4624,7 +4624,7 @@ h6 {
 
     .header .header-menu .menu__nav>li:hover>a {
         color: var(--color-white);
-        background-color: var(--color-orange-1);
+        background-color: var(--color-green-1);
         /* border-radius: 24px; */
     }
 
@@ -6662,7 +6662,7 @@ h6 {
     font-size: 35px;
     font-weight: 700;
     line-height: 40px;
-    color: #00FF84;
+    color: #548235;
 }
 
 .counter__title {
@@ -7222,7 +7222,7 @@ h6 {
 }
 
 .eventCard.-type-4:hover .eventCard__date {
-    background-color: var(--color-blue-1) !important;
+    background-color: var(--color-green-1) !important;
 }
 
 .eventCard.-type-4:hover .eventCard__date span {

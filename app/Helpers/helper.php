@@ -230,3 +230,31 @@ if (!function_exists('get_sosmed')) {
         return $get ? $get->toArray() : [];
     }
 }
+
+if (!function_exists('get_file_attr_attribute')) {
+    function get_file_attr_attribute(string $file)
+    {
+        $results = [
+            'height' => null,
+            'width' => null,
+            'mime' => null,
+            'bits' => null,
+            'channels' => null,
+        ];
+
+        $cek = file_exists($file);
+
+
+        if ($cek) {
+            $result = getimagesize($file);
+            $results['width'] = $result[0];
+            $results['height'] = $result[1];
+            $results['bits'] = $result['bits'];
+            $results['channels'] = $result['channels'];
+            $results['mime'] = $result['mime'];
+            return (object)$results;
+        } else {
+            return (object)$results;
+        }
+    }
+}

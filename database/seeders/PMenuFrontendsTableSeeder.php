@@ -73,19 +73,6 @@ class PMenuFrontendsTableSeeder extends Seeder
             ),
             4 => 
             array (
-                'id' => 19,
-                'parent_id' => NULL,
-                'title' => 'FAQ',
-                'icon' => NULL,
-                'route' => 'kontak.faq',
-                'sequence' => 6,
-                'active' => 1,
-                'type' => 1,
-                'created_at' => '2022-08-22 20:45:46',
-                'updated_at' => '2022-09-02 00:45:51',
-            ),
-            5 => 
-            array (
                 'id' => 20,
                 'parent_id' => NULL,
                 'title' => 'Artikel',
@@ -96,19 +83,6 @@ class PMenuFrontendsTableSeeder extends Seeder
                 'type' => 1,
                 'created_at' => '2022-09-02 00:45:45',
                 'updated_at' => '2022-09-15 22:14:20',
-            ),
-            6 => 
-            array (
-                'id' => 21,
-                'parent_id' => 19,
-                'title' => 'Testing',
-                'icon' => NULL,
-                'route' => '#',
-                'sequence' => 7,
-                'active' => 1,
-                'type' => 1,
-                'created_at' => '2022-09-15 22:27:06',
-                'updated_at' => '2022-09-15 22:27:09',
             ),
         ));
         

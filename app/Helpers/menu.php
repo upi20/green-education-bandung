@@ -359,7 +359,7 @@ if (!function_exists('navbar_menu_front2')) {
         $menu_body = '';
 
         // active class
-        $active_class_src = 'class="text-white bg-orange-1 -rounded px-20 mx-2"';
+        $active_class_src = 'class="text-white bg-green-1 -rounded px-20 mx-2"';
         foreach ($menus as $m) {
             $menu = (object)$m;
 

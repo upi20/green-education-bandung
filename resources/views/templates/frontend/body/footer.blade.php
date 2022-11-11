@@ -1,4 +1,4 @@
-<footer class="footer -type-1 bg-blue-1 -green-links mt-0">
+<footer class="footer -type-1 bg-green-1 -green-links mt-0">
     <div class="container">
         <div class="footer-header">
             <div class="row y-gap-20 justify-between items-center">
@@ -20,59 +20,6 @@
                                     </a>
                                 </li>
                             @endforeach
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-columns">
-            <div class="row y-gap-30">
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="text-17 fw-500 text-white uppercase mb-25">Tentang</div>
-                    <div class="row justify-between y-gap-20">
-                        <div class="col-md-6">
-                            <div class="d-flex y-gap-10 flex-column">
-                                <a href="">AD/ART</a>
-                                <a href="{{ route('kontak') }}">Kontak</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="text-17 fw-500 text-white uppercase mb-25">Dukungan</div>
-                    <div class="row justify-between y-gap-20">
-                        <div class="col-md-6">
-                            <div class="d-flex y-gap-10 flex-column">
-                                <a href="">Buku Panduan</a>
-                                <a href="{{ route('kontak.faq') }}">FAQS</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="d-flex y-gap-10 flex-column">
-                                <a href="{{ route('login') }}">Login Anggota</a>
-                                <a href="{{ route('dashboard') }}">Dashboard</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="text-17 fw-500 text-white uppercase mb-25">Lainnya</div>
-                    <div class="row justify-between y-gap-20">
-                        <div class="col-md-6">
-                            <div class="d-flex y-gap-10 flex-column">
-                                <a href="{{ route('galeri') }}">Galeri</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="d-flex y-gap-10 flex-column">
-                                <a href="{{ route('login') }}">Login</a>
-                                <a href="">Blog Artikel</a>
-                            </div>
                         </div>
                     </div>
                 </div>

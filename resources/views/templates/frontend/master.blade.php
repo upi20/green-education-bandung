@@ -75,6 +75,8 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
     <meta itemprop="name" content="{{ $page_attr_title }}">
     <meta itemprop="description" content="{{ $page_attr->description }}">
     <meta itemprop="image" content="{{ $page_attr->image }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -143,6 +145,66 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
             cursor: pointer;
             border: #FFF 3px solid;
         }
+
+        .pl-lg-60 {
+            padding-left: 60px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .col-image-hero {
+                /* display: none */
+                padding: 0;
+            }
+
+            .col-image-logo {
+                position: absolute;
+                z-index: 1;
+            }
+
+            .masthead.-type-5 {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+
+            .carousel-control-prev {
+                display: none;
+            }
+
+            .carousel-control-next {
+                display: none;
+            }
+
+            .carousel-item img {
+                opacity: 0.5;
+            }
+
+            section.masthead.-type-5 {
+                background-color: #000;
+            }
+
+            .pl-lg-60 {
+                padding-left: 0;
+            }
+
+            .description-2 {
+                padding-top: 420px;
+            }
+        }
+
+        .carousel-item img {
+            height: 740px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .button.-green-1.text-white:hover {
+            color: var(--color-green-1) !important;
+        }
+
+        .button.-icon.-outline-green-1.text-green-1:hover {
+            color: var(--color-white) !important;
+        }
     </style>
     @yield('stylesheet')
 
@@ -150,6 +212,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
         <!-- custom {{ $meta->name }} -->
         {!! $meta->value !!}
     @endforeach
+
 </head>
 
 <body>
@@ -157,7 +220,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
     <!-- preloader -->
     @if ($page_attr->loader)
         <div id="preloader">
-            <div class="d-flex justify-content-center align-items-center flex-column bg-blue-1"
+            <div class="d-flex justify-content-center align-items-center flex-column bg-green-1"
                 style="height: 100vh;">
                 <img src="{{ asset(settings()->get(set_front('app.foto_light_mode'))) }}" style="max-width: 80px;"
                     alt="logo" />
@@ -172,7 +235,6 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
         <main class="main-content ">
 
             @include('templates.frontend.body.header', $compact)
-
 
             <div class="content-wrapper  js-content-wrapper">
                 @yield('content', '')
@@ -201,12 +263,20 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
     {{-- <script src="{{ asset('assets/templates/frontend/assets/leaflet1.7.1/dist/leaflet.js') }}"></script> --}}
     <script src="{{ asset('assets/templates/frontend/js/vendors.js') }}"></script>
     <script src="{{ asset('assets/templates/frontend/js/main_v2.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script>
         const preload_container = $("#preloader");
+        let preload_finish = false;
         $(window).on('load', function() {
             "use strict";
             preload_container.delay(750).fadeOut('slow');
             refresh_margin_top();
+            preload_finish = true;
         });
 
         (function pulse(back) {
@@ -215,7 +285,9 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
                 'font-size': (back) ? '100px' : '140px',
                 opacity: (back) ? 1 : 0.5
             }, 700, function() {
-                pulse(!back)
+                if (!preload_finish) {
+                    pulse(!back);
+                }
             });
         })(false);
 
