@@ -21,6 +21,17 @@
                         <h1 data-anim-child="slide-up delay-2" class="masthead__title text-white">
                             GREEN EDUCATION BANDUNG
                         </h1>
+
+                        <div class="col-auto mt-20" data-anim-child="slide-right delay-2">
+                            <a href="https://www.youtube.com/watch?v=1NY5uR-NHjs" class="d-flex items-center js-gallery"
+                                data-gallery="gallery1">
+                                <div class="d-flex justify-center items-center size-60 rounded-full"
+                                    style="border: 2px solid white;">
+                                    <div class="icon-play text-20 text-white pl-5"></div>
+                                </div>
+                                <div class="ml-10 text-white">Wisata Petik Jeruk RGL di Bandung</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
