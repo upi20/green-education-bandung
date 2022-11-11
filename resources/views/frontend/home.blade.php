@@ -143,7 +143,7 @@
                                     alt="image"
                                     style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
                                 <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Hessy Widiyastuti, M.Pd
+                                    Hessy Widiyastuti, S.Psi, M.Pd
                                 </h4>
                                 <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
                                     Ketua Dewan Pembina
@@ -158,7 +158,7 @@
                                 <img src="{{ asset('assets/templates/frontend/logo.png') }}" alt="image"
                                     style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
                                 <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Rudy Hidayat
+                                    Rudi
                                 </h4>
                                 <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
                                     Dewan Pengawas
@@ -174,7 +174,7 @@
                                     alt="image"
                                     style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
                                 <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Rudy Hidayat
+                                    Boy Hidayat
                                 </h4>
                                 <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
                                     Ketua Yayasan
