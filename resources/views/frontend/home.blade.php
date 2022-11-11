@@ -385,7 +385,7 @@
         <section class="layout-pt-md layout-pb-lg">
             <div data-anim-wrap class="container">
                 <div class="row y-gap-20 justify-between items-center">
-                    <div class="col-lg-6"data-anim-child="slide-right delay-3">
+                    <div class="col-lg-6" data-anim-child="slide-right delay-3">
                         <div class="sectionTitle ">
                             <h2 class="sectionTitle__title ">{{ settings()->get("$k.title") }}</h2>
                             <p class="sectionTitle__text ">{{ settings()->get("$k.sub_title") }}</p>
@@ -502,7 +502,7 @@
             object-fit: cover; /* cover, contain, fill, scale-down */
             object-position: center;">
 
-        <div style="position: absolute;margin-top: -720px;width: 100%;">
+        <div style="position: absolute;margin-top: -720px;width: 100%;" data-anim-child="slide-top delay-1">
             <img src="{{ asset('assets/logo.png') }}" alt="" style="margin-top:60px; width: 150px"
                 id="image-thank">
             <h1 class="text-white mt-25">TERIMA KASIH</h1>
@@ -511,7 +511,7 @@
         <div class="d-flex justify-content-center"
             style="position: absolute;margin-top: -160px;width: 100%;text-align: center;">
             <div class="bg-green-1 pt-20 pb-20 pl-20 pr-20" style="max-width: 960px;border-radius: 8px;opacity: 0.5;">
-                <h3 class="text-white text-alamat">
+                <h3 class="text-white text-alamat" data-anim-child="slide-top delay-1">
                     GREEN EDUCATION BANDUNG / YAYASAN PENDIDIKAN BANDUNG HIJAU
                     JL. INTAN RAYA NO. 4 SADANG SERANG - BANDUNG (081322728628)
                 </h3>
@@ -521,7 +521,7 @@
         <div class="d-flex justify-content-center"
             style="position: absolute;margin-top: -160px;width: 100%;text-align: center;">
             <div class="pt-20 pb-20 pl-20 pr-20" style="max-width: 960px;border-radius: 8px;">
-                <h3 class="text-white text-alamat">
+                <h3 class="text-white text-alamat" data-anim-child="slide-top delay-2">
                     GREEN EDUCATION BANDUNG / YAYASAN PENDIDIKAN BANDUNG HIJAU
                     JL. INTAN RAYA NO. 4 SADANG SERANG - BANDUNG (081322728628)
                 </h3>
