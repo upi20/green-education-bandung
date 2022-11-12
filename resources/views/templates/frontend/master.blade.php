@@ -242,9 +242,10 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
             </div>
 
             <div class="bottom-left-container">
-                <div class="button -green-5 p-20 text-white fw-bold" id="whatsapp-container">
+                <a class="button -green-5 p-20 text-white fw-bold" id="whatsapp-container"
+                    href="https://api.whatsapp.com/send?phone=6281322728628" target="_blank">
                     <i class="fab fa-whatsapp" style="font-size: 1.5em"></i>
-                </div>
+                </a>
 
                 <div style="display: none">
                     <div id="back-to-top" class="span bg-blue-1 p-20 mt-5">
