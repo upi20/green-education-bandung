@@ -3,12 +3,12 @@
         style="box-shadow: 0px 0px 20px 0px #404f680d">
         @if ($notifikasi)
             @foreach ($notifikasi as $v)
-                <div class="bg-dark-1 py-10 notification_top">
+                <div class="bg-green-1 py-10 notification_top">
                     <div class="container  d-flex justify-content-between">
 
                         <p class="text-white">{{ $v->deskripsi }}
                             @if ($v->link)
-                                <a href="{{ $v->link }}" class="text-purple-1 fw-bold">{{ $v->link_nama }}</a>
+                                <a href="{{ $v->link }}" class="text-orange-1 fw-bold">{{ $v->link_nama }}</a>
                             @endif
                         </p>
                         <span class="text-white fw-bold" style="cursor: pointer"

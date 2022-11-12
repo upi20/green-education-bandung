@@ -41,7 +41,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#fff">
-    <meta name="theme-color" content="#140342">
+    <meta name="theme-color" content="#548235">
     <meta name="msapplication-TileImage" content="{{ asset('favicon/icon-144x144.png') }}">
 
     <!-- META DATA -->
@@ -204,6 +204,10 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
 
         .button.-icon.-outline-green-1.text-green-1:hover {
             color: var(--color-white) !important;
+        }
+
+        .text-orange-1:hover {
+            color: var(--color-green-7);
         }
     </style>
     @yield('stylesheet')

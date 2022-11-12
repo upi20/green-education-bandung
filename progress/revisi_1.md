@@ -9,3 +9,9 @@ sosial media
   [x] https://www.facebook.com/people/Green-Education-Bandung/100063639066890/
   [x] http://www.instagram.com/green_education_bdg/
   [x] https://www.youtube.com/channel/UCQwQPjJqBcfQXpMaV6E8fxg
+
+home
+  [x] tambah link join ke group WA
+  [x] Warna notif sesuai dengan warna loading
+  [] tambah fitur popup as loading selesai (seperti iklan)
+  [] youtube di hero bisa di custom
