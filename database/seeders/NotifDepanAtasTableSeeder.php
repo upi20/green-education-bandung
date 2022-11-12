@@ -21,7 +21,7 @@ class NotifDepanAtasTableSeeder extends Seeder
         \DB::table('notif_depan_atas')->insert(array (
             0 => 
             array (
-                'id' => 1,
+                'id' => '1',
                 'nama' => 'Situs ini masih dalam masa pengembangan.',
                 'deskripsi' => 'Website ini masih dalam masa pengembangan. jika anda menemukan error atau ada saran lain-nya bisa menghubungi developer',
                 'dari' => '2022-08-02',
@@ -33,7 +33,7 @@ class NotifDepanAtasTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'id' => 2,
+                'id' => '2',
                 'nama' => 'Testing',
                 'deskripsi' => 'Testing wkwk',
                 'dari' => '2022-08-01',
@@ -42,6 +42,18 @@ class NotifDepanAtasTableSeeder extends Seeder
                 'link_nama' => 'Klik Disini',
                 'created_at' => '2022-08-08 22:38:37',
                 'updated_at' => '2022-08-08 22:59:36',
+            ),
+            2 => 
+            array (
+                'id' => '3',
+                'nama' => 'Group WA',
+                'deskripsi' => 'Untuk Masyarakat Yang Ingin Gabung Atau Mau Bertanya Langsung Bisa',
+                'dari' => '2022-11-11',
+                'sampai' => '2025-11-12',
+                'link' => 'https://chat.whatsapp.com/E9Eumj8OwpbLOplOxPer4e',
+                'link_nama' => 'Klik disini',
+                'created_at' => '2022-11-12 17:37:38',
+                'updated_at' => '2022-11-12 17:38:16',
             ),
         ));
         
