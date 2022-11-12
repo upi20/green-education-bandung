@@ -192,7 +192,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
         }
 
         .carousel-item img {
-            height: 740px;
+            height: 780px;
             width: 100%;
             object-fit: cover;
             object-position: center;
