@@ -114,7 +114,8 @@ $page_attr_title = ($page_attr->title == '' ? '' : $page_attr->title . ' | ') . 
                             <img src="{{ asset(settings()->get(set_admin('app.foto_light_landscape_mode'))) }}"
                                 class="header-brand-img" alt="Logo Karmapack" id="logo">
                         </div>
-                        <p class="text-center mt-5">Sistem Informasi Anggota (SIA)</p>
+                        {{-- <p class="text-center mt-5">Masuk</p> --}}
+                        <br>
                         <div class="panel panel-primary">
                             <div class="panel-body tabs-menu-body p-0">
                                 <div class="tab-content">

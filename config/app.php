@@ -202,6 +202,6 @@ return [
     ])->toArray(),
 
     // my config
-    'super_admin_role' => env('SUPER_ADMIN_ROLE', 'Administrator'),
+    'super_admin_role' => env('SUPER_ADMIN_ROLE', 'Super Admin'),
     'user_input_angkatan' => (bool)env('USER_INPUT_ANGKATAN', false)
 ];

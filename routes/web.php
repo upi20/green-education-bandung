@@ -78,8 +78,6 @@ Route::get('/dashboard', function () {
     if (!auth()->user()) return Redirect::route('login');
     if (auth_has_role(config('app.super_admin_role'))) {
         return Redirect::route('admin.dashboard');
-    } else {
-        return Redirect::route('member.dashboard');
     }
 })->name("dashboard");
 // ====================================================================================================================
@@ -99,8 +97,6 @@ Route::controller(LoaderController::class)->prefix($prefix)->group(function () {
 // ====================================================================================================================
 
 
-
-
 // laboartorium =======================================================================================================
 $prefix = 'lab';
 Route::controller(LabController::class)->prefix($prefix)->group(function () {
@@ -113,10 +109,6 @@ Route::controller(LabController::class)->prefix($prefix)->group(function () {
 
 // frontend ==========================================================================================================
 Route::get('/frontend', [HomeController::class, 'fronted2'])->name('frontend');
-
-
-// profile username ===================================================================================================
-Route::get('/{model:username}', [MemberController::class, 'member'])->name("anggota.username");
 
 // Gform
 Route::get('/f/{model:slug}', [GFormController::class, 'frontend_detail'])->name("frontend.gform.detail");

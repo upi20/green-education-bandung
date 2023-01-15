@@ -41,6 +41,7 @@ use App\Http\Controllers\Admin\Setting\HomeController;
 use App\Http\Controllers\Admin\Utility\HariBesarNasionalController;
 use App\Http\Controllers\Admin\Utility\NotifAdminAtasController;
 use App\Http\Controllers\Admin\Utility\NotifDepanAtasController;
+use Illuminate\Support\Facades\Redirect;
 
 $name = 'admin';
 $prefix = 'dashboard';
@@ -55,6 +56,8 @@ Route::group(
         Route::get('/', 'index')->name($name);
     }
 );
+
+Route::get('/', fn () => Redirect::route('admin.dashboard'));
 
 $prefix = 'user';
 Route::controller(UserController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
@@ -355,4 +358,11 @@ Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
         Route::get('/', 'index')->name($name)->middleware("permission:$name");
         Route::post('/setting', 'setting')->name("$name.setting")->middleware("permission:$name.setting");
     });
+});
+
+$prefix = "password";
+Route::controller(UserController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+    $name = "$name.$prefix"; // admin.password
+    Route::get('/', 'change_password')->name($name)->middleware("permission:$name");
+    Route::post('/save', 'save_password')->name("$name.save")->middleware("permission:$name.save");
 });
