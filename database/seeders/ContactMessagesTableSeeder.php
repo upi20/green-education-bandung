@@ -29,6 +29,26 @@ class ContactMessagesTableSeeder extends Seeder
                 'created_at' => '2022-08-21 15:49:29',
                 'updated_at' => '2022-08-21 15:49:29',
             ),
+            1 => 
+            array (
+                'id' => 2,
+                'nama' => 'CANDIDO CRUICKSHANK JR.',
+                'email' => 'admin@mail.com',
+                'message' => 'a',
+                'status' => NULL,
+                'created_at' => '2023-01-15 15:21:24',
+                'updated_at' => '2023-01-15 15:21:24',
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'nama' => 'Testing',
+                'email' => 'admin@mail.com',
+                'message' => '123',
+                'status' => NULL,
+                'created_at' => '2023-01-15 15:24:45',
+                'updated_at' => '2023-01-15 15:24:45',
+            ),
         ));
         
         
