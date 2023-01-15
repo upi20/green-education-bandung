@@ -41,8 +41,8 @@
         <div data-anim-wrap class="container">
             <div class=" pb-30" data-anim="slide-up delay-4">
                 <form class="search-field h-50" action="">
-                    <input class="bg-light-3 pr-50" type="search" placeholder="Poesaka..." value="{{ $filters->search }}"
-                        name="search" id="search">
+                    <input class="bg-light-3 pr-50" type="search" placeholder="Masukan kata kunci pencarian.."
+                        value="{{ $filters->search }}" name="search" id="search">
                     <button class="" type="submit">
                         <i class="icon-search text-20"></i>
                     </button>

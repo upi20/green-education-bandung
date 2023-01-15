@@ -2301,7 +2301,7 @@ button:focus {
 
 .button.-blue-1:hover {
     background-color: transparent !important;
-    color: var(--color-blue-1);
+    color: var(--color-blue-1) !important;
 }
 
 .button.-outline-blue-1 {
