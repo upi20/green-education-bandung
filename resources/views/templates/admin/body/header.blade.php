@@ -9,7 +9,7 @@
             </div>
             <div>
 
-                <a class="logo-horizontal " href="{{ url('/') }}">
+                <a class="logo-horizontal " href="{{ url('/admin') }}">
                     <img src="{{ asset(settings()->get(set_admin('app.foto_light_landscape_mode'))) }}"
                         class="header-brand-img desktop-logo" alt="logo">
                     <img src="{{ asset(settings()->get(set_admin('app.foto_dark_landscape_mode'))) }}"

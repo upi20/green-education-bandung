@@ -545,12 +545,28 @@ Goals Report 2021<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11
                 'detail' => '<p><br><div class="embed-container"><br></div><div class="embed-container"><iframe src="https://www.youtube.com/embed/WH1SduDRL_Y?autoplay=1&amp;fs=1&amp;iv_load_policy=&amp;showinfo=1&amp;rel=0&amp;cc_load_policy=1&amp;start=0&amp;modestbranding&amp;end=0&amp;controls=1" frameborder="0" width="100%" height="500px" type="text/html" allowfullscreen="true"></iframe></div><p></p></p>
 ',
                 'excerpt' => 'Testing video youtube',
-                'counter' => 5,
+                'counter' => 6,
                 'date' => '2022-04-27',
                 'status' => 1,
                 'created_at' => '2022-04-28 07:19:02',
-                'updated_at' => '2022-09-02 00:44:49',
+                'updated_at' => '2023-01-15 15:51:13',
                 'user_id' => 1,
+            ),
+            10 => 
+            array (
+                'id' => 37,
+                'nama' => 'Tema Hari Buku dan Hak Cipta Sedunia 23 April 2022',
+                'slug' => 'tema-hari-buku-dan-hak-cipta-sedunia-23-april-2022',
+                'foto' => '/assets/artikel/tema-hari-16737731580.png',
+                'detail' => '<p><img style="width: 799px;" data-bs-filename="Class Diagram.jpg" src="/assets/artikel/tema-hari-16737731580.png"><p>UNESCO menciptakan World Book and Copyright Day untuk meningkatkan kesadaran bahwa membaca adalah hal yang sangat penting dan banyak mempengaruhi kehidupan.<br></p></p>
+',
+                'excerpt' => 'UNESCO menciptakan World Book and Copyright Day untuk meningkatkan kesadaran bahwa membaca adalah hal yang sangat penting dan banyak mempengaruhi kehidupan.',
+                'counter' => 5,
+                'date' => '2023-01-15',
+                'status' => 1,
+                'created_at' => '2023-01-15 15:50:50',
+                'updated_at' => '2023-01-15 15:59:33',
+                'user_id' => 2,
             ),
         ));
         

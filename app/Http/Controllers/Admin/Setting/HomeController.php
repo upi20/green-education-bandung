@@ -14,9 +14,9 @@ class HomeController extends Controller
     public function index()
     {
         $page_attr = [
-            'title' => 'Home Page Setting',
+            'title' => 'Halaman Depan',
             'breadcrumbs' => [
-                ['name' => 'Setting'],
+                ['name' => 'Pengaturan'],
             ]
         ];
         $pre = $this->setting_prefix;

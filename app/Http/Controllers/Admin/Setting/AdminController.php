@@ -13,9 +13,9 @@ class AdminController extends Controller
     public function index(Request $request)
     {
         $page_attr = [
-            'title' => 'Admin Setting',
+            'title' => 'Pengaturan Admin',
             'breadcrumbs' => [
-                ['name' => 'Setting'],
+                ['name' => 'Pengaturan'],
             ]
         ];
         $data = compact(

@@ -84,6 +84,19 @@ class PMenuFrontendsTableSeeder extends Seeder
                 'created_at' => '2022-09-02 00:45:45',
                 'updated_at' => '2022-09-15 22:14:20',
             ),
+            5 => 
+            array (
+                'id' => 21,
+                'parent_id' => NULL,
+                'title' => 'Masuk',
+                'icon' => NULL,
+                'route' => 'login',
+                'sequence' => 5,
+                'active' => 1,
+                'type' => 1,
+                'created_at' => '2023-01-17 21:39:28',
+                'updated_at' => '2023-01-17 21:39:52',
+            ),
         ));
         
         

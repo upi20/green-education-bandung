@@ -13,9 +13,9 @@ class FrontController extends Controller
     public function index(Request $request)
     {
         $page_attr = [
-            'title' => 'Front Setting',
+            'title' => 'Pengaturan Depan',
             'breadcrumbs' => [
-                ['name' => 'Setting'],
+                ['name' => 'Pengaturan'],
             ]
         ];
         $data = compact(

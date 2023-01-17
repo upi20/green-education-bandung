@@ -3,7 +3,7 @@
     <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
     <div class="app-sidebar">
         <div class="side-header">
-            <a class="header-brand1" href="{{ url('/') }}">
+            <a class="header-brand1" href="{{ url('/admin') }}">
                 {{-- light landscape --}}
                 <img src="{{ asset(settings()->get(set_admin('app.foto_light_landscape_mode'))) }}"
                     class="header-brand-img desktop-logo" alt="logo">

@@ -29,7 +29,7 @@ class NotifDepanAtasTableSeeder extends Seeder
                 'link' => 'https://wa.me/+6285798132505',
                 'link_nama' => 'Klik disini',
                 'created_at' => '2022-08-08 22:37:14',
-                'updated_at' => '2022-08-22 02:43:16',
+                'updated_at' => '2023-01-17 21:44:28',
             ),
             1 => 
             array (

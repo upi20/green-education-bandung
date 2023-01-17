@@ -11,7 +11,7 @@ class DashboardController extends Controller
     public function index(Request $request)
     {
         $total_anggota = User::count();
-        $page_attr = ['title' => 'Dashboard'];
+        $page_attr = ['title' => 'Halaman Utama'];
 
         $data = compact(
             'total_anggota',
