@@ -84,7 +84,7 @@ Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
 
     $prefix = 'data';
     Route::controller(ArtikelController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-        $name = "$name.$prefix"; // admin.data
+        $name = "$name.$prefix"; // admin.artikel.data
         Route::get('/', 'index')->name($name)->middleware("permission:$name");
         Route::get('/add', 'add')->name("$name.add")->middleware("permission:$name.insert");
         Route::get('/edit/{artikel}', 'edit')->name("$name.edit")->middleware("permission:$name.update");
@@ -242,7 +242,7 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
 
     $prefix = 'frontend';
     Route::controller(MenuFrontendController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-        $name = "$name.$prefix"; // admin.menu.admin
+        $name = "$name.$prefix"; // admin.menu.frontend
         Route::get('/', 'index')->name($name)->middleware("permission:$name");
         Route::put('/save', 'save')->name("$name.save")->middleware("permission:$name.save");
 
