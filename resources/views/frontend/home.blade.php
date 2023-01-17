@@ -63,7 +63,6 @@
         </section>
     @endif
 
-
     @php
         $k = "$p.about";
     @endphp
@@ -235,6 +234,7 @@
     @php
         $k = "$p.galeri_kegiatan";
     @endphp
+    {{-- Geleri Kegiatan --}}
     @if (settings()->get("$k.visible"))
         <section class="layout-pt-lg layout-pb-lg bg-light-3" data-anim-wrap>
             <div class="container">
@@ -325,6 +325,7 @@
     @php
         $k = "$p.artikel";
     @endphp
+    {{-- Artikel --}}
     @if (settings()->get("$k.visible"))
         <section class="layout-pt-md layout-pb-lg">
             <div data-anim-wrap class="container">
@@ -435,11 +436,6 @@
         $image_asset = 'assets/templates/frontend/img/home/terima-kasih/1.jpeg';
         $img_thx_attr = get_file_attr_attribute("./$image_asset");
     @endphp
-    {{-- <section class="bg-green-3" data-anim-wrap
-        style="background-image: url('{{ asset($image_asset) }}');
-        background-repeat: no-repeat;
-        background-position: center;
-        height: {{ $img_thx_attr->height }}px;"> --}}
     <section class="bg-green-3 text-center" data-anim-wrap style="height: 720px">
         <img src="{{ asset($image_asset) }}" alt=""
             style="height: 100%;
@@ -473,6 +469,7 @@
         </div>
 
     </section>
+
 @endsection
 
 
