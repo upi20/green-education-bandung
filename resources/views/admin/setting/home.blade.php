@@ -47,6 +47,7 @@
             </div>
         </div>
 
+        {{-- About --}}
         <div class="grid-item col-md-6 col-lg-4">
             @php
                 $name = 'about';
@@ -169,7 +170,6 @@
             </div>
         </div>
 
-
         {{-- artikel --}}
         <div class="grid-item col-md-6 col-lg-4">
             @php
@@ -209,6 +209,67 @@
                             <input type="text" id="{{ $s("$name.button_text") }}" name="button_text"
                                 class="form-control" placeholder="Teks Tombol"
                                 value="{{ settings()->get($s("$name.button_text")) }}" required />
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-end">
+                    <button type="submit" class="btn btn-primary" form="{{ $name }}-form">
+                        <li class="fas fa-save mr-1"></li> Simpan
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        {{-- Terima Kasih --}}
+        <div class="grid-item col-md-6 col-lg-4">
+            @php
+                $name = 'terima_kasih';
+                $title = 'Terima Kasih';
+            @endphp
+            <div class="card">
+                <div class="card-header d-md-flex flex-row justify-content-between">
+                    <h3 class="card-title">Pengaturan {{ $title }} </h3>
+                    <label class="custom-switch form-switch">
+                        <input type="checkbox" name="visible" form="{{ $name }}-form"
+                            class="custom-switch-input" {{ settings()->get($s("$name.visible")) ? 'checked' : '' }}>
+                        <span class="custom-switch-indicator"></span>
+                        <span class="custom-switch-description">Tampilkan</span>
+                    </label>
+                </div>
+                <div class="card-body">
+                    <form class="form-horizontal" id="{{ $name }}-form">
+                        <div class="form-group">
+                            <label class="form-label" for="{{ $s("$name.title") }}">Judul
+                                <span class="text-danger">*</span></label>
+                            <input type="text" id="{{ $s("$name.title") }}" name="title" class="form-control"
+                                placeholder="Judul" value="{{ settings()->get($s("$name.title")) }}" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Foto Logo
+                                <span class="badge bg-primary" id="terima_kasih_image_logo"
+                                    onclick='viewImage(`{{ settings()->get($s("$name.image_logo")) }}`, `Foto Logo {{ $title }}`)'>
+                                    Lihat
+                                </span>
+                            </label>
+                            <input type="file" accept="image/*" id="{{ "$name.image_logo" }}" name="image_logo"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Foto Latar Belakang
+                                <span class="badge bg-primary" id="terima_kasih_image"
+                                    onclick='viewImage(`{{ settings()->get($s("$name.image")) }}`, `Foto Latar Belakang {{ $title }}`)'>
+                                    Lihat
+                                </span>
+                            </label>
+                            <input type="file" accept="image/*" id="{{ "$name.image" }}" name="image"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="{{ $s("$name.deskripsi") }}">
+                                Deskripsi <span class="text-danger">*</span>
+                            </label>
+                            <textarea id="{{ $s("$name.deskripsi") }}" name="deskripsi" class="form-control" required rows="3"
+                                placeholder="Deskripsi">{!! settings()->get($s("$name.deskripsi")) !!}</textarea>
                         </div>
                     </form>
                 </div>
@@ -266,7 +327,7 @@
                 columnWidth: '.grid-sizer'
             });
 
-            // Hero ===================================================================================================
+            // About ==================================================================================================
             $('#about-form').submit(function(e) {
                 const load_el = $(this).parent().parent();
                 e.preventDefault();
@@ -293,7 +354,52 @@
                             `viewImage('${data.foto1}', 'Foto Deskripsi 1')`);
                         $('#deskripsi_foto_2').attr('onclick',
                             `viewImage('${data.foto2}', 'Foto Deskripsi 2')`);
-                        $('#about-form').find('input[name=image]').val('');
+                        load_el.find('input[type=file]').val('');
+                    },
+                    error: function(data) {
+                        const res = data.responseJSON ?? {};
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'error',
+                            title: res.message ?? 'Something went wrong',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                    },
+                    complete: function() {
+                        load_el.LoadingOverlay("hide");
+                    }
+                });
+            });
+
+            // About ==================================================================================================
+            $('#terima_kasih-form').submit(function(e) {
+                const load_el = $(this).parent().parent();
+                e.preventDefault();
+                var formData = new FormData(this);
+                load_el.LoadingOverlay("show");
+                $.ajax({
+                    type: "POST",
+                    url: `{{ route(h_prefix('terima_kasih')) }}`,
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: (data) => {
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Data saved successfully',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+
+                        // set image
+                        $('#terima_kasih_image').attr('onclick',
+                            `viewImage('${data.foto}', 'Foto Latar Belakang Terima Kasih')`);
+                        $('#terima_kasih_image_logo').attr('onclick',
+                            `viewImage('${data.image_logo}', 'Foto Logo Terima Kasih')`);
+                        load_el.find('input[type=file]').val('');
                     },
                     error: function(data) {
                         const res = data.responseJSON ?? {};
@@ -354,7 +460,6 @@
                 });
             });
 
-
             // Galeri Kegiatan ========================================================================================
             $('#galeri_kegiatan-form').submit(function(e) {
                 const load_el = $(this).parent().parent();
@@ -393,7 +498,7 @@
                 });
             });
 
-            // Galeri Kegiatan ========================================================================================
+            // Artikel Kegiatan =======================================================================================
             $('#artikel-form').submit(function(e) {
                 const load_el = $(this).parent().parent();
                 e.preventDefault();

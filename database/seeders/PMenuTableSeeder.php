@@ -461,6 +461,19 @@ class PMenuTableSeeder extends Seeder
                 'created_at' => '2023-01-18 00:18:02',
                 'updated_at' => '2023-01-18 00:42:10',
             ),
+            34 => 
+            array (
+                'id' => 414,
+                'parent_id' => 397,
+                'title' => 'Visi Dan Misi',
+                'icon' => NULL,
+                'route' => 'admin.setting.visi_misi',
+                'sequence' => 33,
+                'active' => 1,
+                'type' => 1,
+                'created_at' => '2023-01-18 01:51:32',
+                'updated_at' => '2023-01-18 01:51:32',
+            ),
         ));
         
         

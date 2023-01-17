@@ -172,63 +172,53 @@
         </section>
     @endif
 
-
+    @php
+        $k = "$p.visi_misi";
+    @endphp
     {{-- visi misi --}}
-    <section class="layout-pt-lg layout-pb-md" data-anim-wrap>
-        <div class="container">
-            <div class="row justify-center text-center mb-60">
-                <div class="col-auto">
-                    <div class="sectionTitle ">
-                        <h2 class="sectionTitle__title "data-anim-child="slide-up delay-1">Visi dan misi yayasan</h2>
-                        <p class="sectionTitle__text " data-anim-child="slide-up delay-2">Sebagai pegangan dan pijakan
-                            dalam melangkah</p>
+    @if (settings()->get("$k.visible"))
+        <section class="layout-pt-lg layout-pb-md" data-anim-wrap>
+            <div class="container">
+                <div class="row justify-center text-center mb-60">
+                    <div class="col-auto">
+                        <div class="sectionTitle ">
+                            <h2 class="sectionTitle__title "data-anim-child="slide-up delay-1">
+                                {{ settings()->get("$k.title") }}</h2>
+                            <p class="sectionTitle__text " data-anim-child="slide-up delay-2">
+                                {{ settings()->get("$k.sub_title") }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row y-gap-30 items-center" data-anim-child="slide-right delay-3">
+                    <div class="col-xl-5 offset-xl-1 col-lg-6">
+                        <img class="w-1/1" src="{{ url(settings()->get("$k.visi_image")) }}" style="border-radius: 8px"
+                            alt="image">
+                    </div>
+
+                    <div class="col-xl-4 offset-xl-1 col-lg-6" data-anim-child="slide-left delay-4">
+                        <h3 class="text-24 lh-1">{{ settings()->get("$k.visi_title") }}</h3>
+                        {!! settings()->get("$k.visi") !!}
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="layout-pt-md layout-pb-md" data-anim-wrap>
+            <div class="container">
+                <div class="row y-gap-30 items-center">
+                    <div class="col-xl-4 offset-xl-1 order-lg-1 col-lg-6 order-2" data-anim-child="slide-left delay-1">
+                        <h3 class="text-24 lh-1">{{ settings()->get("$k.misi_title") }}</h3>
+                        {!! settings()->get("$k.misi") !!}
+                    </div>
 
-            <div class="row y-gap-30 items-center" data-anim-child="slide-right delay-3">
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <img class="w-1/1" src="{{ asset('assets/templates/frontend/img/home/visi-misi/visi.jpeg') }}"
-                        style="border-radius: 8px" alt="image">
-                </div>
-
-                <div class="col-xl-4 offset-xl-1 col-lg-6" data-anim-child="slide-left delay-4">
-                    <h3 class="text-24 lh-1">VISI YAYASAN</h3>
-                    <p class="mt-20 text-24" style="line-height: 40px">Terciptanya generasi yang rahmatan lil'alamin,
-                        yaitu masyarakat yang mampu
-                        memberikan manfaat kepada sekitar serta mampu mengelola alam secara bijak, adil, dan lestari </p>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 order-lg-2 order-1" data-anim-child="slide-right delay-2">
+                        <img class="w-1/1" src="{{ url(settings()->get("$k.misi_image")) }}" style="border-radius: 8px"
+                            alt="image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="layout-pt-md layout-pb-md" data-anim-wrap>
-        <div class="container">
-            <div class="row y-gap-30 items-center">
-                <div class="col-xl-4 offset-xl-1 order-lg-1 col-lg-6 order-2" data-anim-child="slide-left delay-1">
-                    <h3 class="text-24 lh-1">MISI YAYASAN </h3>
-                    <p class="mt-20 text-24">
-                    <ul>
-                        <li class="text-20">
-                            Menjadi Pusat Edukasi Lingkungan, Budaya, dan Kebangsaan yang berbasis kepada kearifan lokal
-                            bangsa Indonesia.
-                        </li>
-                        <li class="text-20">
-                            Menjadi Institusi Pengembangan Kreativitas Pengelolaan Sampah yang terbaik.
-                        </li>
-                        <li class="text-20">
-                            Menjadi Model dalam Pengembangan Pendidikan Lingkungan Masyarakat.
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="col-xl-5 offset-xl-1 col-lg-6 order-lg-2 order-1" data-anim-child="slide-right delay-2">
-                    <img class="w-1/1" src="{{ asset('assets/templates/frontend/img/home/visi-misi/misi.jpeg') }}"
-                        style="border-radius: 8px" alt="image">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
 
     @php
@@ -431,44 +421,43 @@
         </section>
     @endif
 
-    {{-- terima kasih --}}
     @php
-        $image_asset = 'assets/templates/frontend/img/home/terima-kasih/1.jpeg';
-        $img_thx_attr = get_file_attr_attribute("./$image_asset");
+        $k = "$p.terima_kasih";
     @endphp
-    <section class="bg-green-3 text-center" data-anim-wrap style="height: 720px">
-        <img src="{{ asset($image_asset) }}" alt=""
-            style="height: 100%;
+    {{-- Terima Kasih --}}
+    @if (settings()->get("$k.visible"))
+        <section class="bg-green-3 text-center" data-anim-wrap style="height: 720px">
+            <img src="{{ asset(settings()->get("$k.image")) }}" alt=""
+                style="height: 100%;
             object-fit: cover; /* cover, contain, fill, scale-down */
             object-position: center;">
 
-        <div style="position: absolute;margin-top: -720px;width: 100%;" data-anim-child="slide-top delay-1">
-            <img src="{{ asset('assets/logo.png') }}" alt="" style="margin-top:60px; width: 150px"
-                id="image-thank">
-            <h1 class="text-white mt-25">TERIMA KASIH</h1>
-        </div>
-
-        <div class="d-flex justify-content-center"
-            style="position: absolute;margin-top: -160px;width: 100%;text-align: center;">
-            <div class="bg-green-1 pt-20 pb-20 pl-20 pr-20" style="max-width: 960px;border-radius: 8px;opacity: 0.5;">
-                <h3 class="text-white text-alamat" data-anim-child="slide-top delay-1">
-                    GREEN EDUCATION BANDUNG / YAYASAN PENDIDIKAN BANDUNG HIJAU
-                    JL. INTAN RAYA NO. 4 SADANG SERANG - BANDUNG (081322728628)
-                </h3>
+            <div style="position: absolute;margin-top: -720px;width: 100%;" data-anim-child="slide-top delay-1">
+                <img src="{{ asset(settings()->get("$k.image_logo")) }}" alt=""
+                    style="margin-top:60px; width: 150px" id="image-thank">
+                <h1 class="text-white mt-25">{{ settings()->get("$k.title") }}</h1>
             </div>
-        </div>
 
-        <div class="d-flex justify-content-center"
-            style="position: absolute;margin-top: -160px;width: 100%;text-align: center;">
-            <div class="pt-20 pb-20 pl-20 pr-20" style="max-width: 960px;border-radius: 8px;">
-                <h3 class="text-white text-alamat" data-anim-child="slide-top delay-2">
-                    GREEN EDUCATION BANDUNG / YAYASAN PENDIDIKAN BANDUNG HIJAU
-                    JL. INTAN RAYA NO. 4 SADANG SERANG - BANDUNG (081322728628)
-                </h3>
+            <div class="d-flex justify-content-center"
+                style="position: absolute;margin-top: -160px;width: 100%;text-align: center;">
+                <div class="bg-green-1 pt-20 pb-20 pl-20 pr-20" style="max-width: 960px;border-radius: 8px;opacity: 0.5;">
+                    <h3 class="text-white text-alamat" data-anim-child="slide-top delay-1">
+                        {{ settings()->get("$k.deskripsi") }}
+                    </h3>
+                </div>
             </div>
-        </div>
 
-    </section>
+            <div class="d-flex justify-content-center"
+                style="position: absolute;margin-top: -160px;width: 100%;text-align: center;">
+                <div class="pt-20 pb-20 pl-20 pr-20" style="max-width: 960px;border-radius: 8px;">
+                    <h3 class="text-white text-alamat" data-anim-child="slide-top delay-2">
+                        {{ settings()->get("$k.deskripsi") }}
+                    </h3>
+                </div>
+            </div>
+
+        </section>
+    @endif
 
 @endsection
 

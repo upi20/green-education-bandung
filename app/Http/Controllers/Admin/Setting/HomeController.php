@@ -86,6 +86,53 @@ class HomeController extends Controller
         return response()->json(compact('foto1', 'foto2'));
     }
 
+    public function terima_kasih(Request $request)
+    {
+        $this->pre = 'terima_kasih';
+        settings()->set($this->s('visible'), $request->visible != null)->save();
+        settings()->set($this->s('deskripsi'), $request->deskripsi)->save();
+        settings()->set($this->s('title'), $request->title)->save();
+
+        // image
+        $key = 'image';
+        $current = settings()->get($this->s($key));
+        $foto = $current;
+        if ($image = $request->file($key)) {
+            // delete foto
+            $folder = $this->folder_image;
+            if ($current) {
+                $path = public_path("$folder/$current");
+                delete_file($path);
+            }
+
+            $foto = "$folder/{$this->pre}-$key." . $image->getClientOriginalExtension();
+            $image->move(public_path($folder), $foto);
+
+            // save foto
+            settings()->set($this->s($key), $foto)->save();
+        }
+
+        // image_logo
+        $key = 'image_logo';
+        $current = settings()->get($this->s($key));
+        $image_logo = $current;
+        if ($image = $request->file($key)) {
+            // delete foto
+            $folder = $this->folder_image;
+            if ($current) {
+                $path = public_path("$folder/$current");
+                delete_file($path);
+            }
+            $image_logo = "$folder/{$this->pre}-$key." . $image->getClientOriginalExtension();
+            $image->move(public_path($folder), $image_logo);
+
+            // save foto
+            settings()->set($this->s($key), $image_logo)->save();
+        }
+
+        return response()->json(compact('foto', 'image_logo'));
+    }
+
 
 
 

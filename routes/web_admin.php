@@ -21,7 +21,6 @@ use App\Http\Controllers\Admin\Contact\FAQController;
 use App\Http\Controllers\Admin\Contact\ListContactController;
 use App\Http\Controllers\Admin\Contact\MessageController;
 
-
 // User Access ========================================================================================================
 use App\Http\Controllers\Admin\UserAccess\PermissionController;
 use App\Http\Controllers\Admin\UserAccess\RoleController;
@@ -38,12 +37,15 @@ use App\Http\Controllers\Admin\Setting\AdminController;
 use App\Http\Controllers\Admin\Setting\FrontController;
 use App\Http\Controllers\Admin\Setting\HomeController;
 use App\Http\Controllers\Admin\Setting\HomeSliderController;
+use App\Http\Controllers\Admin\Setting\VisiMisiController;
 
 // Utility ============================================================================================================
 use App\Http\Controllers\Admin\Utility\HariBesarNasionalController;
 use App\Http\Controllers\Admin\Utility\NotifAdminAtasController;
 use App\Http\Controllers\Admin\Utility\NotifDepanAtasController;
 use App\Http\Controllers\Admin\StrukturController;
+
+// ====================================================================================================================
 
 
 
@@ -75,7 +77,6 @@ Route::controller(UserController::class)->prefix($prefix)->group(function () use
     Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
     Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
 });
-
 
 $prefix = 'artikel';
 Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
@@ -114,8 +115,6 @@ Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
     });
 });
 
-
-
 $prefix = 'galeri';
 Route::controller(GaleriController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
     $name = "$name.$prefix"; // admin.galeri
@@ -135,8 +134,6 @@ Route::controller(SocialMediaController::class)->prefix($prefix)->group(function
     Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
 });
 
-
-
 $prefix = 'struktur';
 Route::controller(StrukturController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
     $name = "$name.$prefix"; // admin.struktur
@@ -147,8 +144,6 @@ Route::controller(StrukturController::class)->prefix($prefix)->group(function ()
     Route::post('/setting', 'setting')->name("$name.setting")->middleware("permission:$name.setting");
     Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
 });
-
-
 
 $prefix = 'pendaftaran';
 Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
@@ -261,9 +256,6 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
     });
 });
 
-
-
-
 $prefix = "setting";
 Route::prefix($prefix)->group(function () use ($name, $prefix) {
     $name = "$name.$prefix"; // admin.setting
@@ -318,6 +310,9 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         $method = 'about';
         Route::post("/$method", $method)->name("$name_.$method");
 
+        $method = 'terima_kasih';
+        Route::post("/$method", $method)->name("$name_.$method");
+
         $method = 'poesaka';
         Route::post("/$method", $method)->name("$name_.$method");
 
@@ -349,9 +344,14 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
         Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
     });
+
+    $prefix = 'visi_misi';
+    Route::controller(VisiMisiController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+        $name = "$name.$prefix"; // admin.setting.visi_misi
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+    });
 });
-
-
 
 $prefix = 'kontak';
 Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
