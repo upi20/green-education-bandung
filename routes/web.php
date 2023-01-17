@@ -78,6 +78,8 @@ Route::get('/dashboard', function () {
     if (!auth()->user()) return Redirect::route('login');
     if (auth_has_role(config('app.super_admin_role'))) {
         return Redirect::route('admin.dashboard');
+    } else {
+        return Redirect::route('admin.dashboard');
     }
 })->name("dashboard");
 // ====================================================================================================================
