@@ -91,6 +91,9 @@ class backup extends Command
             'other' => [
                 'faq',
             ],
+            'data' => [
+                'strukturs',
+            ],
             'setting' => [
                 'home_sliders',
             ],

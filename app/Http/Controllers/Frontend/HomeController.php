@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Artikel\Artikel;
 use App\Models\Galeri;
 use App\Models\Setting\HomeSlider;
+use App\Models\Struktur;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Repository\Frontend\HomeRepository;
@@ -24,7 +25,6 @@ class HomeController extends Controller
         // frontend
         $list_sosmed = get_sosmed();
 
-
         // artikel
         if ($this->checkVisible('artikel')) {
             $request->limit = 6;
@@ -32,7 +32,6 @@ class HomeController extends Controller
         } else {
             $articles = [];
         }
-
 
         if ($this->checkVisible('galeri_kegiatan')) {
             $galeri_limit = settings()->get('setting.home.galeri_kegiatan.limit', 6);
@@ -42,11 +41,15 @@ class HomeController extends Controller
             $galeri_list = [];
         }
 
+        // slider
         $home_sliders = HomeSlider::where('tampilkan', 'Ya')->orderBy('nama')->get();
         $home_slider_url = asset(HomeSlider::image_folder);
 
-        $folder_image = $this->folder_image;
+        // slider
+        $strukturs = Struktur::where('tampilkan', 'Ya')->orderBy('urutan')->get();
+        $struktur_url = asset(Struktur::image_folder);
 
+        $folder_image = $this->folder_image;
         $data = compact(
             'page_attr',
             'list_sosmed',
@@ -54,6 +57,8 @@ class HomeController extends Controller
             'galeri_list',
             'home_slider_url',
             'home_sliders',
+            'struktur_url',
+            'strukturs',
             'folder_image'
         );
         $data['compact'] = $data;

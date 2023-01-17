@@ -2,6 +2,7 @@
 // ====================================================================================================================
 // utility ============================================================================================================
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
 
 // ====================================================================================================================
 // Admin ==============================================================================================================
@@ -31,6 +32,7 @@ use App\Http\Controllers\Admin\Menu\FrontendController as MenuFrontendController
 
 // Pendaftaran ========================================================================================================
 use App\Http\Controllers\Admin\Pendaftaran\GFormController;
+
 // Setting ============================================================================================================
 use App\Http\Controllers\Admin\Setting\AdminController;
 use App\Http\Controllers\Admin\Setting\FrontController;
@@ -41,7 +43,9 @@ use App\Http\Controllers\Admin\Setting\HomeSliderController;
 use App\Http\Controllers\Admin\Utility\HariBesarNasionalController;
 use App\Http\Controllers\Admin\Utility\NotifAdminAtasController;
 use App\Http\Controllers\Admin\Utility\NotifDepanAtasController;
-use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\Admin\StrukturController;
+
+
 
 $name = 'admin';
 $prefix = 'dashboard';
@@ -133,7 +137,16 @@ Route::controller(SocialMediaController::class)->prefix($prefix)->group(function
 
 
 
-
+$prefix = 'struktur';
+Route::controller(StrukturController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+    $name = "$name.$prefix"; // admin.struktur
+    Route::get('/', 'index')->name($name)->middleware("permission:$name");
+    Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+    Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+    Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+    Route::post('/setting', 'setting')->name("$name.setting")->middleware("permission:$name.setting");
+    Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+});
 
 
 
@@ -331,7 +344,6 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
     Route::controller(HomeSliderController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
         $name = "$name.$prefix"; // admin.setting.home_slider
         Route::get('/', 'index')->name($name)->middleware("permission:$name");
-        Route::get('/member', 'member_select2')->name("$name.member")->middleware("permission:$name");
         Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
         Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
         Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");

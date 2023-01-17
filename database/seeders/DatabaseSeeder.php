@@ -48,5 +48,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactMessagesTableSeeder::class);
         $this->call(FaqTableSeeder::class);
         $this->call(HomeSlidersTableSeeder::class);
+        $this->call(StruktursTableSeeder::class);
     }
 }

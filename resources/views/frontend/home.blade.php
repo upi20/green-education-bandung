@@ -101,132 +101,77 @@
             </div>
         </section>
     @endif
+
+    @php
+        $k = "$p.struktur";
+    @endphp
     {{-- struktur --}}
-    <section class="layout-pt-lg layout-pb-lg"
-        style="background-image: url('{{ asset('assets/templates/frontend/img/home/struktur/bg.jpg') }}');  background-repeat: no-repeat;
+    @if (settings()->get("$k.visible"))
+        <section class="layout-pt-lg layout-pb-lg"
+            style="background-image: url('{{ asset(settings()->get("$k.image")) }}');  background-repeat: no-repeat;
         /* background-attachment: fixed; */
         background-position: center;
         background-size: cover;"
-        data-anim-wrap>
-        <div class="container">
-            <div class="row y-gap-15 justify-between items-end" data-anim-child="slide-up delay-1">
-                <div class="col-lg-6">
-                    <div class="sectionTitle bg-white" style="padding: 8px; border-radius: 4px">
-                        <h2 class="sectionTitle__title ">Struktur</h2>
-                        <p class="sectionTitle__text ">Yayasan pendidikan bandung hijau</p>
+            data-anim-wrap>
+            <div class="container">
+                <div class="row y-gap-15 justify-between items-end" data-anim-child="slide-up delay-1">
+                    <div class="col-lg-6">
+                        <div class="sectionTitle bg-white" style="padding: 8px; border-radius: 4px">
+                            <h2 class="sectionTitle__title ">{{ settings()->get("$k.title") }}</h2>
+                            <p class="sectionTitle__text ">{{ settings()->get("$k.sub_title") }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="pt-60 lg:pt-40 js-section-slider " data-gap="30" data-pagination="js-students-slider-pagination"
-                data-nav-prev="js-students-slider-prev" data-nav-next="js-students-slider-next"
-                data-slider-cols="xl-4 lg-3 md-2" data-anim-child="slide-left delay-2">
-                <div class="swiper-wrapper">
+                <div class="pt-60 lg:pt-40 js-section-slider " data-gap="30"
+                    data-pagination="js-students-slider-pagination" data-nav-prev="js-students-slider-prev"
+                    data-nav-next="js-students-slider-next" data-slider-cols="xl-4 lg-3 md-2"
+                    data-anim-child="slide-left delay-2">
+                    <div class="swiper-wrapper">
 
-                    <div class="swiper-slide" data-anim-child="slide-left delay-3">
-                        <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
-                            <div class="teamCard__content pt-25">
-                                <img src="{{ asset('assets/templates/frontend/img/home/struktur/dewan pengawas.jpg') }}"
-                                    alt="image"
-                                    style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
-                                <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Hessy Widiyastuti, S.Psi, M.Pd
-                                </h4>
-                                <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
-                                    Ketua Dewan Pembina
+                        @foreach ($strukturs as $i => $struktur)
+                            <div class="swiper-slide" data-anim-child="slide-left delay-{{ $i + 2 }}">
+                                <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
+                                    <div class="teamCard__content pt-25">
+                                        <img src="{{ "$struktur_url/$struktur->foto" }}" alt="{{ $struktur->nama }}"
+                                            style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
+                                        <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
+                                            {{ $struktur->nama }}
+                                        </h4>
+                                        <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
+                                            {{ $struktur->jabatan }}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        @endforeach
 
-                    <div class="swiper-slide" data-anim-child="slide-left delay-4">
-                        <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
-                            <div class="teamCard__content pt-25">
-                                <img src="{{ asset('assets/templates/frontend/logo.png') }}" alt="image"
-                                    style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
-                                <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Rudi
-                                </h4>
-                                <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
-                                    Dewan Pengawas
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="swiper-slide" data-anim-child="slide-left delay-5">
-                        <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
-                            <div class="teamCard__content pt-25">
-                                <img src="{{ asset('assets/templates/frontend/img/home/struktur/ketua yayasan.jpeg') }}"
-                                    alt="image"
-                                    style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
-                                <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Boy Hidayat
-                                </h4>
-                                <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
-                                    Ketua Yayasan
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" data-anim-child="slide-left delay-6">
-                        <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
-                            <div class="teamCard__content pt-25">
-                                <img src="{{ asset('assets/templates/frontend/img/home/struktur/sekertaris.jpg') }}"
-                                    alt="image"
-                                    style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
-                                <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Dadan S. Sumardja
-                                </h4>
-                                <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
-                                    Sekertaris
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide" data-anim-child="slide-left delay-6">
-                        <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
-                            <div class="teamCard__content pt-25">
-                                <img src="{{ asset('assets/templates/frontend/img/home/struktur/bendahara.jpeg') }}"
-                                    alt="image"
-                                    style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
-                                <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
-                                    Chiechie Sari Rachma
-                                </h4>
-                                <div class="teamCard__subtitle text-14 lh-1 mt-5 text-center">
-                                    Bendahara
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
 
-            <div class="row pt-60 lg:pt-40">
-                <div class="col-auto">
-                    <div class="d-flex x-gap-15 justify-center items-center bg-white"
-                        style="padding: 8px; border-radius: 4px">
-                        <div class="col-auto">
-                            <button class="d-flex items-center text-24 arrow-left-hover js-students-slider-prev">
-                                <i class="icon icon-arrow-left"></i>
-                            </button>
-                        </div>
-                        <div class="col-auto">
-                            <div class="pagination -arrows js-students-slider-pagination"></div>
-                        </div>
-                        <div class="col-auto">
-                            <button class="d-flex items-center text-24 arrow-right-hover js-students-slider-next">
-                                <i class="icon icon-arrow-right"></i>
-                            </button>
+                <div class="row pt-60 lg:pt-40">
+                    <div class="col-auto">
+                        <div class="d-flex x-gap-15 justify-center items-center bg-white"
+                            style="padding: 8px; border-radius: 4px">
+                            <div class="col-auto">
+                                <button class="d-flex items-center text-24 arrow-left-hover js-students-slider-prev">
+                                    <i class="icon icon-arrow-left"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="pagination -arrows js-students-slider-pagination"></div>
+                            </div>
+                            <div class="col-auto">
+                                <button class="d-flex items-center text-24 arrow-right-hover js-students-slider-next">
+                                    <i class="icon icon-arrow-right"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
 
     {{-- visi misi --}}

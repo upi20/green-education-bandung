@@ -2,7 +2,7 @@
 
 @section('content')
     @php
-    $can_setting = auth_can(h_prefix('setting'));
+        $can_setting = auth_can(h_prefix('setting'));
     @endphp
     <!-- Row -->
     <div class="row row-sm">
