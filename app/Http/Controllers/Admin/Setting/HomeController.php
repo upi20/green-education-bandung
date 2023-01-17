@@ -34,13 +34,22 @@ class HomeController extends Controller
     {
         $this->pre = 'hero';
         settings()->set($this->s('visible'), $request->visible != null)->save();
-        settings()->set($this->s('title'), $request->title)->save();
-        settings()->set($this->s('sub_title'), $request->sub_title)->save();
+        settings()->set($this->s('video_title'), $request->video_title)->save();
+        settings()->set($this->s('video_link'), $request->video_link)->save();
+        return response()->json();
+    }
+
+    public function about(Request $request)
+    {
+        $this->pre = 'about';
+        settings()->set($this->s('visible'), $request->visible != null)->save();
+        settings()->set($this->s('deskripsi1'), $request->deskripsi1)->save();
+        settings()->set($this->s('deskripsi2'), $request->deskripsi2)->save();
 
         // image
-        $key = 'image';
+        $key = 'foto1';
         $current = settings()->get($this->s($key));
-        $foto = $current;
+        $foto1 = $current;
         if ($image = $request->file($key)) {
             // delete foto
             $folder = $this->folder_image;
@@ -49,15 +58,41 @@ class HomeController extends Controller
                 delete_file($path);
             }
 
-            $foto = "$folder/$this->pre." . $image->getClientOriginalExtension();
-            $image->move(public_path($folder), $foto);
+            $foto1 = "$folder/{$this->pre}2." . $image->getClientOriginalExtension();
+            $image->move(public_path($folder), $foto1);
 
             // save foto
-            settings()->set($this->s($key), $foto)->save();
+            settings()->set($this->s($key), $foto1)->save();
         }
 
-        return response()->json(['foto' => $foto]);
+        $key = 'foto2';
+        $current = settings()->get($this->s($key));
+        $foto2 = $current;
+        if ($image = $request->file($key)) {
+            // delete foto
+            $folder = $this->folder_image;
+            if ($current) {
+                $path = public_path("$folder/$current");
+                delete_file($path);
+            }
+
+            $foto2 = "$folder/{$this->pre}2." . $image->getClientOriginalExtension();
+            $image->move(public_path($folder), $foto2);
+
+            // save foto
+            settings()->set($this->s($key), $foto2)->save();
+        }
+
+        return response()->json(compact('foto1', 'foto2'));
     }
+
+
+
+
+
+
+
+
 
     public function poesaka(Request $request)
     {

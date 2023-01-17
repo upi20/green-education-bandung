@@ -4,105 +4,104 @@
         $p = 'setting.home';
         $k = "$p.hero";
     @endphp
-
     {{-- herro --}}
-    <section data-anim-wrap class="masthead -type-5 pt-lg-0 pb-lg-0 bg-green-1 mt-lg-0">
-        <div class="masthead__bg"></div>
-        <div class="container">
-            <div class="row y-gap-50 items-center d-lg-flex flex-row-reverse">
+    @if (settings()->get("$k.visible"))
+        <section data-anim-wrap class="masthead -type-5 pt-lg-0 pb-lg-0 bg-green-1 mt-lg-0">
+            <div class="masthead__bg"></div>
+            <div class="container">
+                <div class="row y-gap-50 items-center d-lg-flex flex-row-reverse">
 
-                <div class="col-lg-6 col-image-logo">
-                    <div class="masthead__content text-center">
-                        <h1 data-anim-child="slide-up delay-1" class="text-white">
-                            PROGRAM PENDIDIKAN <br> LINGKUNGAN HIDUP
-                        </h1>
-                        <img src="{{ asset('assets/templates/frontend/logo.png') }}" alt="" class="mt-20 mb-20">
+                    <div class="col-lg-6 col-image-logo">
+                        <div class="masthead__content text-center">
+                            <h1 data-anim-child="slide-up delay-1" class="text-white">
+                                PROGRAM PENDIDIKAN <br> LINGKUNGAN HIDUP
+                            </h1>
+                            <img src="{{ asset('assets/templates/frontend/logo.png') }}" alt="" class="mt-20 mb-20">
 
-                        <h1 data-anim-child="slide-up delay-2" class="masthead__title text-white">
-                            GREEN EDUCATION BANDUNG
-                        </h1>
+                            <h1 data-anim-child="slide-up delay-2" class="masthead__title text-white">
+                                GREEN EDUCATION BANDUNG
+                            </h1>
 
-                        <div class="col-auto mt-20" data-anim-child="slide-right delay-2">
-                            <a href="https://www.youtube.com/watch?v=1NY5uR-NHjs" class="d-flex items-center js-gallery"
-                                data-gallery="gallery1">
-                                <div class="d-flex justify-center items-center size-60 rounded-full"
-                                    style="border: 2px solid white;">
-                                    <div class="icon-play text-20 text-white pl-5"></div>
-                                </div>
-                                <div class="ml-10 text-white">Wisata Petik Jeruk RGL di Bandung</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-image-hero pt-0 pb-0">
-                    <div data-anim-child="slide-up delay-3" class="masthead__image">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                @foreach ($home_sliders as $slider)
-                                    <div class="carousel-item  @if ($loop->first) active @endif">
-                                        <img src="{{ "$home_slider_url/$slider->foto" }}" alt="{{ $slider->nama }}">
+                            <div class="col-auto mt-20" data-anim-child="slide-right delay-2">
+                                <a href="{{ settings()->get("$k.video_link") }}" class="d-flex items-center js-gallery"
+                                    data-gallery="gallery1">
+                                    <div class="d-flex justify-center items-center size-60 rounded-full"
+                                        style="border: 2px solid white;">
+                                        <div class="icon-play text-20 text-white pl-5"></div>
                                     </div>
-                                @endforeach
+                                    <div class="ml-10 text-white">{{ settings()->get("$k.video_title") }}</div>
+                                </a>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-image-hero pt-0 pb-0">
+                        <div data-anim-child="slide-up delay-3" class="masthead__image">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    @foreach ($home_sliders as $slider)
+                                        <div class="carousel-item  @if ($loop->first) active @endif">
+                                            <img src="{{ "$home_slider_url/$slider->foto" }}" alt="{{ $slider->nama }}">
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
 
+    @php
+        $p = 'setting.home';
+        $k = "$p.about";
+    @endphp
     {{-- deskripsi --}}
-    <section data-anim-wrap class="cta -type-1 layout-pt-lg layout-pb-lg bg-dark-1 pb-0" style="padding-top: 460px">
-        <div data-parallax="0.6" class="cta__bg">
-            <div data-parallax-target class="bg-image js-lazy"
-                data-bg="{{ asset('assets/templates/frontend/img/home/paralax/1.jpg') }}"
-                style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
-        </div>
-        <div class="bg-green-1">
-            <div class="container pb-90 pt-60">
-                <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
-                    Green Education Bandung berdiri sejak tahun 2014, dengan misi utama berperan serta dalam memberikan
-                    edukasi serta contoh nyata dalam giat kepedulian lingkungan hidup kepada masyarakat, melalui kegiatan
-                    Reduce, Reuse, Recycle, serta urban farming.
-                </h2>
+    @if (settings()->get("$k.visible"))
+        <section data-anim-wrap class="cta -type-1 layout-pt-lg layout-pb-lg bg-dark-1 pb-0" style="padding-top: 460px">
+            <div data-parallax="0.6" class="cta__bg">
+                <div data-parallax-target class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.foto1")) }}"
+                    style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
             </div>
-        </div>
-    </section>
-    <section data-anim-wrap class="cta -type-1 layout-pt-lg layout-pb-lg bg-dark-1 pt-0 pb-0">
-        <div data-parallax="0.6" class="cta__bg">
-            <div data-parallax-target class="bg-image js-lazy"
-                data-bg="{{ asset('assets/templates/frontend/img/home/paralax/2.png') }}"
-                style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 description-2"></div>
-            <div class="col-lg-6">
-                <div class="bg-green-1 pl-lg-60 pt-60 pb-90">
-                    <div style="max-width: 720px" class="container-lg">
-                        <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
-                            GEB (Green Education Bandung) telah banyak memberikan pelatihan pembuatan produk dan karya
-                            seni dari barang bekas serta pelatihan urban farming kepada sekolah-sekolah dan kelompok
-                            masyarakat di berbagai kota, baik diselenggarakan secara mandiri maupun bekerjasama dengan
-                            lembaga pemerintah dan pihak swasta.
-                        </h2>
+            <div class="bg-green-1">
+                <div class="container pb-90 pt-60">
+                    <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
+                        {{ settings()->get("$k.deskripsi1") }}
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section data-anim-wrap class="cta -type-1 layout-pt-lg layout-pb-lg bg-dark-1 pt-0 pb-0">
+            <div data-parallax="0.6" class="cta__bg">
+                <div data-parallax-target class="bg-image js-lazy" data-bg="{{ asset(settings()->get("$k.foto2")) }}"
+                    style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 description-2"></div>
+                <div class="col-lg-6">
+                    <div class="bg-green-1 pl-lg-60 pt-60 pb-90">
+                        <div style="max-width: 720px" class="container-lg">
+                            <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
+                                {{ settings()->get("$k.deskripsi2") }}
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    @endif
     {{-- struktur --}}
     <section class="layout-pt-lg layout-pb-lg"
         style="background-image: url('{{ asset('assets/templates/frontend/img/home/struktur/bg.jpg') }}');  background-repeat: no-repeat;

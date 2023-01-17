@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
+    private $folder_image = '/assets/setting/home';
+
     public function index(Request $request)
     {
 
@@ -43,13 +45,16 @@ class HomeController extends Controller
         $home_sliders = HomeSlider::where('tampilkan', 'Ya')->orderBy('nama')->get();
         $home_slider_url = asset(HomeSlider::image_folder);
 
+        $folder_image = $this->folder_image;
+
         $data = compact(
             'page_attr',
             'list_sosmed',
             'articles',
             'galeri_list',
             'home_slider_url',
-            'home_sliders'
+            'home_sliders',
+            'folder_image'
         );
         $data['compact'] = $data;
 

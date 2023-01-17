@@ -302,6 +302,9 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         $method = 'hero';
         Route::post("/$method", $method)->name("$name_.$method");
 
+        $method = 'about';
+        Route::post("/$method", $method)->name("$name_.$method");
+
         $method = 'poesaka';
         Route::post("/$method", $method)->name("$name_.$method");
 
