@@ -65,7 +65,6 @@
 
 
     @php
-        $p = 'setting.home';
         $k = "$p.about";
     @endphp
     {{-- deskripsi --}}
