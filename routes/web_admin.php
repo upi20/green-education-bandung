@@ -313,25 +313,13 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         $method = 'terima_kasih';
         Route::post("/$method", $method)->name("$name_.$method");
 
-        $method = 'poesaka';
-        Route::post("/$method", $method)->name("$name_.$method");
-
         $method = 'visi_misi';
-        Route::post("/$method", $method)->name("$name_.$method");
-
-        $method = 'struktur_anggota';
-        Route::post("/$method", $method)->name("$name_.$method");
-
-        $method = 'kata_alumni';
         Route::post("/$method", $method)->name("$name_.$method");
 
         $method = 'galeri_kegiatan';
         Route::post("/$method", $method)->name("$name_.$method");
 
         $method = 'artikel';
-        Route::post("/$method", $method)->name("$name_.$method");
-
-        $method = 'sensus';
         Route::post("/$method", $method)->name("$name_.$method");
     });
 
