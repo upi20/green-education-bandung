@@ -31,11 +31,11 @@ use App\Http\Controllers\Admin\Menu\FrontendController as MenuFrontendController
 
 // Pendaftaran ========================================================================================================
 use App\Http\Controllers\Admin\Pendaftaran\GFormController;
-
 // Setting ============================================================================================================
 use App\Http\Controllers\Admin\Setting\AdminController;
 use App\Http\Controllers\Admin\Setting\FrontController;
 use App\Http\Controllers\Admin\Setting\HomeController;
+use App\Http\Controllers\Admin\Setting\HomeSliderController;
 
 // Utility ============================================================================================================
 use App\Http\Controllers\Admin\Utility\HariBesarNasionalController;
@@ -322,6 +322,17 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
 
         $method = 'sensus';
         Route::post("/$method", $method)->name("$name_.$method");
+    });
+
+    $prefix = 'home_slider';
+    Route::controller(HomeSliderController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+        $name = "$name.$prefix"; // admin.setting.home_slider
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/member', 'member_select2')->name("$name.member")->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
     });
 });
 

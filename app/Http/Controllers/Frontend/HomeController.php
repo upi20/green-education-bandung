@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Artikel\Artikel;
 use App\Models\Galeri;
+use App\Models\Setting\HomeSlider;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Repository\Frontend\HomeRepository;
@@ -39,13 +40,16 @@ class HomeController extends Controller
             $galeri_list = [];
         }
 
-
+        $home_sliders = HomeSlider::where('tampilkan', 'Ya')->orderBy('nama')->get();
+        $home_slider_url = asset(HomeSlider::image_folder);
 
         $data = compact(
             'page_attr',
             'list_sosmed',
             'articles',
             'galeri_list',
+            'home_slider_url',
+            'home_sliders'
         );
         $data['compact'] = $data;
 

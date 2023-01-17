@@ -39,22 +39,11 @@
                     <div data-anim-child="slide-up delay-3" class="masthead__image">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="{{ asset('assets/templates/frontend/img/home/hero-slide/1.jpeg') }}"
-                                        alt="image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('assets/templates/frontend/img/home/hero-slide/2.jpeg') }}"
-                                        alt="image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('assets/templates/frontend/img/home/hero-slide/3.jpeg') }}"
-                                        alt="image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{ asset('assets/templates/frontend/img/home/hero-slide/4.jpeg') }}"
-                                        alt="image">
-                                </div>
+                                @foreach ($home_sliders as $slider)
+                                    <div class="carousel-item  @if ($loop->first) active @endif">
+                                        <img src="{{ "$home_slider_url/$slider->foto" }}" alt="{{ $slider->nama }}">
+                                    </div>
+                                @endforeach
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                                 data-bs-slide="prev">
