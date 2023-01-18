@@ -165,7 +165,7 @@
                             <input type="file" class="form-control" id="foto" name="foto" required />
                         </div>
                         <div class="form-group">
-                            <label class="form-label" for="tampilkan">Tampilkan Gambar</label>
+                            <label class="form-label" for="tampilkan">Tampilkan Pengurus</label>
                             <select class="form-control" required="" id="tampilkan" name="tampilkan">
                                 <option value="Ya">Ya</option>
                                 <option value="Tidak">Tidak</option>
