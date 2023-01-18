@@ -45,6 +45,9 @@ use App\Http\Controllers\Admin\Utility\NotifAdminAtasController;
 use App\Http\Controllers\Admin\Utility\NotifDepanAtasController;
 use App\Http\Controllers\Admin\StrukturController;
 
+// Produk ============================================================================================================
+use App\Http\Controllers\Admin\Produk\KategoriController as ProdukKategoriController;
+
 // ====================================================================================================================
 
 
@@ -373,6 +376,24 @@ Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
         Route::post('/setting', 'setting')->name("$name.setting")->middleware("permission:$name.setting");
     });
 });
+
+
+$prefix = 'produk';
+Route::prefix($prefix)->group(function () use ($prefix, $name) {
+    $name = "$name.$prefix"; // admin.produk
+
+    $prefix = 'kategori';
+    Route::prefix($prefix)->controller(ProdukKategoriController::class)->group(function () use ($prefix, $name) {
+        $name = "$name.$prefix"; // admin.produk.kategori
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+        Route::post('/setting', 'setting')->name("$name.setting")->middleware("permission:$name.setting");
+    });
+});
+
 
 $prefix = "password";
 Route::controller(UserController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
