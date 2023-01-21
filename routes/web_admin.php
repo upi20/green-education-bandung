@@ -47,6 +47,7 @@ use App\Http\Controllers\Admin\StrukturController;
 
 // Produk ============================================================================================================
 use App\Http\Controllers\Admin\Produk\KategoriController as ProdukKategoriController;
+use App\Http\Controllers\Admin\Produk\ProdukController;
 
 // ====================================================================================================================
 
@@ -381,6 +382,14 @@ Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
 $prefix = 'produk';
 Route::prefix($prefix)->group(function () use ($prefix, $name) {
     $name = "$name.$prefix"; // admin.produk
+    Route::controller(ProdukController::class)->group(function () use ($name) {
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+        Route::post('/setting', 'setting')->name("$name.setting")->middleware("permission:$name.setting");
+    });
 
     $prefix = 'kategori';
     Route::prefix($prefix)->controller(ProdukKategoriController::class)->group(function () use ($prefix, $name) {

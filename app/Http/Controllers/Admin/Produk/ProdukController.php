@@ -4,34 +4,38 @@ namespace App\Http\Controllers\Admin\Produk;
 
 use App\Helpers\Summernote;
 use App\Http\Controllers\Controller;
+use App\Models\Produk;
 use App\Models\ProdukKategori;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use League\Config\Exception\ValidationException;
 use Yajra\Datatables\Datatables;
 
-class KategoriController extends Controller
+class ProdukController extends Controller
 {
     private $validate_model = [
         'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
         'nama' => ['required', 'string'],
         'keterangan' => ['nullable', 'string'],
+        'kategori_id' => ['required', 'integer'],
+        'tampilkan' => ['required', 'string'],
     ];
 
-    private $image_folder = ProdukKategori::image_folder;
+    private $image_folder = Produk::image_folder;
 
     private $query = [];
-    private $key = 'setting.produk.kategori';
-    private $folder_image = ProdukKategori::image_folder;
+    private $key = 'setting.produk';
+    private $folder_image = Produk::image_folder;
 
     public function index(Request $request)
     {
         if (request()->ajax()) {
             return $this->datatable($request);
         }
+        $kategoris = ProdukKategori::orderBy('nama')->get();
         $image_folder = $this->image_folder;
         $page_attr = [
-            'title' => 'Kategori',
+            'title' => 'Daftar Produk',
             'breadcrumbs' => [
                 ['name' => 'Produk'],
             ]
@@ -42,7 +46,7 @@ class KategoriController extends Controller
             'sub_title' => settings()->get("$this->key.sub_title"),
             'image' => settings()->get("$this->key.image"),
         ];
-        return view('admin.produk.kategori', compact('page_attr', 'image_folder', 'setting'));
+        return view('admin.produk.produk', compact('page_attr', 'image_folder', 'setting', 'kategoris'));
     }
 
     public function insert(Request $request): mixed
@@ -50,7 +54,7 @@ class KategoriController extends Controller
         try {
             $request->validate($this->validate_model);
 
-            $model = new ProdukKategori();
+            $model = new Produk();
             $foto = '';
             if ($image = $request->file('foto')) {
                 $foto = date('YmdHis') . "." . $image->getClientOriginalExtension();
@@ -59,6 +63,9 @@ class KategoriController extends Controller
 
             $model->foto = $foto;
             $model->nama = $request->nama;
+            $model->kategori_id = $request->kategori_id;
+            $model->keterangan = $request->keterangan;
+            $model->tampilkan = $request->tampilkan;
             $model->save();
             return response()->json();
         } catch (ValidationException $error) {
@@ -72,7 +79,7 @@ class KategoriController extends Controller
     public function update(Request $request): mixed
     {
         try {
-            $model = ProdukKategori::findOrFail($request->id);
+            $model = Produk::findOrFail($request->id);
             $request->validate(array_merge(['id' => [
                 'required', 'int',
             ]], $this->validate_model));
@@ -93,8 +100,9 @@ class KategoriController extends Controller
             }
 
             $model->nama = $request->nama;
+            $model->kategori_id = $request->kategori_id;
             $model->keterangan = $request->keterangan;
-            $model->replicate();
+            $model->tampilkan = $request->tampilkan;
             $model->save();
             return response()->json();
         } catch (ValidationException $error) {
@@ -105,7 +113,7 @@ class KategoriController extends Controller
         }
     }
 
-    public function delete(ProdukKategori $model): mixed
+    public function delete(Produk $model): mixed
     {
         try {
             $model->delete();
@@ -125,13 +133,14 @@ class KategoriController extends Controller
 
     public function find(Request $request)
     {
-        return ProdukKategori::findOrFail($request->id);
+        return Produk::findOrFail($request->id);
     }
 
     public function datatable(Request $request): mixed
     {
         // list table
-        $table = ProdukKategori::tableName;
+        $table = Produk::tableName;
+        $t_kategori = ProdukKategori::tableName;
         $base_url_image_folder = url(str_replace('./', '', $this->image_folder)) . '/';
 
         // cusotm query
@@ -159,6 +168,13 @@ class KategoriController extends Controller
                 (concat('$base_url_image_folder',$table.foto))
         SQL;
         $this->query["{$c_foto_link}_alias"] = $c_foto_link;
+
+        // foto
+        $c_kategori = 'kategori';
+        $this->query[$c_kategori] = <<<SQL
+                $t_kategori.nama
+        SQL;
+        $this->query["{$c_kategori}_alias"] = $c_kategori;
         // ========================================================================================================
 
 
@@ -173,6 +189,7 @@ class KategoriController extends Controller
             $c_created_str,
             $c_updated,
             $c_updated_str,
+            $c_kategori
         ];
 
         $to_db_raw = array_map(function ($a) use ($sraa) {
@@ -182,9 +199,10 @@ class KategoriController extends Controller
 
 
         // Select =====================================================================================================
-        $model = ProdukKategori::select(array_merge([
+        $model = Produk::select(array_merge([
             DB::raw("$table.*"),
-        ], $to_db_raw));
+        ], $to_db_raw))
+            ->leftJoin($t_kategori, "$t_kategori.id", "=", "$table.kategori_id");
 
         // Filter =====================================================================================================
         // filter check
@@ -194,7 +212,7 @@ class KategoriController extends Controller
         };
 
         // filter custom
-        $filters = ['tampilkan'];
+        $filters = ['tampilkan', 'kategori_id'];
         foreach ($filters as  $f) {
             if ($f_c($f) !== false) {
                 $model->whereRaw("$table.$f='{$f_c($f)}'");
@@ -219,7 +237,7 @@ class KategoriController extends Controller
                 'nama',
                 'keterangan',
                 'foto',
-                'slug',
+                'tampilkan',
             ];
             $search_add = array_map(function ($v) use ($table) {
                 return "$table.$v";
