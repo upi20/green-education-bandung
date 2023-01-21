@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Artikel\Artikel;
 use App\Models\Galeri;
+use App\Models\Produk;
+use App\Models\ProdukKategori;
 use App\Models\Setting\HomeSlider;
 use App\Models\Struktur;
 use App\Models\User;
@@ -49,6 +51,19 @@ class HomeController extends Controller
         $strukturs = Struktur::where('tampilkan', 'Ya')->orderBy('urutan')->get();
         $struktur_url = asset(Struktur::image_folder);
 
+        // Produk
+        $kategori_limit = 3;
+        $t_produk_kategori = ProdukKategori::tableName;
+        $produk_kategori_folder = ProdukKategori::image_folder;
+
+        $t_produk = Produk::tableName;
+        $produk_folder = Produk::image_folder;
+
+        $produk_kategories = ProdukKategori::whereRaw("(select count(*) from $t_produk where $t_produk.kategori_id = $t_produk_kategori.id) > 0")
+            ->limit($kategori_limit)
+            ->get();
+        $produk_limit = 3;
+        $produks = Produk::where('tampilkan', 'Ya')->orderBy('created_at')->limit($produk_limit, 'desc')->get();
         $folder_image = $this->folder_image;
         $data = compact(
             'page_attr',
@@ -59,7 +74,11 @@ class HomeController extends Controller
             'home_sliders',
             'struktur_url',
             'strukturs',
-            'folder_image'
+            'folder_image',
+            'produk_kategories',
+            'produk_kategori_folder',
+            'produks',
+            'produk_folder',
         );
         $data['compact'] = $data;
 

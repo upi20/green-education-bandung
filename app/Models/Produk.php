@@ -13,4 +13,9 @@ class Produk extends Model
     protected $table = 'produks';
     const tableName = 'produks';
     const image_folder = '/assets/produk';
+
+    public function kategori()
+    {
+        return $this->belongsTo(ProdukKategori::class, 'kategori_id', 'id');
+    }
 }

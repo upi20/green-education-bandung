@@ -133,7 +133,7 @@
                                 <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
                                     <div class="teamCard__content pt-25">
                                         <img src="{{ "$struktur_url/$struktur->foto" }}" alt="{{ $struktur->nama }}"
-                                            style="margin: auto;position: relative;margin: auto;width: 150px;height: 150px;max-height: 150px;border-radius: 150px;object-fit: cover; /* cover, contain, fill, scale-down */object-position: center;-webkit-border-radius: 150px;-moz-border-radius: 150px;">
+                                            style=" margin: auto; position: relative; margin: auto; width: 150px; height: 150px; max-height: 150px; border-radius: 150px; object-fit: cover; object-position: center; -webkit-border-radius: 150px; -moz-border-radius: 150px;">
                                         <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
                                             {{ $struktur->nama }}
                                         </h4>
@@ -307,6 +307,132 @@
                             <span class="icon-arrow-top-right text-14 ml-10"></span>
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+    @endif
+
+    @if (true)
+        <section class="layout-pt-lg layout-pb-lg">
+            <div data-anim-wrap class="container">
+                <div class="row y-gap-20 justify-between items-end">
+                    <div class="col-lg-6" data-anim-child="slide-right delay-1">
+                        <div class="sectionTitle ">
+                            <h2 class="sectionTitle__title">Kategori Produk</h2>
+                            <p class="sectionTitle__text">Daftar Kategori Produk</p>
+                        </div>
+                    </div>
+
+                    <div class="col-auto" data-anim-child="slide-left delay-2">
+                        <a href="{{ url('produk') }}" class="button -icon -green-1 text-white">
+                            Semua Produk
+                            <i class="icon-arrow-top-right text-13 ml-10"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row y-gap-50 pt-60 lg:pt-50">
+                    @foreach ($produk_kategories as $i => $kategori)
+                        <div class="col-xl-3 col-lg-4 col-sm-6" data-anim-child="slide-right delay-{{ $i + 3 }}">
+                            <a href="{{ url("produk/kategori/$kategori->slug") }}" class="categoryCard -type-2">
+                                <div class="categoryCard__image mr-20">
+                                    <img src="{{ asset("$produk_kategori_folder/$kategori->foto") }}"
+                                        alt="{{ $kategori->nama }}"
+                                        style="margin: auto; position: relative; margin: auto; width: 80px; height: 80px; border-radius: 4px; object-fit: cover; object-position: center;">
+                                </div>
+                                <div class="categoryCard__content">
+                                    <h4 class="categoryCard__title text-17 fw-500">{{ $kategori->nama }}</h4>
+                                    <div class="categoryCard__text text-13 lh-1 mt-5">
+                                        @php
+                                            $jumlah = $kategori->produks->count();
+                                        @endphp
+                                        {{ $jumlah > 1 ? $jumlah - 1 : $jumlah }} {{ $jumlah > 1 ? '+' : '' }} Produk
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </section>
+    @endif
+
+    @if (true)
+        <section class="layout-pt-lg layout-pb-lg section-bg">
+            <div class="section-bg__item bg-light-6"></div>
+
+            <div data-anim-wrap class="container">
+                <div class="row y-gap-15 justify-between items-center" data-anim-child="slide-right delay-1">
+                    <div class="col-lg-6">
+                        <div class="sectionTitle ">
+                            <h2 class="sectionTitle__title ">Produk Terbaru</h2>
+                            <p class="sectionTitle__text ">Daftar Produk Terbaru Kami.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="overflow-hidden pt-60 lg:pt-50 js-section-slider" data-gap="30" data-loop data-pagination
+                        data-nav-prev="js-courses-prev" data-nav-next="js-courses-next"
+                        data-slider-cols="xl-4 lg-3 md-2 sm-2">
+
+                        <div class="swiper-wrapper">
+                            @foreach ($produks as $produk)
+                                <div class="swiper-slide">
+                                    <div data-anim-child="slide-up delay-1">
+                                        <div class="coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
+                                            <div class="relative">
+                                                <div class="coursesCard__image overflow-hidden rounded-8">
+                                                    <img class="w-1/1" src="{{ asset("$produk_folder/$produk->foto") }}"
+                                                        alt="{{ $produk->nama }}"
+                                                        style="margin: auto; position: relative; margin: auto; width: 265px; height: 185px; border-radius: 4px; object-fit: cover; object-position: center;">
+                                                    <div class="coursesCard__image_overlay rounded-8"></div>
+                                                </div>
+                                                <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
+                                                    <div>
+                                                        <div class="px-15 rounded-200 bg-green-1">
+                                                            <span class="text-11 lh-1 uppercase fw-500 text-dark-1">
+                                                                {{ is_null($produk->kategori) ? '' : $produk->kategori->nama }}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="h-100 px-10 pt-10">
+                                                <div class="text-17 lh-15 fw-500 text-dark-1 mt-10">
+                                                    {{ $produk->nama }}
+                                                </div>
+
+                                                <div class="coursesCard-footer">
+                                                    <div class="coursesCard-footer__author">
+                                                        <a target="_blank"
+                                                            href="https://api.whatsapp.com/send?phone=6281322728628&text=Saya tertarik dengan {{ $produk->nama }}">
+                                                            <i class="fab fa-whatsapp text-success"
+                                                                style="font-size: 1.5em"></i>
+                                                            Whatsapp
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            @endforeach
+
+                        </div>
+                    </div>
+                    <button
+                        class="section-slider-nav -prev -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-prev">
+                        <i class="icon icon-arrow-left text-24"></i>
+                    </button>
+                    <button
+                        class="section-slider-nav -next -dark-bg-dark-2 -outline-dark-1 -absolute-out size-50 rounded-full xl:d-none js-courses-next">
+                        <i class="icon icon-arrow-right text-24"></i>
+                    </button>
+
                 </div>
             </div>
         </section>
