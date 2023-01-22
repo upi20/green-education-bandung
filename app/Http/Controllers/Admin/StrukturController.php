@@ -35,7 +35,7 @@ class StrukturController extends Controller
         $page_attr = [
             'title' => 'Struktur Pengurus',
             'breadcrumbs' => [
-                ['name' => 'Halaman Utama'],
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
             ]
         ];
         $setting = (object)[

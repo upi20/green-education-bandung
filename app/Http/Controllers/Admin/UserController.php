@@ -23,13 +23,13 @@ class UserController extends Controller
         }
 
         $page_attr = [
-            'title' => 'View User',
+            'title' => 'Manajemen Pengguna',
             'breadcrumbs' => [
-                ['name' => 'Manage User'],
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
             ],
             'navigation' => 'user.view',
         ];
-	$user_role = Role::all();
+        $user_role = Role::all();
         return view('admin.user', compact('page_attr', 'user_role'));
     }
 
@@ -53,7 +53,7 @@ class UserController extends Controller
         $page_attr = [
             'title' => 'Ganti Password',
             'breadcrumbs' => [
-                ['name' => 'Dashboard'],
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
             ],
         ];
         $user_role = Role::all();

@@ -80,9 +80,9 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Name</th>
+                                <th>Nama</th>
                                 <th>Email</th>
-                                <th>Role</th>
+                                <th>Jabatan</th>
                                 <th>Status</th>
                                 {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
                             </tr>
@@ -106,9 +106,9 @@
                         enctype="multipart/form-data">
                         <input type="hidden" name="id" id="id">
                         <div class="form-group">
-                            <label class="form-label" for="name">Name <span class="text-danger">*</span></label>
+                            <label class="form-label" for="name">Nama <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="name" name="name"
-                                placeholder="Enter Name" required="" />
+                                placeholder="Nama Lengkap" required="" />
 
                         </div>
                         <div class="form-group">
@@ -327,7 +327,7 @@
 
         function add() {
             $('#UserForm').trigger("reset");
-            $('#modal-default-title').html("Tambah User");
+            $('#modal-default-title').html("Tambah Pengguna");
             $('#modal-default').modal('show');
             $('#id').val('');
             $('#roles').val('').trigger('change');
@@ -347,7 +347,7 @@
                     id
                 },
                 success: (data) => {
-                    $('#modal-default-title').html("Ubah User");
+                    $('#modal-default-title').html("Ubah Pengguna");
                     $('#modal-default').modal('show');
                     $('#UserForm').trigger("reset");
                     $('#id').val(data.id);
