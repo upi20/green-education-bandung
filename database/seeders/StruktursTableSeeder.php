@@ -21,8 +21,8 @@ class StruktursTableSeeder extends Seeder
         \DB::table('strukturs')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'urutan' => 1,
+                'id' => '1',
+                'urutan' => '1',
                 'nama' => 'Hessy Widiyastuti, S.Psi, M.Pd',
                 'jabatan' => 'Ketua Dewan Pembina',
                 'foto' => '20230118003125.jpg',
@@ -32,8 +32,8 @@ class StruktursTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'id' => 2,
-                'urutan' => 3,
+                'id' => '2',
+                'urutan' => '3',
                 'nama' => 'Boy Hidayat',
                 'jabatan' => 'Ketua Yayasan',
                 'foto' => '20230118003200.jpeg',
@@ -43,8 +43,8 @@ class StruktursTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => 3,
-                'urutan' => 4,
+                'id' => '3',
+                'urutan' => '4',
                 'nama' => 'Dadan S. Sumardja',
                 'jabatan' => 'Sekertaris',
                 'foto' => '20230118003218.jpg',
@@ -54,8 +54,8 @@ class StruktursTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 4,
-                'urutan' => 5,
+                'id' => '4',
+                'urutan' => '5',
                 'nama' => 'Chiechie Sari Rachma',
                 'jabatan' => 'Bendahara',
                 'foto' => '20230118003403.jpeg',
@@ -65,8 +65,8 @@ class StruktursTableSeeder extends Seeder
             ),
             4 => 
             array (
-                'id' => 5,
-                'urutan' => 2,
+                'id' => '5',
+                'urutan' => '2',
                 'nama' => 'Rudi',
                 'jabatan' => 'Dewan Pengawas',
                 'foto' => '20230118003333.png',

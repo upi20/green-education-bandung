@@ -21,7 +21,7 @@ class GaleriTableSeeder extends Seeder
         \DB::table('galeri')->insert(array (
             0 => 
             array (
-                'id' => 8,
+                'id' => '8',
                 'nama' => 'Apresiasi dari pengunjung',
                 'foto' => '',
                 'foto_id_gdrive' => '1FdEhTh0Zl4uBwPGpYCM-7AfgKm0LTIIX',
@@ -30,13 +30,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             1 => 
             array (
-                'id' => 9,
+                'id' => '9',
                 'nama' => 'Pameran urban farming',
                 'foto' => '',
                 'foto_id_gdrive' => '16tFAQVijq_G3TCuztVSNqGoG7QRkXlul',
@@ -45,13 +45,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             2 => 
             array (
-                'id' => 10,
+                'id' => '10',
                 'nama' => 'Pelatihan art recycle',
                 'foto' => '',
                 'foto_id_gdrive' => '1zfnH-CL74_WHYpjIc3_4MsbzpT3eh_HQ',
@@ -60,13 +60,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             3 => 
             array (
-                'id' => 11,
+                'id' => '11',
                 'nama' => 'Pelatihan art recycle mengolah limbah',
                 'foto' => '',
                 'foto_id_gdrive' => '1JIRMtoS0zxtCR2hF5R9lJO_hjS38vgT7',
@@ -75,13 +75,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-11',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             4 => 
             array (
-                'id' => 12,
+                'id' => '12',
                 'nama' => 'Pelatihan hidroponik',
                 'foto' => '',
                 'foto_id_gdrive' => '14tSjoZfT9uZSBVxs2-pKHpwnsHsXRGNG',
@@ -90,13 +90,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             5 => 
             array (
-                'id' => 13,
+                'id' => '13',
                 'nama' => 'Pelatihan kebun sekolah',
                 'foto' => '',
                 'foto_id_gdrive' => '11Mo1pt64clen9u_oP-zvsa-XbkhQ7rS3',
@@ -105,13 +105,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             6 => 
             array (
-                'id' => 14,
+                'id' => '14',
                 'nama' => 'Pelatihan urban farming',
                 'foto' => '',
                 'foto_id_gdrive' => '1ttKfABAyCvRLPoGyrxI-4v77zHs-jtUS',
@@ -120,13 +120,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             7 => 
             array (
-                'id' => 15,
+                'id' => '15',
                 'nama' => 'Penanaman anggrek',
                 'foto' => '',
                 'foto_id_gdrive' => '1m8OrGDgkC_KhUy8XYaQgKhrK9DkVakWY',
@@ -135,13 +135,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             8 => 
             array (
-                'id' => 16,
+                'id' => '16',
                 'nama' => 'Pendidikan budaya',
                 'foto' => '',
                 'foto_id_gdrive' => '1I7qpBv8VN8r24V7TEEBkBM-DRqwc6v37',
@@ -150,13 +150,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             9 => 
             array (
-                'id' => 17,
+                'id' => '17',
                 'nama' => 'Pendidikan lingkungan',
                 'foto' => '',
                 'foto_id_gdrive' => '1n52yeOoVcGvnBxBJk1_KL3zTeKGu-YYk',
@@ -165,13 +165,13 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             10 => 
             array (
-                'id' => 18,
+                'id' => '18',
                 'nama' => 'Pengenalan sawah',
                 'foto' => '',
                 'foto_id_gdrive' => '17x_fjpRXgXgPJ-vE1v_EPp_Fmxc3Bzmm',
@@ -180,7 +180,7 @@ class GaleriTableSeeder extends Seeder
                 'tanggal' => '2022-11-12',
                 'lokasi' => 'lokasi',
                 'keterangan' => 'Keterangan',
-                'status' => 1,
+                'status' => '1',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
