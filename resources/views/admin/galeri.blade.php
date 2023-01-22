@@ -2,55 +2,73 @@
 
 @section('content')
     @php
-    $can_insert = auth_can(h_prefix('insert'));
-    $can_update = auth_can(h_prefix('update'));
-    $can_delete = auth_can(h_prefix('delete'));
+        $can_insert = auth_can(h_prefix('insert'));
+        $can_update = auth_can(h_prefix('update'));
+        $can_delete = auth_can(h_prefix('delete'));
     @endphp
     <div class="row row-sm">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">Galeri Table</h3>
+                    <h3 class="card-title">Tabel Galeri</h3>
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
-                            <i class="fas fa-plus"></i> Add
+                            <i class="fas fa-plus"></i> Tambah
                         </button>
                     @endif
                 </div>
                 <div class="card-body">
-                    <h5 class="h5">Filter Data</h5>
-                    <form action="javascript:void(0)" class="form-inline ml-md-3 mb-md-3" id="FilterForm">
-                        <div class="form-group me-md-3">
-                            <label for="filter_status">Kategori Status</label>
-                            <select class="form-control" id="filter_status" name="filter_status" style="max-width: 200px">
-                                <option value="">All Kategori Status</option>
-                                <option value="1">Tampilkan</option>
-                                <option value="0">Tidak Tampilkan</option>
-                            </select>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default active mb-2">
+                            <div class="panel-heading " role="tab" id="headingOne1">
+                                <h4 class="panel-title">
+                                    <a role="button" data-bs-toggle="collapse" data-bs-parent="#accordion"
+                                        href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Filter Data
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingOne1">
+                                <div class="panel-body">
+                                    <form action="javascript:void(0)" class="ml-md-3 mb-md-3" id="FilterForm">
+                                        <div class="form-group float-start me-2">
+                                            <label for="filter_status">Status</label>
+                                            <select class="form-control" id="filter_status" name="filter_status"
+                                                style="max-width: 200px">
+                                                <option value="">Semua</option>
+                                                <option value="1">Tampilkan</option>
+                                                <option value="0">Tidak Tampilkan</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <div style="clear: both"></div>
+                                    <button type="submit" form="FilterForm" class="btn btn-rounded btn-md btn-info"
+                                        data-toggle="tooltip" title="Refresh Filter Table">
+                                        <i class="bi bi-arrow-repeat"></i> Terapkan filter
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-rounded btn-md btn-info" title="Refresh Filter Table">
-                            <i class="fas fa-sync"></i> Refresh
-                        </button>
-                    </form>
-                    <div class="table-responsive table-striped">
-                        <table class="table table-bordered text-nowrap border-bottom" id="tbl_main">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Lihat</th>
-                                    <th>Slug</th>
-                                    <th>keterangan</th>
-                                    <th>Tanggal</th>
-                                    <th>Lokasi</th>
-                                    <th>Status</th>
-                                    {!! $can_delete || $can_update ? '<th>Action</th>' : '' !!}
-                                </tr>
-                            </thead>
-                            <tbody> </tbody>
-                        </table>
                     </div>
+
+                    <table class="table table-striped" id="tbl_main">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Lihat</th>
+                                <th>Slug</th>
+                                <th>keterangan</th>
+                                <th>Tanggal</th>
+                                <th>Lokasi</th>
+                                <th>Status</th>
+                                {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -206,16 +224,17 @@
                         data: 'status_str',
                         name: 'status',
                         render(data, type, full, meta) {
-                            const class_el = full.status == 1 ? 'badge bg-success' :
-                                'badge bg-danger';
-                            return `<span class="${class_el} p-2">${full.status_str}</span>`;
+                            const class_el = full.status == 1 ? 'text-success' :
+                                'text-danger';
+                            return `<i class="fas fa-circle me-2 ${class_el}"></i>${full.status_str}`;
                         },
+                        className: 'text-nowrap'
                     },
                     ...(can_update || can_delete ? [{
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Edit Data"
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
                                 data-id="${full.id}"
                                 data-nama="${full.nama}"
                                 data-status="${full.status}"
@@ -226,9 +245,9 @@
                                 data-id_gdrive="${full.id_gdrive}"
                                 data-keterangan="${full.keterangan}"
                                 onClick="editFunc(this)">
-                                <i class="fas fa-edit"></i> Edit </button>` : '';
+                                <i class="fas fa-edit"></i> Ubah </button>` : '';
                             const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm  me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                             return btn_update + btn_delete;
                         },
@@ -319,7 +338,7 @@
 
         function add() {
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Add Galeri");
+            $('#modal-default-title').html("Tambah Galeri");
             $('#modal-default').modal('show');
             $('#id').val('');
             resetErrorAfterInput();
@@ -328,7 +347,7 @@
 
         function editFunc(datas) {
             const data = datas.dataset;
-            $('#modal-default-title').html("Edit Galeri");
+            $('#modal-default-title').html("Ubah Galeri");
             $('#modal-default').modal('show');
             $('#MainForm').trigger("reset");
             $('#id').val(data.id);

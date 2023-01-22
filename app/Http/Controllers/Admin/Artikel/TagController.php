@@ -41,9 +41,10 @@ class TagController extends Controller
                 ->make(true);
         }
         $page_attr = [
-            'title' => 'Manage List Tag',
+            'title' => 'Artikel Tag',
             'breadcrumbs' => [
-                ['name' => 'Tag'],
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
+                ['name' => 'Artikel'],
             ]
         ];
         return view('admin.artikel.tag', compact('page_attr'));

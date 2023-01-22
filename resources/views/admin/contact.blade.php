@@ -2,19 +2,19 @@
 
 @section('content')
     @php
-    $can_insert = auth_can(h_prefix('insert'));
-    $can_update = auth_can(h_prefix('update'));
-    $can_delete = auth_can(h_prefix('delete'));
+        $can_insert = auth_can(h_prefix('insert'));
+        $can_update = auth_can(h_prefix('update'));
+        $can_delete = auth_can(h_prefix('delete'));
     @endphp
     <div class="row row-sm">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">Status Contact</h3>
+                    <h3 class="card-title">Status Kontak</h3>
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
-                            <i class="fas fa-plus"></i> Add
+                            <i class="fas fa-plus"></i> Tambah
                         </button>
                     @endif
                 </div>
@@ -22,9 +22,9 @@
                     <h5 class="h5">Filter Data</h5>
                     <form action="javascript:void(0)" class="form-inline ml-md-3 mb-md-3" id="FilterForm">
                         <div class="form-group me-md-3">
-                            <label for="filter_status">Contact</label>
+                            <label for="filter_status">Kontak</label>
                             <select class="form-control" id="filter_status" name="filter_status" style="max-width: 200px">
-                                <option value="">All Contact</option>
+                                <option value="">Semua Kontak</option>
                                 <option value="1">Dipakai</option>
                                 <option value="0">Tidak Dipakai</option>
                             </select>
@@ -44,7 +44,7 @@
                                     <th>No Urut</th>
                                     <th>Keterangan</th>
                                     <th>Status</th>
-                                    {!! $can_delete || $can_update ? '<th>Action</th>' : '' !!}
+                                    {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
                                 </tr>
                             </thead>
                             <tbody> </tbody>
@@ -79,7 +79,7 @@
                         <div class="form-group">
                             <label class="form-label" for="url">Link <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="url" name="url"
-                                placeholder="Link Contact" required="" />
+                                placeholder="Link Kontak" required="" />
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="order">Nomor Urut <span class="text-danger">*</span></label>
@@ -191,7 +191,7 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Edit Data"
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
                                 data-id="${full.id}"
                                 data-nama="${full.nama}"
                                 data-url="${full.url}"
@@ -200,10 +200,10 @@
                                 data-keterangan="${full.keterangan}"
                                 data-order="${full.order}"
                                 onClick="editFunc(this)">
-                                <i class="fas fa-edit"></i> Edit
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>` : '';
                             const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                             return btn_update + btn_delete;
                         },
@@ -288,7 +288,7 @@
 
         function add() {
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Add Contact");
+            $('#modal-default-title').html("Tambah Kontak");
             $('#modal-default').modal('show');
             $('#id').val('');
             resetErrorAfterInput();
@@ -297,10 +297,9 @@
 
         function editFunc(datas) {
             const data = datas.dataset;
-            $('#modal-default-title').html("Edit Contact");
+            $('#modal-default-title').html("Ubah Kontak");
             $('#modal-default').modal('show');
             $('#MainForm').trigger("reset");
-            console.log(data);
             $('#id').val(data.id);
             $('#nama').val(data.nama);
             $('#status').val(data.status);
@@ -339,7 +338,7 @@
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'Contact  deleted successfully',
+                                title: 'Kontak  deleted successfully',
                                 showConfirmButton: false,
                                 timer: 1500
                             })

@@ -45,7 +45,7 @@ class UserRepository
         $this->query["{$c_roles}_alias"] = $c_roles;
 
         $user = User::select(['id', 'name', 'email', 'active'])
-            ->selectRaw('IF(active = 1, "Yes", "No") as active_str')
+            ->selectRaw('IF(active = 1, "Aktif", "Tidak Aktif") as active_str')
             ->selectRaw($this->query[$c_roles] . ' as ' . $this->query["{$c_roles}_alias"]);
         // filter
         if (isset($request->filter)) {
@@ -175,8 +175,8 @@ class UserRepository
         $a = User::tableName;
 
         $active_str = <<<SQL
-                    if($a.active = 0, 'No',
-                        if($a.active = 1, 'Yes',
+                    if($a.active = 0, 'Tidak Aktif',
+                        if($a.active = 1, 'Aktif',
                             'Unknown')
                     ) as active_str
                 SQL;

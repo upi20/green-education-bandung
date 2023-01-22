@@ -2,21 +2,21 @@
 
 @section('content')
     @php
-    $can_insert = auth_can(h_prefix('insert'));
-    $can_update = auth_can(h_prefix('update'));
-    $can_delete = auth_can(h_prefix('delete'));
-    $can_setting = auth_can(h_prefix('setting'));
+        $can_insert = auth_can(h_prefix('insert'));
+        $can_update = auth_can(h_prefix('update'));
+        $can_delete = auth_can(h_prefix('delete'));
+        $can_setting = auth_can(h_prefix('setting'));
     @endphp
     <!-- Row -->
     <div class="row row-sm">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">{{ $page_attr['title'] }} Table</h3>
+                    <h3 class="card-title">Tabel {{ $page_attr['title'] }}</h3>
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
-                            <i class="fas fa-plus"></i> Add
+                            <i class="fas fa-plus"></i> Tambah
                         </button>
                     @endif
                 </div>
@@ -93,25 +93,23 @@
                         </div>
                     </div>
 
-                    <div class="table-responsive table-striped">
-                        <table class="table table-bordered text-nowrap border-bottom" id="tbl_main">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Keterangan</th>
-                                    <th>Icon</th>
-                                    <th>Link</th>
-                                    <th>Urutan</th>
-                                    <th>Status</th>
-                                    @if ($can_update || $can_delete)
-                                        <th>Action</th>
-                                    @endif
-                                </tr>
-                            </thead>
-                            <tbody> </tbody>
-                        </table>
-                    </div>
+                    <table class="table table-striped" id="tbl_main">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Keterangan</th>
+                                <th>Icon</th>
+                                <th>Link</th>
+                                <th>Urutan</th>
+                                <th>Status</th>
+                                @if ($can_update || $can_delete)
+                                    <th>Aksi</th>
+                                @endif
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -202,7 +200,7 @@
         const can_update = {{ $can_update ? 'true' : 'false' }};
         const can_delete = {{ $can_delete ? 'true' : 'false' }};
         const table_html = $('#tbl_main');
-        let isEdit = true;
+        let isUbah = true;
         $(document).ready(function() {
             // datatable ====================================================================================
             $.ajaxSetup({
@@ -258,11 +256,11 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Edit Data" onClick="editFunc('${data}')">
-                                <i class="fas fa-edit"></i> Edit
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data" onClick="editFunc('${data}')">
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>` : '';
                             const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                             return btn_update + btn_delete;
                         },
@@ -319,7 +317,7 @@
                             showConfirmButton: false,
                             timer: 1500
                         })
-                        isEdit = true;
+                        isUbah = true;
                     },
                     error: function(data) {
                         const res = data.responseJSON ?? {};
@@ -398,12 +396,12 @@
         function add() {
             if (!isEdit) return false;
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Add {{ $page_attr['title'] }}");
+            $('#modal-default-title').html("Tambah {{ $page_attr['title'] }}");
             $('#modal-default').modal('show');
             $('#id').val('');
             $('#lihat-foto').hide();
             resetErrorAfterInput();
-            isEdit = false;
+            isUbah = false;
             return true;
         }
 
@@ -419,8 +417,8 @@
                     id
                 },
                 success: (data) => {
-                    isEdit = true;
-                    $('#modal-default-title').html("Edit {{ $page_attr['title'] }}");
+                    isUbah = true;
+                    $('#modal-default-title').html("Ubah {{ $page_attr['title'] }}");
                     $('#modal-default').modal('show');
                     $('#id').val(data.id);
                     $('#nama').val(data.nama);

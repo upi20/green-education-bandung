@@ -148,7 +148,7 @@
                     <div class="card-title">Meta Header List</div>
                     <button class="btn btn-primary btn-sm" data-bs-effect="effect-scale" data-bs-toggle="modal"
                         href="#modal-meta_list" onclick="meta_list_add()" data-target="#modal-meta_list"><i
-                            class="fa fa-plus me-2"></i>Add</button>
+                            class="fa fa-plus me-2"></i>Tambah</button>
                 </div>
                 <div class="card-body p-0">
                     <div class="list-group list-group-flush" id="meta_list-body"> </div>
@@ -377,7 +377,7 @@
             $('#meta_list_id').val('');
             $('#meta_list_name').val('');
             $('#meta_list_value').val('');
-            $('#modal-meta_list-title').html('Add Meta');
+            $('#modal-meta_list-title').html('Tambah Meta');
             meta_list_is_edit = false;
         }
 
@@ -411,7 +411,7 @@
             $('#meta_list_id').val(id);
             $('#meta_list_name').val(data.name);
             $('#meta_list_value').val(data.value);
-            $('#modal-meta_list-title').html('Edit Meta');
+            $('#modal-meta_list-title').html('Ubah Meta');
             meta_list_is_edit = true;
 
             $('#modal-meta_list').modal('show');

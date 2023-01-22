@@ -2,9 +2,9 @@
 
 @section('content')
     @php
-    $can_insert = auth_can(h_prefix('insert'));
-    $can_update = auth_can(h_prefix('update'));
-    $can_delete = auth_can(h_prefix('delete'));
+        $can_insert = auth_can(h_prefix('insert'));
+        $can_update = auth_can(h_prefix('update'));
+        $can_delete = auth_can(h_prefix('delete'));
     @endphp
     <!-- Row -->
     <div class="row row-sm">
@@ -15,7 +15,7 @@
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
-                            <i class="fas fa-plus"></i> Add
+                            <i class="fas fa-plus"></i> Tambah
                         </button>
                     @endif
                 </div>
@@ -44,7 +44,7 @@
                                     <th>Pendidikan</th>
                                     <th>Status</th>
                                     @if ($can_update || $can_delete)
-                                        <th>Action</th>
+                                        <th>Aksi</th>
                                     @endif
                                 </tr>
                             </thead>
@@ -129,16 +129,16 @@
                     data: 'id',
                     name: 'id',
                     render(data, type, full, meta) {
-                        const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Edit Data"
+                        const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
                                 data-id="${full.id}"
                                 data-nama="${full.nama}"
                                 data-status="${full.status}"
                                 data-keterangan="${full.keterangan}"
                                 onClick="editFunc(this)">
-                                <i class="fas fa-edit"></i> Edit
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>` : '';
                         const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm  me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                         return btn_update + btn_delete;
                     },
@@ -266,7 +266,7 @@
 
         function add() {
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Add Jenis Pendidikan");
+            $('#modal-default-title').html("Tambah Jenis Pendidikan");
             $('#modal-default').modal('show');
             $('#id').val('');
             resetErrorAfterInput();
@@ -275,7 +275,7 @@
 
         function editFunc(datas) {
             const data = datas.dataset;
-            $('#modal-default-title').html("Edit Jenis Pendidikan");
+            $('#modal-default-title').html("Ubah Jenis Pendidikan");
             $('#modal-default').modal('show');
             $('#MainForm').trigger("reset");
             $('#id').val(data.id);

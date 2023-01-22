@@ -9,7 +9,7 @@
                     <h3 class="card-title">Status Pendaftaran</h3>
                     <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                         data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
-                        <i class="fas fa-plus"></i> Add
+                        <i class="fas fa-plus"></i> Tambah
                     </button>
                 </div>
                 <div class="card-body">
@@ -41,7 +41,7 @@
                                     <th>Route</th>
                                     <th>Detail</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody> </tbody>
@@ -263,7 +263,7 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            return ` <button type="button" class="btn btn-rounded btn-primary btn-sm" title="Edit Data"
+                            return ` <button type="button" class="btn btn-rounded btn-primary btn-sm" title="Ubah Data"
                                 data-id="${full.id}"
                                 data-no_urut="${full.no_urut}"
                                 data-nama="${full.nama}"
@@ -274,10 +274,10 @@
                                 data-pengumuman="${full.pengumuman}"
                                 data-status="${full.status}"
                                 onClick="editFunc(this)">
-                                <i class="fas fa-edit"></i> Edit
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>
                                 <button type="button" class="btn btn-rounded btn-danger btn-sm" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>
                                 `;
                         },
@@ -362,7 +362,7 @@
 
         function add() {
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Add Pendaftaran");
+            $('#modal-default-title').html("Tambah Pendaftaran");
             $('#modal-default').modal('show');
             $('#id').val('');
             $('#foto').attr('required', true);
@@ -372,7 +372,7 @@
 
         function editFunc(datas) {
             const data = datas.dataset;
-            $('#modal-default-title').html("Edit Pendaftaran");
+            $('#modal-default-title').html("Ubah Pendaftaran");
             $('#modal-default').modal('show');
             $('#MainForm').trigger("reset");
             $('#foto').removeAttr('required');

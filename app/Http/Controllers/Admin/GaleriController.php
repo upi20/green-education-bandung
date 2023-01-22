@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 
 class GaleriController extends Controller
 {
+    public $query = [];
     public function index(Request $request)
     {
         if (request()->ajax()) {
@@ -31,9 +32,9 @@ class GaleriController extends Controller
                 ->make(true);
         }
         $page_attr = [
-            'title' => 'Manage List Galeri',
+            'title' => 'Galeri',
             'breadcrumbs' => [
-                ['name' => 'Dashboard'],
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
             ]
         ];
         return view('admin.galeri', compact('page_attr'));

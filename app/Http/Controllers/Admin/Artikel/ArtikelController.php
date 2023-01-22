@@ -36,8 +36,9 @@ class ArtikelController extends Controller
                 ->make(true);
         }
         $page_attr = [
-            'title' => 'Manage List Artikel',
+            'title' => 'Daftar Artikel',
             'breadcrumbs' => [
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
                 ['name' => 'Artikel'],
             ]
         ];
@@ -51,7 +52,7 @@ class ArtikelController extends Controller
             'title' => 'Tambah Artikel',
             'breadcrumbs' => [
                 ['name' => 'Artikel'],
-                ['name' => 'Manage List Artikel', 'url' => $navigation],
+                ['name' => 'Daftar Artikel', 'url' => $navigation],
             ],
             'navigation' => $navigation
         ];
@@ -66,7 +67,7 @@ class ArtikelController extends Controller
             'title' => 'Edit Artikel',
             'breadcrumbs' => [
                 ['name' => 'Artikel'],
-                ['name' => 'Manage List Artikel', 'url' => $navigation],
+                ['name' => 'Daftar Artikel', 'url' => $navigation],
             ],
             'navigation' => $navigation
         ];

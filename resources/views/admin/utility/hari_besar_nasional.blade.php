@@ -3,9 +3,9 @@
 @section('content')
     <input type="text" id="clipboard" style="position: fixed; top:-50px">
     @php
-    $can_insert = auth_can(h_prefix('insert'));
-    $can_update = auth_can(h_prefix('update'));
-    $can_delete = auth_can(h_prefix('delete'));
+        $can_insert = auth_can(h_prefix('insert'));
+        $can_update = auth_can(h_prefix('update'));
+        $can_delete = auth_can(h_prefix('delete'));
     @endphp
     <div class="row row-sm">
         <div class="col-lg-12">
@@ -15,7 +15,7 @@
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
-                            <i class="fas fa-plus"></i> Add
+                            <i class="fas fa-plus"></i> Tambah
                         </button>
                     @endif
                 </div>
@@ -90,7 +90,7 @@
                                     <th>Countdown</th>
                                     <th>Type</th>
                                     <th>Keterangan</th>
-                                    {!! $can_delete || $can_update ? '<th>Action</th>' : '' !!}
+                                    {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
                                 </tr>
                             </thead>
                             <tbody> </tbody>
@@ -218,7 +218,7 @@
         const can_update = {{ $can_update ? 'true' : 'false' }};
         const can_delete = {{ $can_delete ? 'true' : 'false' }};
         const table_html = $('#tbl_main');
-        let isEdit = true;
+        let isUbah = true;
         $(document).ready(function() {
             $('#type').change(() => {
                 refreshType();
@@ -283,11 +283,11 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Edit Data" onClick="editFunc('${data}')">
-                                <i class="fas fa-edit"></i> Edit
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data" onClick="editFunc('${data}')">
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>` : '';
                             const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                             return btn_update + btn_delete;
                         },
@@ -375,11 +375,11 @@
             refreshType();
             if (!isEdit) return false;
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Add {{ $page_attr['title'] }}");
+            $('#modal-default-title').html("Tambah {{ $page_attr['title'] }}");
             $('#modal-default').modal('show');
             $('#id').val('');
             resetErrorAfterInput();
-            isEdit = false;
+            isUbah = false;
             return true;
         }
 
@@ -396,8 +396,8 @@
                     id
                 },
                 success: (data) => {
-                    isEdit = true;
-                    $('#modal-default-title').html("Edit {{ $page_attr['title'] }}");
+                    isUbah = true;
+                    $('#modal-default-title').html("Ubah {{ $page_attr['title'] }}");
                     $('#modal-default').modal('show');
                     $('#id').val(data.id);
 

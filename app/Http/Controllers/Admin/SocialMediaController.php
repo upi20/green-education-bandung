@@ -43,9 +43,9 @@ class SocialMediaController extends Controller
                 ->make(true);
         }
         $page_attr = [
-            'title' => 'Manage List Sosial Media',
+            'title' => 'Sosial Media',
             'breadcrumbs' => [
-                ['name' => 'Dashboard'],
+                ['name' => 'Halaman Utama', 'url' => 'admin.dashboard'],
             ]
         ];
         return view('admin.social_media', compact('page_attr'));

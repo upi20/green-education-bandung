@@ -1,10 +1,10 @@
 @extends('templates.admin.master')
 @section('content')
     @php
-    $can_insert = auth_can(h_prefix('insert'));
-    $can_update = auth_can(h_prefix('update'));
-    $can_delete = auth_can(h_prefix('delete'));
-    $can_save = auth_can(h_prefix('save'));
+        $can_insert = auth_can(h_prefix('insert'));
+        $can_update = auth_can(h_prefix('update'));
+        $can_delete = auth_can(h_prefix('delete'));
+        $can_save = auth_can(h_prefix('save'));
     @endphp
     <div class="row">
         <div class="col-lg-6">
@@ -46,7 +46,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header d-md-flex flex-row justify-content-between">
-                            <h3 class="card-title" id="menu-title">Add Menu</h3>
+                            <h3 class="card-title" id="menu-title">Tambah Menu</h3>
                             <button class="btn btn-rounded btn-danger btn-sm" id="menu-btn-cancel" onclick="isEdit(false)"
                                 style="display: none">
                                 <i class="fe fe-arrow-left"></i> Cancel
@@ -351,7 +351,7 @@
                 isUpdate = true;
 
                 // edit attribute
-                title.html('Edit Menu');
+                title.html('Ubah Menu');
                 btn_cancel.fadeIn();
                 setContainer(can_update);
             } else {
@@ -367,7 +367,7 @@
                 $('#route').val('');
 
                 // edit attribute
-                title.html('Add Menu');
+                title.html('Tambah Menu');
                 btn_cancel.fadeOut();
                 setContainer(can_insert);
             }

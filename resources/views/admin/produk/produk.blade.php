@@ -134,7 +134,7 @@
                                 <th>Nama</th>
                                 <th>Keterangan</th>
                                 <th>Tampilkan</th>
-                                {!! $can_delete || $can_update ? '<th>Action</th>' : '' !!}
+                                {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
                             </tr>
                         </thead>
                         <tbody> </tbody>
@@ -283,7 +283,7 @@
         const can_delete = {{ $can_delete ? 'true' : 'false' }};
         const is_admin = {{ $is_admin ? 'true' : 'false' }};
         const table_html = $('#tbl_main');
-        let isEdit = true;
+        let isUbah = true;
         const image_url = '{{ asset($image_folder) }}';
         $(document).ready(function() {
             // datatable ====================================================================================
@@ -347,11 +347,11 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Edit Data" onClick="editFunc('${data}')">
-                                <i class="fas fa-edit"></i> Edit
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data" onClick="editFunc('${data}')">
+                                <i class="fas fa-edit"></i> Ubah
                                 </button>` : '';
                             const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Delete
+                                <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                             return btn_update + btn_delete;
                         },
@@ -408,7 +408,7 @@
                             showConfirmButton: false,
                             timer: 1500
                         })
-                        isEdit = true;
+                        isUbah = true;
 
                     },
                     error: function(data) {
@@ -486,7 +486,7 @@
             $('#lihat-foto').hide();
             $('#foto').attr('required', '');
             resetErrorAfterInput();
-            isEdit = false;
+            isUbah = false;
             return true;
         }
 
@@ -502,7 +502,7 @@
                     id
                 },
                 success: (data) => {
-                    isEdit = true;
+                    isUbah = true;
                     $('#modal-default-title').html("Ubah Produk");
                     $('#modal-default').modal('show');
                     $('#id').val(data.id);
