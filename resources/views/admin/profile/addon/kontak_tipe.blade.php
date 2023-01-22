@@ -34,24 +34,22 @@
                             <i class="fas fa-sync"></i> Refresh
                         </button>
                     </form>
-                    <div class="table-responsive table-striped">
-                        <table class="table table-bordered text-nowrap border-bottom" id="tbl_main">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Icon</th>
-                                    <th>Keterangan</th>
-                                    <th>Kontak</th>
-                                    <th>Status</th>
-                                    @if ($can_update || $can_delete)
-                                        <th>Aksi</th>
-                                    @endif
-                                </tr>
-                            </thead>
-                            <tbody> </tbody>
-                        </table>
-                    </div>
+                    <table class="table table-striped" id="tbl_main">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Icon</th>
+                                <th>Keterangan</th>
+                                <th>Kontak</th>
+                                <th>Status</th>
+                                @if ($can_update || $can_delete)
+                                    <th>Aksi</th>
+                                @endif
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
                 </div>
             </div>
         </div>

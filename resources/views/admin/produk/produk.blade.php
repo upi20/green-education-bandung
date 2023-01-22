@@ -13,7 +13,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">Produk Table List</h3>
+                    <h3 class="card-title">Tabel {{ $page_attr['title'] }}</h3>
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
@@ -29,7 +29,7 @@
                                     <h4 class="panel-title">
                                         <a role="button" data-bs-toggle="collapse" data-bs-parent="#accordion2"
                                             href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                            Setting
+                                            Pengaturan
                                         </a>
                                     </h4>
                                 </div>

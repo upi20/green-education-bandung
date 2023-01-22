@@ -12,7 +12,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">{{ $page_attr['title'] }} Table List</h3>
+                    <h3 class="card-title">Tabel {{ $page_attr['title'] }}</h3>
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
@@ -78,27 +78,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive table-striped">
-                        <table class="table table-bordered  border-bottom" id="tbl_main">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    {!! $is_admin ? '<th>Dibuat Oleh</th>' : '' !!}
-                                    <th>No Urut</th>
-                                    <th>Nama</th>
-                                    <th>Copy Link</th>
-                                    <th>Foto</th>
-                                    <th>Dari</th>
-                                    <th>Sampai</th>
-                                    <th>Detail</th>
-                                    <th>Tampilkan</th>
-                                    <th>Status</th>
-                                    {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
-                                </tr>
-                            </thead>
-                            <tbody> </tbody>
-                        </table>
-                    </div>
+                    <table class="table table-striped" id="tbl_main">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                {!! $is_admin ? '<th>Dibuat Oleh</th>' : '' !!}
+                                <th>No Urut</th>
+                                <th>Nama</th>
+                                <th>Copy Link</th>
+                                <th>Foto</th>
+                                <th>Dari</th>
+                                <th>Sampai</th>
+                                <th>Detail</th>
+                                <th>Tampilkan</th>
+                                <th>Status</th>
+                                {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
+                            </tr>
+                        </thead>
+                        <tbody> </tbody>
+                    </table>
                 </div>
             </div>
         </div>

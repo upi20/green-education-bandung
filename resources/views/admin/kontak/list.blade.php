@@ -28,7 +28,7 @@
                                     <h4 class="panel-title">
                                         <a role="button" data-bs-toggle="collapse" data-bs-parent="#accordion2"
                                             href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                                            Setting
+                                            Pengaturan
                                         </a>
                                     </h4>
                                 </div>
