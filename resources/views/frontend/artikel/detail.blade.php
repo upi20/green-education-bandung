@@ -206,3 +206,12 @@
         </div>
     </section>
 @endsection
+
+@section('stylesheet')
+    <style>
+        .blogCard a {
+            color: #0d6efd !important;
+            text-decoration: underline;
+        }
+    </style>
+@endsection
