@@ -37,41 +37,49 @@ class ArtikelTagItemTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => '9',
-                'artikel_id' => '29',
-                'tag_id' => '2',
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
-                'id' => '10',
-                'artikel_id' => '30',
-                'tag_id' => '2',
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            4 => 
-            array (
-                'id' => '13',
-                'artikel_id' => '33',
-                'tag_id' => '2',
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
-            array (
                 'id' => '15',
                 'artikel_id' => '32',
                 'tag_id' => '2',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            3 => 
+            array (
+                'id' => '30',
+                'artikel_id' => '30',
+                'tag_id' => '6',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            4 => 
+            array (
+                'id' => '31',
+                'artikel_id' => '29',
+                'tag_id' => '3',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            5 => 
+            array (
+                'id' => '32',
+                'artikel_id' => '33',
+                'tag_id' => '11',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
             6 => 
             array (
-                'id' => '21',
+                'id' => '33',
                 'artikel_id' => '31',
-                'tag_id' => '2',
+                'tag_id' => '5',
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            7 => 
+            array (
+                'id' => '34',
+                'artikel_id' => '31',
+                'tag_id' => '6',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),

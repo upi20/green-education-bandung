@@ -184,6 +184,36 @@ class GaleriTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            11 => 
+            array (
+                'id' => '19',
+                'nama' => 'penyewaan tanaman hias',
+                'foto' => NULL,
+                'foto_id_gdrive' => '11',
+                'id_gdrive' => '12',
+                'slug' => 'penyewaan-tanaman-hias',
+                'tanggal' => '2023-01-23',
+                'lokasi' => 'https://drive.google.com/file/d/11X58kSdMWtGoVpO7n5kI1dxvGtqWEcGF/view?usp=drivesdk',
+                'keterangan' => 'Pdf',
+                'status' => '1',
+                'created_at' => '2023-01-23 12:09:24',
+                'updated_at' => '2023-01-23 12:09:24',
+            ),
+            12 => 
+            array (
+                'id' => '20',
+                'nama' => 'Pelatiham Wirausaha Tanaman Hias Sukulen',
+                'foto' => NULL,
+                'foto_id_gdrive' => '1LYQJl2IXhjkgj6GSoSL2yokSLIL_713z',
+                'id_gdrive' => '1uqzblgutD6Eru6ElldMBsXBFTNSQPfvQ',
+                'slug' => 'pelatiham-wirausaha-tanaman-hias-sukulen',
+                'tanggal' => '2023-01-26',
+                'lokasi' => 'Kel. manjahlega kecamatan rancasari',
+                'keterangan' => 'Pelatiham Wirausaha Tanaman Hias Sukulen untuk Ibu-ibu PKK kelurahan manjahlega kecamatan rancasari, bekerjasama dengan dinas sosial kota bandung',
+                'status' => '1',
+                'created_at' => '2023-01-27 00:15:27',
+                'updated_at' => '2023-01-27 00:15:27',
+            ),
         ));
         
         

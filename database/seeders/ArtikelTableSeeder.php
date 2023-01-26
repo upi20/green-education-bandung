@@ -54,422 +54,49 @@ class ArtikelTableSeeder extends Seeder
             2 => 
             array (
                 'id' => '29',
-                'nama' => 'Hari Dongeng Sedunia 20 Maret, Berikut Sejarahnya',
-                'slug' => 'hari-dongeng-sedunia-20-maret-berikut-sejarahnya',
-                'foto' => '/assets/artikel/hari-donge16508588100.png',
-            'detail' => '<p style="text-align: center; "><img style="width: 432.833px; height: 519.8px;" data-bs-filename="275992630_338274278350229_4965771253315453026_n.webp" src="/assets/artikel/hari-donge16508588100.png"><br><p>Menurut Kamus Besar Bahasa Indonesia (KBBI), dongeng diartikan sebagai cerita yang tidak benar-benar terjadi, terutama menggambarkan kejadian-kejadian masa lalu.</p><p>Meski tak benar-benar terjadi, jalan cerita yang menarik, membuat dongeng disukai oleh anak-anak.</p><p>Di Indonesia, beberapa dongeng yang kerap diceritakan adalah Dongeng Sangkuriang, Roro Jonggrang, Malin Kundang, Danau Toba, hingga cerita soal Timun Mas.</p><p>Sejarah Hari Dongeng Sedunia 20 Maret&nbsp;</p><p>Lantas, bagaimana sejarah Hari Dongeng Sedunia?&nbsp;</p><p>Dikutip dari Days of The Year, sejarah Hari Dongeng Dunia dimulai di Swedia pada 1991.&nbsp;</p><p>Saat itu, mereka telah merayakan Alla Berattares Dag (Hari Semua Pendongeng) yang digelar saat ekuinoks Maret.&nbsp;</p><p>Tak lama kemudian, perayaan itu telah menyebar ke seluruh penjuru dunia. Pada 1997, perayaan telah menyebar ke Australia dan Amerika Latin dan menyebar ke seluruh Skandinavia pada 2002.</p><p>Kemudian, pada 2009 menandai pertama kalinya perayaan itu dilakukan di enam benua dan 20 Maret ditetapkan sebagai Hari Dongeng Sedunia.&nbsp;</p><p>Saat ini, Hari Dongeng Sedunia berlangsung setiap tahun dan berpusat di sekitar tema yang berbeda. Tujuan perayaan ini adalah untuk merayakan seni mendongeng lisan, sehingga semakin banyak orang menceritakan dan mendengarkan cerita dalam bahasa masing-masing.</p><p>Manfaat membacakan cerita atau dongeng</p><p style="text-align: center; "><img style="width: 750px;" data-bs-filename="60ffb2528e6d7.jpg" src="/assets/artikel/hari-donge16508588101.png"></p><p style="text-align: center; "><span style="font-size: 10px;">KG Media bersama media anak meluncurkan kanal berisikan konten dongeng berbasis audio melalui platform siniar (podcast), yaitu Dongeng Pilihan Orangtua.</span><br></p><p>(KG Media) Ada bukti yang menunjukkan bahwa manfaat sering dibacakan sebagai seorang anak jauh melampaui keterampilan literasi, dikutip dari BBC.&nbsp;</p><p><b>1. Membentuk pandangan dunia&nbsp;</b></p><p>Membacakan cerita untuk anak-anak dapat menunjukkan kepada mereka tempat-tempat yang jauh, orang-orang luar biasa, dan situasi yang membuka mata untuk memperluas dan memperkaya dunia mereka. Ini juga bisa menjadi cara yang bagus untuk membantu mereka menghadapi situasi kehidupan nyata yang perlu mereka tangani.&nbsp;</p><p><br></p><p><b>2. Lebih mudah memahami orang lain</b></p><p>Para ilmuwan telah menemukan bahwa anak-anak yang membacakan fiksi untuk mereka secara teratur merasa lebih mudah untuk memahami orang lain.&nbsp;</p><p>Anak-anak ini menunjukkan lebih banyak empati dan memiliki teori pikiran yang berkembang lebih baik.&nbsp;</p><p><br></p><p><b>3. Membantu anak menghadapi dunia nyata</b></p><p>Para peneliti telah menemukan bahwa aktivitas otak yang terjadi ketika kita membaca fiksi sangat mirip dengan mengalami situasi itu dalam kehidupan nyata.&nbsp;</p><p>Jadi, membaca tentang suatu situasi membantu anak-anak mencari cara untuk menyelesaikannya dalam kenyataan.</p><p><br style="color: rgb(42, 42, 42); font-family: Roboto, sans-serif; background-color: rgb(18, 18, 18);">Artikel ini telah tayang di&nbsp;<a href="https://www.kompas.com/" style="vertical-align: baseline; outline: 0px; transition: all 0.2s ease 0s;">Kompas.com</a>&nbsp;dengan judul "Hari Dongeng Sedunia 20 Maret, Berikut Sejarahnya", Klik untuk baca:&nbsp;<a href="https://www.kompas.com/tren/read/2022/03/20/103100565/hari-dongeng-sedunia-20-maret-berikut-sejarahnya?page=all" style="vertical-align: baseline; outline: 0px; transition: all 0.2s ease 0s;">https://www.kompas.com/tren/read/2022/03/20/103100565/hari-dongeng-sedunia-20-maret-berikut-sejarahnya?page=all</a>.<br style="">Penulis : Ahmad Naufal Dzulfaroh<br style="">Editor : Sari Hardiyanto<br></p><p></p><p></p></p>
+                'nama' => 'Pelatihan Budidaya Tanaman Hias Kampung KB - Keluarga Berkualitas',
+                'slug' => 'pelatihan-budidaya-tanaman-hias-kampung-kb-keluarga-berkualitas-',
+                'foto' => '/assets/artikel/hari-donge16744472200.png',
+            'detail' => '<p style="text-align: center; "><img style="width: 1130.4px;" data-bs-filename="visi.jpeg" src="/assets/artikel/hari-donge16744472200.png"><br><p style="text-align: center; "><br></p><p>Green Education Bandung (GEB) kembali dipercaya oleh Dinas PPKB Kota Bandung untuk memberikan pelatihan kepada ibu-ibu pengurus Kampung KB di 10 kelurahan/kecamatan. Kegiatan ini bertujuan memberikan materi mengenai alternatif peningkatan kesejahteraan melalui kegiatan urban farming yang menjanjikan nilai ekonomi yaitu budidaya tanaman hias, khususnya tanaman yang baru mulai diperkanalkan kepada masyarakat dengan istilah " edible flower " atau bunga yang dapat dikonsumsi atau dimakan.</p><p>Kegiatan ini berlangsung selama 10 hari, dari pagi sampai siang. Diharapkan masyarakat pada umumnya menjadi paham akan potensi dari budidaya tanaman hias ini. Para peserta tampak antusias dengan pelatihan ini, karena mereka jadi mengenal tanaman edible flower ini, dan berniat untuk belajar membudidayakannya di tempatnya masing-masing.</p><p>Semoga berhasil ya Ibu-ibu, sampai jumpa di pelatihan berikutnya.&nbsp;&nbsp;</p><p></p><p></p><p></p><p></p></p>
 ',
-            'excerpt' => 'Menurut Kamus Besar Bahasa Indonesia (KBBI), dongeng diartikan sebagai cerita yang tidak benar-benar terjadi, terutama menggambarkan kejadian-kejadian masa lalu.',
-                'counter' => '4',
+                'excerpt' => 'Pelatihan Ibu-ibu PKK pengurus Kampung KB, bekerjasama dengan DPPKB Kota Bandung',
+                'counter' => '5',
                 'date' => '2022-04-20',
                 'status' => '1',
                 'created_at' => '2022-04-25 03:50:37',
-                'updated_at' => '2023-01-18 23:18:07',
+                'updated_at' => '2023-01-25 10:04:06',
                 'user_id' => '1',
             ),
             3 => 
             array (
                 'id' => '30',
-                'nama' => 'Peringatan Hari Hutan Internasional',
-                'slug' => 'peringatan-hari-hutan-internasional2022',
-                'foto' => '/assets/artikel/peringatan16508596430.png',
-                'detail' => '<p class="MsoNormal" style="text-align: center; margin-bottom: 0cm; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#222222;mso-fareast-language:IN\'><br></span><img style="width: 367.4px; height: 441.22px;" data-bs-filename="276121008_719900469175542_1271108511653924704_n.webp" src="/assets/artikel/peringatan16508596430.png"><p class="MsoNormal" style="text-align: center; margin-bottom: 0cm; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img style="width: 800px;" data-bs-filename="Peringatan-Hari-Hutan-Internasional.gif" src="/assets/artikel/peringatan16508596431.png"><br></p><p class="MsoNormal" style="text-align: center; margin-bottom: 0cm; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#222222;mso-fareast-language:IN\'>Peringatan Hari Hutan
-Internasional</span></p><p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#222222;mso-fareast-language:IN\'><p><br></p></span></p><p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#222222;mso-fareast-language:IN\'><p><br></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Sejak tahun 2012, Majelis Umum PBB telah menetapkan tanggal 21 Maret
-sebagai peringatan Hari Hutan Internasional. Tahun 2022 bertema: &acirc;&#128;&#156;<i>Forests
-and sustainable production and consumption</i>&acirc;&#128;&#157;.<a name="_ednref1"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn1"><span style="color:#56C696">[i]</span></a>&nbsp;Tema
-tersebut berarti seluruh pihak harus mengakhiri berbagai bentuk pola konsumsi
-dan produksi yang tidak berkelanjutan sehingga berdampak negatif terhadap
-kelestarian ekosistem hutan. Sudah saatnya, seluruh stakeholders turut
-memberikan dukungan yang nyata dan kredibel atas setiap upaya pengelolaan hutan
-berkelanjutan yang telah dilaksanakan oleh negara dan masyarakat.<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Peringatan Hari Hutan Internasional meningkatkan kesadaran akan pentingnya
-ekosistem hutan. Menurut laporan PBB berjudul &acirc;&#128;&#156;<a href="https://www.un.org/esa/forests/wp-content/uploads/2021/04/Global-Forest-Goals-Report-2021.pdf"><span style="color:#56C696">the Global Forest Goals Report 2021</span></a>&acirc;&#128;&#157;
-diterbitkan oleh Departemen Ekonomi dan Urusan Sosial PBB (the UN Department of
-Economic and Social Affairs/ UN DESA), melalui Sekretariat Forum PBB tentang
-Hutan (United Nations Forum on Forests Secretariat/ UNFFS), luasan hutan di
-permukaan daratan bumi saat ini, mencapai 4 miliar hektar, atau setara 31% dari
-luas daratan di dunia.<a name="_ednref2"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn2"><span style="color:#56C696">[ii]</span></a>&nbsp;Seluruh
-negara di dunia didorong untuk melakukan upaya secara lokal, nasional dan
-internasional untuk melaksanakan kegiatan terkait upaya pelestarian ekosistem
-hutan. Mengingat berbagai manfaat yang telah diberikan oleh ekosistem hutan,
-antara lain yaitu:<a name="_ednref3"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn3"><span style="color:#56C696">[iii]</span></a><p></p></span></p><ul type="disc">
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Sektor
-kehutanan menciptakan lapangan kerja bagi sedikitnya 33 juta orang dan
-hasil hutan digunakan oleh miliaran orang. Diperkirakan lebih dari
-setengah produksi ekonomi dunia (seperti PDB) bergantung pada jasa
-ekosistem, termasuk yang disediakan oleh hutan. Lebih dari setengah total
-penduduk dunia diperkirakan menggunakan hasil hutan bukan kayu adalah
-penunjang kesejahteraan dan sumber mata pencaharian masyarakat.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Hutan
-sangat penting untuk kesehatan planet dan kesejahteraan manusia. Hutan
-menutupi hampir sepertiga dari permukaan tanah bumi dan menyediakan
-barang-barang seperti kayu, bahan bakar, makanan dan pakan ternak,
-membantu memerangi perubahan iklim, melindungi keanekaragaman hayati,
-tanah, sungai dan waduk, dan berfungsi sebagai area di mana orang bisa
-dekat dengan alam.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Menggunakan
-hutan secara berkelanjutan akan membantu kita beralih ke ekonomi yang
-didasarkan atas bahan baku yang terbarukan, dapat digunakan kembali, dan
-dapat didaur ulang. Kayu dapat digunakan untuk berbagai tujuan, dengan
-dampak lingkungan yang lebih rendah daripada banyak bahan alternatif. Kayu
-yang digunakan sekali dapat digunakan kembali dan didaur ulang, sehingga
-memperpanjang umurnya dan semakin mengurangi jejak materialnya.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Memperluas
-penggunaan hasil hutan berkontribusi pada netralitas karbon. Ilmu pengetahuan
-dan inovasi menghasilkan produk baru yang menarik dari kayu dan pohon,
-termasuk tekstil, makanan, bahan bangunan, kosmetik, biokimia, bioplastik,
-dan obat-obatan. Mengganti bahan yang kurang berkelanjutan dengan kayu
-terbarukan dan produk berbasis pohon dapat mengurangi jejak karbon.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Kayu
-yang lestari adalah bahan penting untuk menghijaukan kota. Sektor bangunan
-dan konstruksi bertanggung jawab atas hampir 40 persen emisi gas rumah
-kaca terkait energi secara global. Inovasi memungkinkan penggunaan lebih
-banyak kayu di gedung-gedung tinggi dan infrastruktur lainnya, membantu
-&acirc;&#128;&#156;menghijaukan&acirc;&#128;&#157; kota, karena kayu menyimpan karbon, membutuhkan lebih
-sedikit energi untuk diproduksi daripada banyak bahan konstruksi lainnya,
-dan menyediakan insulasi yang baik.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Hutan
-sangat penting untuk menunjang produksi pangan. Jasa ekosistem hutan,
-seperti habitat keanekaragaman hayati, pengaturan iklim, kualitas air dan
-tanah, dan penyerbukan sangatlah penting untuk sistem pangan pertanian
-berkelanjutan dan memberi makan populasi global yang terus bertambah.
-Selain itu, lebih dari tiga perempat rumah tangga pedesaan di seluruh
-dunia diperkirakan memanen makanan liar dari hutan dan lingkungan lainnya.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Diperlukan
-lebih banyak tindakan untuk menghentikan deforestasi dan degradasi hutan.
-Sejak tahun 1990, dunia telah kehilangan 420 juta hektar hutan (lebih
-besar dari luas negara India), dan masih terjadi deforestasi seluas 10
-juta hektar per/ tahun, terutama karena ekspansi lahan pertanian.
-Pengelolaan hutan secara lestari dapat mengurangi deforestasi dan
-degradasi, memulihkan lanskap yang terdegradasi, dan menyediakan lapangan
-kerja dan material terbarukan bagi masyarakat.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Pilih
-produk kayu dari sumber yang legal dan berkelanjutan. Konsumen dapat
-berkontribusi pada pemanfaatan hutan yang berkelanjutan dengan memilih
-produk kayu dengan label atau sertifikasi yang menegaskan bahwa produk
-tersebut berasal dari sumber yang legal dan berkelanjutan.<p></p></span></li>
-</ul><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>&nbsp;</span></p><p class="MsoNormal" style="text-align: center; margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img style="width: 709.247px; height: 319.388px;" data-bs-filename="Peringatan-Hari-Hutan-Internasional-2.jpg" src="/assets/artikel/peringatan16508596432.png"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'><br></span></p><p class="MsoNormal" align="center" style="margin-bottom: 11.25pt; text-align: center; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style=\'font-size:10.5pt;
-font-family:"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#222222;mso-fareast-language:IN\'>Foto: sertifikasi ramah lingkungan untuk
-produk kehutanan, yang menjadi salah satu indikator bagi konsumen untuk
-menentukan hasil produksi hutan yang lestari.</span></b><span style=\'font-size:
-10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#222222;mso-fareast-language:IN\'><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Selaras dengan hal tersebut, Sekretaris Jenderal PBB Ant&Atilde;&sup3;nio Guterres juga
-mengungkapkan, bahwa hutan yang sehat sangat penting bagi manusia dan planet
-ini. Hutan berfungsi sebagai filter alami, menyediakan udara dan air bersih,
-dan mereka adalah surga keanekaragaman hayati. Membantu mengatur iklim kita
-dengan mempengaruhi pola curah hujan, mendinginkan daerah perkotaan dan
-menyerap sepertiga dari emisi gas rumah kaca. Hutan menjadi sumber mata
-pencaharian bagi banyak komunitas dan masyarakat adat, serta sumber dari
-obat-obatan, makanan, sekaligus tempat perlindungan. Sayangnya, masih terjadi
-kerusakan atau kehancuran hutan sekitar 10 juta hektar hutan setiap tahunnya.<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Indonesia sebagai salah satu negara pemilik hutan terluas di dunia, sejak
-era orde baru telah mengandalkan hutan sebagai penunjang pertumbuhan
-ekonominya. Karenanya kelestarian hutan menjadi suatu keniscayaan dalam upaya
-mewujudkan pembangunan berkelanjutan di Indonesia. Menurut Laporan State Forest
-Indonesian Tahun 2020, yang diterbitkan Kementerian Kehutanan dan Lingkungan
-Hidup bekerjasama dengan FAO (Food and Agriculture Organization) Perserikatan
-Bangsa-Bangsa, luasan kawasan di Indonesia yang ditetapkan sebagai Kawasan
-Hutan mencapai 120 Juta Ha, atau seluas 64 persen dari seluruh wilayah daratan
-Indonesia. Karena letak geografisnya, Indonesia merupakan salah satu negara
-dengan tingkat keanekaragaman hayati dan endemisitas yang sangat tinggi, serta
-memiliki tingkat keanekaragaman hayati yang lebih tinggi daripada negara lain
-di dunia.<a name="_ednref4"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn4"><span style="color:#56C696">[iv]</span></a><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Kawasan yang ditetapkan sebagai kawasan Hutan Produksi Indonesia seluas
-68,8 juta hektar, dimana luasan kawasan yang telah diberikan konsesi mencapai
-34,18 juta hektar, sedangkan sisanya 34,62 juta hektar belum dibebankan izin.<a name="_ednref5"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn5"><span style="color:#56C696">[v]</span></a>&nbsp;Sedangkan
-menurut Laporan Status Hutan dan Kehutanan Indonesia pada tahun 2018, luasan
-kawasan hutan yang telah diberikan izin konsesi mencapai 30,7 Juta Hektar, dan
-seluas 38,1 juta hektar sisanya belum dibebani izin apapun.<a name="_ednref6"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn6"><span style="color:#56C696">[vi]</span></a><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>&nbsp;<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img style="width: 1113.2px;" data-bs-filename="Peringatan-Hari-Hutan-Internasional-3.jpg" src="/assets/artikel/peringatan16508596433.png"><br></p><p class="MsoNormal" align="center" style="margin-bottom: 11.25pt; text-align: center; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style=\'font-size:10.5pt;
-font-family:"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#222222;mso-fareast-language:IN\'>Foto: Kayu bulat (<i>tangiable</i>) yang
-masih menjadi tumpuan ekonomi hutan di Indonesia</span></b><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#222222;mso-fareast-language:IN\'><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Menurut data Statistik Produksi Kehutanan 2020 yang diterbitkan oleh BPS,
-pada tahun 2020 Hutan di Indonesia menghasilkan kayu bulat sebesar 61,02 juta
-m&Acirc;&sup3;. Sebesar 68,39 persen produksi kayu bulat di Indonesia berasal dari Pulau
-Sumatra, mencapai 41,73 juta m&Acirc;&sup3;. Produksi kayu bulat terbesar adalah kayu
-akasia sebanyak 32,114 juta m&Acirc;&sup3; (52,63 persen), kayu kelompok rimba campuran
-sebanyak 20,655 juta m&Acirc;&sup3; (33,85 persen), kayu kelompok meranti sebanyak 4,795
-juta m&Acirc;&sup3; (7,86 persen), kayu kelompok indah sebanyak 0,492 juta m&Acirc;&sup3; (0,81
-persen), kayu kelompok eboni sebanyak 0,001 juta m&Acirc;&sup3; (0,00 persen), sedangkan
-sisanya kayu lainnya sebanyak 2,961 juta m&Acirc;&sup3; (4,85 persen).<a name="_ednref7"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn7"><span style="color:#56C696">[vii]</span></a><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Sedangkan produksi kayu olahan pada tahun 2020, berupa chip dan partikel
-sebesar 21,54 juta m&Acirc;&sup3; dan 12,33 juta ton, diikuti oleh bubur kayu sebesar 8,18
-juta ton, kayu lapis sebesar 3,88 juta m&Acirc;&sup3;, kayu gergajian sebesar 3,72 juta m&Acirc;&sup3;,
-veneer sebesar 2,04 juta m&Acirc;&sup3;, papan serat sebesar 0,69 juta m&Acirc;&sup3;, barecore sebesar
-0,38 juta m&Acirc;&sup3;, moulding/dowel sebesar 0,28 juta m&Acirc;&sup3;, dan papan partikel sebesar
-0,02 juta m&Acirc;&sup3;. Sedangkan sisa kayu olahan lainnya sebanyak 0,34 juta m&Acirc;&sup3; dan 0,03
-juta ton. Sebagian besar produk kayu olahan dihasilkan di Pulau Sumatera dan
-Pulau Jawa. Produksi kayu olahan berupa chip &amp; partikel, bubur kayu, dan
-papan serat sebagian besar berasal dari pulau Sumatera. Produksi kayu olahan
-dengan jenis kayu lapis, kayu gergajian, veneer, barecore, dan moulding/ dowel
-sebagian besar berasal dari pulau Jawa.<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Kemudian untuk produk hasil hutan bukan kayu (HHBK) dengan jenis rotan,
-getah karet, dan sagu banyak yang berasal dari pulau Sumatera. Produksi hutan
-bukan kayu dengan jenis bambu, getah pinus, daun kayu putih, gondorukem, madu,
-dan terpentin sebagian besar berasal dari pulau Jawa. Sementara, sebagian besar
-produksi hutan bukan kayu dengan jenis sagu dan minyak kayu putih berasal dari
-pulau Maluku dan Papua.<a name="_ednref8"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn8"><span style="color:#56C696">[viii]</span></a><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Sampai saat ini, sebagian besar masyarakat Indonesia masih memiliki
-ketergantungan ekonomi terhadap potensi kawasan hutan. Sebanyak 25.800 desa,
-atau 34,1% dari total 74.954 desa di seluruh Indonesia, merupakan
-wilayah-wilayah yang berbatasan langsung dengan kawasan hutan. Kawasan konservasi
-terestrial seluas 22,1 juta hektar dikelilingi oleh 6.381 desa, dengan sebagian
-besar penduduknya memiliki ketergantungan terhadap sumberdaya alam untuk
-pemenuhan kebutuhan hidupnya.<a name="_ednref9"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn9"><span style="color:#56C696">[ix]</span></a><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Pengelolaan hutan yang lestari dan pemanfaatannya atas sumber daya adalah
-kunci untuk memerangi perubahan iklim dan berkontribusi pada kemakmuran dan
-kesejahteraan generasi sekarang dan mendatang. Hutan juga memainkan peran
-penting dalam pengentasan kemiskinan dan dalam pencapaian Tujuan Pembangunan
-Berkelanjutan (SDGs). Selain itu, Hutan, melalui jasa ekosistemnya, adalah
-solusi kunci berbasis alam untuk membangun kembali ekonomi global pascapandemi
-dengan cara melestarikan alam, sambil mendorong pertumbuhan ekonomi.<a name="_ednref10"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn10"><span style="color:#56C696">[x]</span></a><p></p></span></p><p class="MsoNormal" style="text-align: center; margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img style="width: 920px;" data-bs-filename="Peringatan-Hari-Hutan-Internasional-4.png" src="/assets/artikel/peringatan16508596434.png"><br></p><p class="MsoNormal" align="center" style="margin-bottom: 11.25pt; text-align: center; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style=\'font-size:10.5pt;
-font-family:"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#222222;mso-fareast-language:IN\'>Tema Hari Hutan Internasional Tahun
-2022, &acirc;&#128;&#156;Choose Sustainable Wood for People and Planet&acirc;&#128;&#157;</span></b><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#222222;mso-fareast-language:IN\'><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Seluruh manfaat dan upaya pengelolaan ekosistem hutan telah terangkum dalam
-Rencana Strategis PBB untuk Hutan 2017&acirc;&#128;&#147;2030 (The United Nations Strategic Plan
-for Forests 2017&acirc;&#128;&#147;2030) yang memberikan kerangka kerja global untuk tindakan
-pengelolaan seluruh jenis hutan secara berkelanjutan dan untuk menghentikan
-deforestasi dan degradasi hutan.<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Rencana Strategis PBB untuk Hutan 2017-2030 dibuat dengan misi untuk
-mempromosikan pengelolaan hutan lestari dan meningkatkan kontribusi hutan dan
-pohon ke Agenda 2030 untuk pembangunan berkelanjutan. Rencana tersebut juga
-menggariskan, bahwa untuk menciptakan dunia di mana hutan dapat memberikan
-manfaat ekonomi, sosial, lingkungan, dan budaya bagi generasi sekarang dan
-mendatang, maka yang pertama dan utama, adalah dibutuhkan lebih banyak hutan.
-Sehingga berbagai anggapan yang mempertentangkan antara keberlanjutan pembangunan
-dan kelestarian hutan, sehingga menciptakan pembenaran sebuah deforestasi,
-patut dikaji kembali secara mendalam.<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Inti dari Rencana Strategis adalah enam Tujuan Hutan Global (Global Forest
-Goals/ GFGs) dan 26 target terkait yang bersifat sukarela dan universal. Enam
-Tujuan Hutan Global yang secara langsung mendukung Tujuan Pembangunan
-Berkelanjutan PBB, mencakup:<a name="_ednref11"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_edn11"><span style="color:#56C696">[xi]</span></a><p></p></span></p><ol start="1" type="1">
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Membalikkan
-kehilangan tutupan hutan di seluruh dunia melalui pengelolaan hutan
-lestari, termasuk perlindungan, restorasi, aforestasi dan reboisasi, dan
-meningkatkan upaya untuk mencegah degradasi hutan dan berkontribusi pada
-upaya dunia untuk mengatasi perubahan iklim.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Meningkatkan
-manfaat ekonomi, sosial dan lingkungan berbasis hutan, termasuk dengan
-meningkatkan mata pencaharian masyarakat yang bergantung pada hutan.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Meningkatkan
-kawasan hutan lindung di seluruh dunia dan kawasan hutan yang dikelola
-secara lestari lainnya secara signifikan, serta proporsi hasil hutan dari
-hutan yang dikelola secara lestari.</span></li><li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Memobilisasi
-sumber daya keuangan baru dan tambahan yang meningkat secara signifikan
-dari semua sumber untuk pelaksanaan pengelolaan hutan lestari dan
-memperkuat kerjasama dan kemitraan ilmiah dan teknis.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Mempromosikan
-kerangka tata kelola untuk menerapkan pengelolaan hutan lestari, termasuk
-melalui instrumen hutan PBB, dan meningkatkan kontribusi hutan pada Agenda
-2030 untuk Pembangunan Berkelanjutan.<p></p></span></li>
-<li class="MsoNormal" style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'>Meningkatkan
-kerja sama, koordinasi, koherensi, dan sinergi dalam isu-isu terkait hutan
-di semua tingkatan, termasuk di dalam sistem Perserikatan Bangsa-Bangsa
-dan di seluruh organisasi anggota Kemitraan Kolaboratif di Hutan, serta
-lintas sektor dan pemangku kepentingan terkait.</span></li></ol><p style="color: rgb(34, 34, 34); line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img style="width: 1113.2px;" data-bs-filename="Peringatan-Hari-Hutan-Internasional-5-1536x675.png" src="/assets/artikel/peringatan16508596435.png"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";mso-fareast-language:IN\'><br></span></p><ol start="1" type="1">
-</ol><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img style="width: 1113.2px;" data-bs-filename="Peringatan-Hari-Hutan-Internasional-6-1536x668.png" src="/assets/artikel/peringatan16508596436.png"><br></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#222222;mso-fareast-language:
-IN\'>Semoga peringatan Hari Hutan Internasional menjadi momentum untuk
-mengingatkan kembali nilai dan manfaat keberadaan ekosistem hutan, sekaligus
-mendorong komitmen atas pelestarian ekosistem hutan di seluruh dunia. Selamat
-Hari Hutan Internasional&acirc;&#128;&brvbar;<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn1"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref1"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[i]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Lihat dalam: (<a href="https://www.fao.org/international-day-of-forests/en/"><span style="color:#56C696">https://www.fao.org/international-day-of-forests/en/</span></a>)<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn2"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref2"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[ii]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;United Nations Department of Economic and Social
-Affairs, United Nations Forum on Forests Secretariat (2021). The Global Forest
-Goals Report 2021<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn3"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref3"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[iii]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Lihat dalam: (<a href="https://www.fao.org/international-day-of-forests/key-messages/en/"><span style="color:#56C696">https://www.fao.org/international-day-of-forests/key-messages/en/</span></a>)<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn4"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref4"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[iv]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Ministry of environment and Forestry, republic
-of Indonesia (2021), State Forest Indonesian Tahun 2020<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn5"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref5"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[v]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;<i>Ibid.</i><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn6"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref6"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[vi]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Kementerian Lingkungan Hidup dan Kehutanan,
-(2019), Status Hutan dan Kehutanan Indonesia Tahun 2018<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn7"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref7"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[vii]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Badan Pusat Statistik, &acirc;&#128;&#156;Statistik Produksi
-Kehutanan 2020&acirc;&#128;&#157;, dokumen dapat diakses di (<a href="https://www.bps.go.id/publication/2021/07/30/d45441e7214b3c12c9653c45/statistik-produksi-kehutanan-2020.html"><span style="color:#56C696">https://www.bps.go.id/publication/2021/07/30/d45441e7214b3c12c9653c45/statistik-produksi-kehutanan-2020.html</span></a>)<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn8"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref8"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[viii]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;<i>Ibid.</i><p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn9"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref9"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[ix]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Kementerian Lingkungan Hidup dan Kehutanan,
-(2019), Status Hutan dan Kehutanan Indonesia Tahun 2018<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn10"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref10"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[x]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;Lihat dalam: (<a href="https://www.unep.org/resources/factsheet/investing-forests-build-back-better-greener"><span style="color:#56C696">https://www.unep.org/resources/factsheet/investing-forests-build-back-better-greener</span></a>)<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><a name="_edn11"></a><a href="https://pslh.ugm.ac.id/peringatan-hari-hutan-internasional/#_ednref11"><span style=\'font-size:10.5pt;font-family:"Helvetica",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#56C696;mso-fareast-language:
-IN\'>[xi]</span></a><span style=\'font-size:10.5pt;font-family:
-"Helvetica",sans-serif;mso-fareast-font-family:"Times New Roman";color:#222222;
-mso-fareast-language:IN\'>&nbsp;United Nations Department of Economic and Social
-Affairs, United Nations Forum on Forests Secretariat (2021). The Global Forest
-Goals Report 2021<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11.25pt; line-height: 150%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p><p class="MsoNormal"><p>&nbsp;</p></p></p>
+                'nama' => 'Penyewaan Tanaman Hias pdf',
+                'slug' => 'penyewaan-tanaman-hias-pdf',
+                'foto' => '/assets/artikel/peringatan16744464890.png',
+            'detail' => '<p class="MsoNormal" style="text-align: center; margin-bottom: 0cm; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font color="#222222" face="Helvetica, sans-serif"><span style="caret-color: rgb(34, 34, 34);">Brosur penyewaan tanaman hias GEB</span></font><p class="MsoNormal" style="text-align: left; margin-bottom: 0cm; line-height: normal;"><font color="#222222" face="Helvetica, sans-serif"><span style="caret-color: rgb(34, 34, 34);">Berikut ini adalah brosur penyewaan tanaman hias dalam format pdf.&nbsp;</span></font><a href="https://drive.google.com/file/d/11X58kSdMWtGoVpO7n5kI1dxvGtqWEcGF/view?usp=drivesdk" target="_blank">https://drive.google.com/file/d/11X58kSdMWtGoVpO7n5kI1dxvGtqWEcGF/view?usp=drivesdk</a><a href="https://drive.google.com/file/d/11X58kSdMWtGoVpO7n5kI1dxvGtqWEcGF/view?usp=drivesdk" style="-webkit-tap-highlight-color: transparent;"></a>&nbsp;</p><p></p><p></p><p></p><p></p></p>
 ',
-                'excerpt' => 'Sejak tahun 2012, Majelis Umum PBB telah menetapkan tanggal 21 Maret sebagai peringatan Hari Hutan Internasional. Tahun 2022 bertema: “Forests and sustainable production and consumption”',
-                'counter' => '3',
+                'excerpt' => 'Brosur penyewaan tanaman hias',
+                'counter' => '10',
                 'date' => '2022-04-21',
                 'status' => '1',
                 'created_at' => '2022-04-25 04:07:23',
-                'updated_at' => '2022-11-12 01:37:49',
+                'updated_at' => '2023-01-23 12:11:31',
                 'user_id' => '1',
             ),
             4 => 
             array (
                 'id' => '31',
-                'nama' => 'Tema Hari Buku dan Hak Cipta Sedunia 23 April 2022 dan Sejarahnya',
-                'slug' => 'tema-hari-buku-dan-hak-cipta-sedunia-23-april-2022-dan-sejarahnya',
-                'foto' => '/assets/artikel/tema-hari-16508601090.png',
-            'detail' => '<p style="text-align: center; "><img style="width: 350px; height: 420.547px;" data-bs-filename="278987778_958380894820976_8231711504543053067_n.webp" src="/assets/artikel/tema-hari-16508601090.png"><p style="text-align: left;"><br></p><p>Organisasi Pendidikan, Keilmuan, dan Kebudayaan PBB (UNESCO) memperingati Hari Buku dan Hak Cipta Sedunia pada 23 April 2022.&nbsp;</p><p>UNESCO menciptakan World Book and Copyright Day untuk meningkatkan kesadaran bahwa membaca adalah hal yang sangat penting dan banyak mempengaruhi kehidupan.&nbsp;</p><p>"Melalui membaca dan memperingati Hari Buku dan Hak Cipta Sedunia, 23 April, kita dapat membuka diri kepada orang lain meskipun jauh, dan kita dapat bepergian berkat imajinasi," tulis UNESCO. Dalam persiapan Hari Buku dan Hak Cipta Sedunia, UNESCO mendorong Anda untuk membaca buku dan mengeksplorasi topik, format, atau genre baru yang tidak biasa. "Tujuan kami adalah untuk melibatkan orang dalam membaca, dan untuk bersenang-senang melakukannya," ujar UNESCO.&nbsp;</p><p><br></p><p><b>Tema Hari Buku Sedunia 2022&nbsp;</b></p><p>Dalam lamannya, UNESCO menuliskan, sebagai perayaan Hari Buku dan Hak Cipta Sedunia tahun ini, UNESCO telah membuat tantangan Bookfacechallenge. Tantangan ini meminta Anda untuk mengunggah foto bersama sampul buku yang unik.&nbsp;</p><p>Usahakan agar sampul buku tersebut cocok atau matching dengan wajah Anda.&nbsp;</p><p>Pandemi juga mengingatkan kita semua akan pentingnya buku dan membaca untuk kenyamanan dan mengisi waktu.&nbsp;</p><p>"Kami selalu senang melihat ketika sebuah judul telah disajikan dengan baik, karena sampul yang baik dapat membuat atau menghancurkan sebuah judul," tulis UNESCO. UNESCO mengajak siswa, guru, pembaca dari seluruh dunia serta industri buku dan layanan perpustakaan untuk bersaksi dan mengekspresikan kecintaan mereka terhadap membaca dengan berpartisipasi dalam tantangan ini.&nbsp;</p><p>Sejarah Hari Buku dan Hak Cipta Sedunia Hari Buku dan Hak Cipta Sedunia adalah perayaan untuk mempromosikan kenikmatan buku dan membaca. Setiap tahun, pada tanggal 23 April, perayaan diadakan di seluruh dunia untuk mengenali ruang lingkup buku.&nbsp;</p><p>Buku adalah penghubung antara masa lalu dan masa depan, jembatan antar generasi dan lintas budaya.&nbsp;</p><p>Tanggal 23 April dipilih karena ini adalah tanggal simbolis dalam sastra dunia, di mana beberapa penulis terkemuka, William Shakespeare, Miguel de Cervantes dan Inca Garcilaso de la Vega meninggal. Tanggal ini juga merupakan hari diadakannya Konferensi Umum UNESCO di Paris pada tahun 1995, untuk memberikan penghormatan di seluruh dunia kepada buku dan penulis. Dengan memperjuangkan buku dan hak cipta, UNESCO membela kreativitas, keragaman, dan akses yang setara ke pengetahuan, dengan pekerjaan di seluruh bidang.</p><div><br></div></p>
+                'nama' => 'Green Edu Bdg menyediakan Rental Tanaman Hias',
+                'slug' => 'Rental tanaman hias',
+                'foto' => '/assets/artikel/green-edu-16744461500.png',
+                'detail' => '<p style="text-align: center; "><p style="text-align: left;"><img data-bs-filename="WhatsApp Image 2023-01-10 at 20.10.29 2.jpeg" style="width: 663px;" src="/assets/artikel/green-edu-16744461500.png"><br></p><p>Kami menyediakan penyewaan tanaman hias dalam pot, untuk keperluan dekorasi cafe, resto, atau kantor anda. Ada banyak jenis tanaman hias koleksi kami yang bisa anda sewa. Minimal sewa 10 pot untuk 1 bulan. Penataan tanaman hias dan pemeliharaan rutin menjadi tanggung jawab kami. Bila anda berminat, silahkan hubungin kami pada kontak atau nomor yang tercantum. Terima kasih.</p><p><a href="https://drive.google.com/file/d/1u--wV3KwQlykbCIKpFgxylqYIWNgIhAM/view?usp=sharing" target="_blank">Brour Penyewaan Tanaman.pdf</a><br></p><p><br></p><p></p><p></p></p>
 ',
-                'excerpt' => 'UNESCO menciptakan World Book and Copyright Day untuk meningkatkan kesadaran bahwa membaca adalah hal yang sangat penting dan banyak mempengaruhi kehidupan.',
-                'counter' => '15',
+                'excerpt' => 'Sedia Tanaman Hias dalam pot untuk disewakan kepada cafe, resto, kantor, dsb. N',
+                'counter' => '22',
                 'date' => '2022-04-23',
                 'status' => '1',
                 'created_at' => '2022-04-25 04:15:09',
-                'updated_at' => '2022-08-06 23:39:31',
+                'updated_at' => '2023-01-27 00:29:52',
                 'user_id' => '1',
             ),
             5 => 
@@ -491,17 +118,38 @@ Goals Report 2021<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11
             6 => 
             array (
                 'id' => '33',
-                'nama' => 'Hari Perawat Nasional 2022: Tema dan Sejarah',
-                'slug' => 'hari-perawat-nasional-2022-tema-dan-sejarah',
-                'foto' => '/assets/artikel/hari-peraw16508904700.png',
-            'detail' => '<p style="text-align: center; line-height: 1.5;"><img style="width: 355.892px; height: 427.4px;" data-bs-filename="276032436_491127839342891_2638356714960767855_n.webp" src="/assets/artikel/hari-peraw16508904700.png"><br><p style="line-height: 1.5;">Pada tahun ini, peringatan Hari Perawat Nasional 2022 masih tetap berlangsung di tengah pandemi Covid-19. Peringatan tersebut mengambil tema \'Perawat Bersama Rakyat Menuju Bangsa Sehat Bebas dari Covid-19\'.<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;">Sebagaimana diketahui, perawat mengambil peran penting selama pandemi Covid-19 berlangsung di Indonesia sejak Maret 2020 lalu. Perawat terus menjalankan tugasnya merawat pasien meski berada di tengah ancaman risiko penularan Covid-19 yang tinggi.<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;">Hingga 17 Maret 2022, data Lapor Covid-19 menyebutkan sebanyak 2.066 tenaga kesehatan meninggal dunia dalam menangani pandemi Covid-19. Sebanyak 67o di antaranya adalah perawat.<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><b><span style="font-size: 18px;">Sejarah Hari Perawat Nasional</span></b><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;">Sejarah Hari Perawat Nasional sendiri tak lepas dari pendirian Persatuan Perawat Nasional Indonesia (PPNI) pada 17 Maret 1974 silam. Organisasi ini dicetuskan dengan alasan tenaga keperawatan yang harus berada di bawah organisasi profesi.<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"></p><p style="line-height: 1.5;"></p><div style="text-align: center;"><img data-bs-filename="ilustrasi-tenaga-kesehatan-di-masa-pandemi_169.jpeg" style="width: 620px;" src="/assets/artikel/hari-peraw16508904701.png"></div><div style="text-align: center;"><span style="font-size: 11px;">Ilustrasi. Hari Perawat Nasional diperingati setiap 17 Maret. (iStock/Kiwis)</span></div><div style="text-align: center;"><span style="font-size: 11px;"><br></span></div><p>Jauh sebelum itu, organisasi perawat telah eksis seiring keberadaan rumah sakit Residen Vpabast pada 1918 di Batavia. Rumah sakit itu kini dikenal sebagai RS Ciptomangunkusumo (RSCM) di Cikini, Jakarta.<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;">Saat itu, beberapa perkumpulan atau organisasi perawat telah tercatat. Misalnya saja Perkumpulan Kaum Verpleger fster Indonesia (PKVI), Persatuan Djuru Kesehatan Indonesia (PDKI), Persatuan Perawat Indonesia (PPI), dan Ikatan Perawat Indonesia (IPI).<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;">Sejumlah organisasi di atas mengadakan pertemuan di Bandung yang dipimpin oleh Maskoed Soerjasumantri. Pertemuan itu menghasilkan kesepakatan terbentuknya satu wadah bernama Persatuan Perawat Indonesia.<br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;"><br style="-webkit-font-smoothing: antialiased; backface-visibility: hidden;">Peringatan Hari Perawat Nasional Indonesia kali ini menandai 48 tahun usia PPNI.<br></p></p>
+                'nama' => 'CATATAN KITA #01',
+                'slug' => 'catatan-kita-01',
+                'foto' => '/assets/artikel/catatan-ki16746164050.png',
+            'detail' => '<p style="text-align: center; line-height: 1.5;"><br><p style="line-height: 1.5;"><br></p><p style="line-height: 1.5;"><img style="width: 913px;" data-bs-filename="WhatsApp Image 2022-01-27 at 19.31.43 (5).jpeg" src="/assets/artikel/catatan-ki16746164050.png"></p><p style="line-height: 1.5;"><br></p><p class="MsoNormal" align="center" style="text-align:center;"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">CATATAN KITA #01</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Kita semua ini adalah biasa dalam pandangan orang tidak mengenal kita..</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Kita adalah orang yang menarik di mata orang yang mahami kita..</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Kita istimewa di mata orang yang mencintai kita..</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Kita adalah pribadi yang menjengkelkan di mata orang yang hasad terhadap kita..</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Kita adalah orang yang jahat di mata orang yang iri padap kita..</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Dan pada akhirnya setiap orang memiliki persepsi masing-masing terhadap kita, maka tak usah berlelah-lelah agar tampak baik dan sempurna di depan orang lain... </span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Sesungguhnya mencari keridhoan manusia itu tujuan yang tidak akan pernah tercapai.</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Sedangkan mencari keridhoan Tuhan mu adalah hal utama.</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">Maka tinggalkanlah apa yang tak bisa kau capai,dan fokuslah pada sesuatu yang tak boleh kau tinggalkan ...</span><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;"><p></p></span></p><p class="MsoNormal"><span style="mso-spacerun:\'yes\';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:\'Times New Roman\';font-size:12,0000pt;">&nbsp;</span></p><p></p></p>
 ',
-                'excerpt' => 'Pada tahun ini, peringatan Hari Perawat Nasional 2022 masih tetap berlangsung di tengah pandemi Covid-19. Peringatan tersebut mengambil tema \'Perawat Bersama Rakyat Menuju Bangsa Sehat Bebas dari Covid-19\'.',
+                'excerpt' => 'Catatan Kita adalah catatan kecil tentang perjalanan hidup yang sayang kalau terlewatkan sehingga dirasa sangat tepat apabila berbagai pengalaman maupun perasaan yang ada itu didokumentasikan agar tidak menguap begitu saja hilang ditelan waktu.',
                 'counter' => '2',
                 'date' => '2022-03-17',
                 'status' => '1',
                 'created_at' => '2022-04-25 12:41:10',
-                'updated_at' => '2023-01-15 14:11:32',
+                'updated_at' => '2023-01-25 10:13:25',
                 'user_id' => '1',
             ),
             7 => 
@@ -545,28 +193,44 @@ Goals Report 2021<p></p></span></p><p class="MsoNormal" style="margin-bottom: 11
                 'detail' => '<p><br><div class="embed-container"><br></div><div class="embed-container"><iframe src="https://www.youtube.com/embed/WH1SduDRL_Y?autoplay=1&amp;fs=1&amp;iv_load_policy=&amp;showinfo=1&amp;rel=0&amp;cc_load_policy=1&amp;start=0&amp;modestbranding&amp;end=0&amp;controls=1" frameborder="0" width="100%" height="500px" type="text/html" allowfullscreen="true"></iframe></div><p></p></p>
 ',
                 'excerpt' => 'Testing video youtube',
-                'counter' => '6',
+                'counter' => '7',
                 'date' => '2022-04-27',
                 'status' => '1',
                 'created_at' => '2022-04-28 07:19:02',
-                'updated_at' => '2023-01-15 15:51:13',
+                'updated_at' => '2023-01-23 11:41:08',
                 'user_id' => '1',
             ),
             10 => 
             array (
-                'id' => '37',
-                'nama' => 'Tema Hari Buku dan Hak Cipta Sedunia 23 April 2022',
-                'slug' => 'tema-hari-buku-dan-hak-cipta-sedunia-23-april-2022',
-                'foto' => '/assets/artikel/tema-hari-16737731580.png',
-                'detail' => '<p><img style="width: 799px;" data-bs-filename="Class Diagram.jpg" src="/assets/artikel/tema-hari-16737731580.png"><p>UNESCO menciptakan World Book and Copyright Day untuk meningkatkan kesadaran bahwa membaca adalah hal yang sangat penting dan banyak mempengaruhi kehidupan.<br></p></p>
+                'id' => '38',
+                'nama' => 'Selamat Datang di website Green Education Bandung',
+                'slug' => 'selamat-datang-di-website-green-education-bandung',
+                'foto' => '/assets/artikel/selamat-da16744479300.png',
+                'detail' => '<p><img style="width: 1130.4px;" data-bs-filename="selamat-da16744448210.png" src="/assets/artikel/selamat-da16744479300.png"><br><p>Selamat Datang di laman Green Education Bandung, Yayasan Pendidikan Bandung Hijau..</p><p>Silahkan menghubungi kami di kontak atau link media sosial kami, mudah-mudahan kami dapat membantu kebutuhan anda semua.</p><p>Salam Hijau Lestari&nbsp;</p></p>
 ',
-                'excerpt' => 'UNESCO menciptakan World Book and Copyright Day untuk meningkatkan kesadaran bahwa membaca adalah hal yang sangat penting dan banyak mempengaruhi kehidupan.',
-                'counter' => '5',
-                'date' => '2023-01-15',
+                'excerpt' => 'Website Green Education Bandung untuk memudahkan komunikasi dan informasi kegiatan, produk, serta apapun dari GEB yang sekarang sudah menjadi yayasan pendidikan bandung hijau.',
+                'counter' => '8',
+                'date' => '2023-01-23',
                 'status' => '1',
-                'created_at' => '2023-01-15 15:50:50',
-                'updated_at' => '2023-01-15 15:59:33',
-                'user_id' => NULL,
+                'created_at' => '2023-01-23 11:25:30',
+                'updated_at' => '2023-01-23 12:25:53',
+                'user_id' => '3',
+            ),
+            11 => 
+            array (
+                'id' => '39',
+                'nama' => 'Brosur',
+                'slug' => 'brosur',
+                'foto' => NULL,
+                'detail' => '<p><a href="https://drive.google.com/file/d/1u--wV3KwQlykbCIKpFgxylqYIWNgIhAM/view?usp=sharing" target="_blank">Brosur</a><p><br><br></p></p>
+',
+                'excerpt' => 'Testing Brour',
+                'counter' => '2',
+                'date' => '2023-01-27',
+                'status' => '1',
+                'created_at' => '2023-01-27 00:27:50',
+                'updated_at' => '2023-01-27 00:28:06',
+                'user_id' => '3',
             ),
         ));
         

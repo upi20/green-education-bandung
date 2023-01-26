@@ -151,6 +151,7 @@ class ArtikelController extends Controller
             $model->excerpt = $request->excerpt;
             $model->date = $request->date;
             $model->status = $request->status;
+            $model->slug = $request->slug;
             // $model->updated_by = auth()->user()->id;
 
             $this->kategori_store($request->kategori, $model->id);

@@ -46,6 +46,33 @@ class ArtikelTagTableSeeder extends Seeder
                 'created_at' => '2022-04-17 15:13:33',
                 'updated_at' => '2022-04-17 15:13:33',
             ),
+            3 => 
+            array (
+                'id' => '5',
+                'nama' => 'tanaman hias',
+                'slug' => 'tanaman-hias',
+                'status' => '1',
+                'created_at' => '2023-01-23 11:39:45',
+                'updated_at' => '2023-01-23 11:39:45',
+            ),
+            4 => 
+            array (
+                'id' => '6',
+                'nama' => 'rental',
+                'slug' => 'rental',
+                'status' => '1',
+                'created_at' => '2023-01-23 11:39:45',
+                'updated_at' => '2023-01-23 11:39:45',
+            ),
+            5 => 
+            array (
+                'id' => '11',
+                'nama' => 'tentang kita',
+                'slug' => 'tentang-kita',
+                'status' => '1',
+                'created_at' => '2023-01-25 10:13:25',
+                'updated_at' => '2023-01-25 10:13:25',
+            ),
         ));
         
         

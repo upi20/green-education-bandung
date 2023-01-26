@@ -71,7 +71,7 @@ class ArtikelController extends Controller
             'type' => 'article',
             'description' => $model->excerpt,
             'keywords' =>  $keyword,
-            'author' => $user->name,
+            'author' => is_null($user) ? '' : $user->name,
             'navigation' => 'artikel',
             'image' => $foto,
         ];

@@ -69,6 +69,36 @@ class ArtikelKategoriTableSeeder extends Seeder
                 'created_at' => '2022-04-25 12:46:55',
                 'updated_at' => '2022-04-25 12:46:55',
             ),
+            5 => 
+            array (
+                'id' => '7',
+                'nama' => 'rental',
+                'slug' => 'rental',
+                'foto' => NULL,
+                'status' => '1',
+                'created_at' => '2023-01-23 11:39:44',
+                'updated_at' => '2023-01-23 11:39:44',
+            ),
+            6 => 
+            array (
+                'id' => '8',
+                'nama' => 'tanaman hias',
+                'slug' => 'tanaman-hias',
+                'foto' => NULL,
+                'status' => '1',
+                'created_at' => '2023-01-23 11:39:44',
+                'updated_at' => '2023-01-23 11:39:44',
+            ),
+            7 => 
+            array (
+                'id' => '13',
+                'nama' => 'catatan kita',
+                'slug' => 'catatan-kita',
+                'foto' => NULL,
+                'status' => '1',
+                'created_at' => '2023-01-25 10:13:25',
+                'updated_at' => '2023-01-25 10:13:25',
+            ),
         ));
         
         

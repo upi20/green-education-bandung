@@ -23,10 +23,10 @@ class HomeSlidersTableSeeder extends Seeder
             array (
                 'id' => '3',
                 'nama' => '1',
-                'foto' => '20230117223936.jpeg',
+                'foto' => '20230124152804.jpeg',
                 'tampilkan' => 'Ya',
                 'created_at' => '2023-01-17 22:39:36',
-                'updated_at' => '2023-01-17 22:46:51',
+                'updated_at' => '2023-01-24 15:28:04',
             ),
             1 => 
             array (
@@ -50,10 +50,10 @@ class HomeSlidersTableSeeder extends Seeder
             array (
                 'id' => '6',
                 'nama' => '4',
-                'foto' => '20230117224037.jpeg',
+                'foto' => '20230124152929.jpeg',
                 'tampilkan' => 'Ya',
                 'created_at' => '2023-01-17 22:40:37',
-                'updated_at' => '2023-01-17 22:47:14',
+                'updated_at' => '2023-01-24 15:29:29',
             ),
             4 => 
             array (

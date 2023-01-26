@@ -35,22 +35,22 @@ class StruktursTableSeeder extends Seeder
                 'id' => '2',
                 'urutan' => '3',
                 'nama' => 'Boy Hidayat',
-                'jabatan' => 'Ketua Yayasan',
+                'jabatan' => 'Direktur Eksekutif',
                 'foto' => '20230118003200.jpeg',
                 'tampilkan' => 'Ya',
                 'created_at' => '2023-01-18 00:32:00',
-                'updated_at' => '2023-01-18 00:32:00',
+                'updated_at' => '2023-01-23 10:35:21',
             ),
             2 => 
             array (
                 'id' => '3',
                 'urutan' => '4',
                 'nama' => 'Dadan S. Sumardja',
-                'jabatan' => 'Sekertaris',
+                'jabatan' => 'Sekretaris Eksekutif',
                 'foto' => '20230118003218.jpg',
                 'tampilkan' => 'Ya',
                 'created_at' => '2023-01-18 00:32:18',
-                'updated_at' => '2023-01-18 00:32:18',
+                'updated_at' => '2023-01-23 10:34:44',
             ),
             3 => 
             array (
@@ -58,10 +58,10 @@ class StruktursTableSeeder extends Seeder
                 'urutan' => '5',
                 'nama' => 'Chiechie Sari Rachma',
                 'jabatan' => 'Bendahara',
-                'foto' => '20230118003403.jpeg',
+                'foto' => '20230124154535.jpeg',
                 'tampilkan' => 'Ya',
                 'created_at' => '2023-01-18 00:32:41',
-                'updated_at' => '2023-01-18 00:34:03',
+                'updated_at' => '2023-01-24 15:45:35',
             ),
             4 => 
             array (
@@ -70,9 +70,9 @@ class StruktursTableSeeder extends Seeder
                 'nama' => 'Rudi',
                 'jabatan' => 'Dewan Pengawas',
                 'foto' => '20230118003333.png',
-                'tampilkan' => 'Ya',
+                'tampilkan' => 'Tidak',
                 'created_at' => '2023-01-18 00:33:33',
-                'updated_at' => '2023-01-18 00:33:33',
+                'updated_at' => '2023-01-23 10:36:24',
             ),
         ));
         
