@@ -97,6 +97,10 @@ class backup extends Command
             'setting' => [
                 'home_sliders',
             ],
+            'produk' => [
+                'produk_kategoris',
+                'produks',
+            ],
         ];
         if ($opt_users == 1 || $arg_type == 'users') echo shell_exec('php artisan iseed users --force');
         foreach ($tables as $k => $t) {

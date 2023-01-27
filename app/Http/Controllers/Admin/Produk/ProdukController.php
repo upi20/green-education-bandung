@@ -25,7 +25,6 @@ class ProdukController extends Controller
 
     private $query = [];
     private $key = 'setting.produk';
-    private $folder_image = Produk::image_folder;
 
     public function index(Request $request)
     {
@@ -44,7 +43,12 @@ class ProdukController extends Controller
             'visible' => settings()->get("$this->key.visible"),
             'title' => settings()->get("$this->key.title"),
             'sub_title' => settings()->get("$this->key.sub_title"),
-            'image' => settings()->get("$this->key.image"),
+            'btn_title' => settings()->get("$this->key.btn_title"),
+            'no_whatsapp' => settings()->get("$this->key.no_whatsapp"),
+            'home_paginate' => settings()->get("$this->key.home_paginate"),
+            'produk_title' => settings()->get("$this->key.produk_title"),
+            'produk_sub_title' => settings()->get("$this->key.produk_sub_title"),
+            'produk_paginate' => settings()->get("$this->key.produk_paginate"),
         ];
         return view('admin.produk.produk', compact('page_attr', 'image_folder', 'setting', 'kategoris'));
     }
@@ -265,25 +269,14 @@ class ProdukController extends Controller
         settings()->set("$this->key.visible", $request->visible != null)->save();
         settings()->set("$this->key.title", $request->title)->save();
         settings()->set("$this->key.sub_title", $request->sub_title)->save();
+        settings()->set("$this->key.no_whatsapp", $request->no_whatsapp)->save();
+        settings()->set("$this->key.btn_title", $request->btn_title)->save();
+        settings()->set("$this->key.home_paginate", $request->home_paginate)->save();
+        settings()->set("$this->key.produk_title", $request->produk_title)->save();
+        settings()->set("$this->key.produk_sub_title", $request->produk_sub_title)->save();
+        settings()->set("$this->key.produk_paginate", $request->produk_paginate)->save();
 
-        // image
-        $key = 'image';
-        $current = settings()->get("$this->key.$key");
-        if ($image = $request->file($key)) {
-            // delete foto
-            $folder = $this->folder_image;
-            if ($current) {
-                $path = public_path("$folder/$current");
-                delete_file($path);
-            }
 
-            $foto = "$folder/struktur." . $image->getClientOriginalExtension();
-            $image->move(public_path($folder), $foto);
-            $current = $foto;
-            // save foto
-            settings()->set("$this->key.$key", $foto)->save();
-        }
-
-        return response()->json(['foto' => $current]);
+        return response()->json(['foto' => '']);
     }
 }

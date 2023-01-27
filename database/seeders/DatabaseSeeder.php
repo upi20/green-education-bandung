@@ -49,5 +49,7 @@ class DatabaseSeeder extends Seeder
         $this->call(FaqTableSeeder::class);
         $this->call(HomeSlidersTableSeeder::class);
         $this->call(StruktursTableSeeder::class);
+        $this->call(ProdukKategorisTableSeeder::class);
+        $this->call(ProduksTableSeeder::class);
     }
 }

@@ -18,10 +18,9 @@ use App\Http\Controllers\LoaderController;
 // Frontend ===========================================================================================================
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\KontakController;
-use App\Http\Controllers\Frontend\MemberController;
-use App\Http\Controllers\Frontend\GaleriController as GaleriControllerFrontend;
+use App\Http\Controllers\Frontend\GaleriController;
 use App\Http\Controllers\Frontend\ArtikelController;
-
+use App\Http\Controllers\Frontend\ProdukController;
 
 // ====================================================================================================================
 // ====================================================================================================================
@@ -50,6 +49,14 @@ Route::controller(ArtikelController::class)->prefix($prefix)->group(function () 
 });
 // ====================================================================================================================
 
+// produk =============================================================================================================
+$prefix = 'produk';
+Route::controller(ProdukController::class)->prefix($prefix)->group(function () use ($prefix) {
+    Route::get('/', 'index')->name($prefix);
+    Route::get('/{model:slug}', 'detail')->name("$prefix.detail");
+});
+// ====================================================================================================================
+
 
 
 // Kontak =============================================================================================================
@@ -64,7 +71,7 @@ Route::controller(KontakController::class)->prefix($name)->group(function () use
 
 // Galeri =============================================================================================================
 $name = 'galeri';
-Route::controller(GaleriControllerFrontend::class)->prefix($name)->group(function () use ($name) {
+Route::controller(GaleriController::class)->prefix($name)->group(function () use ($name) {
     Route::get('/', 'index')->name($name);
     Route::get('/detail/{model:slug}', 'detail')->name("$name.detail");
 });

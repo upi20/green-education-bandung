@@ -45,34 +45,52 @@
                                                 <span class="custom-switch-description">Tampilkan</span>
                                             </label>
 
-                                            <div class="form-group">
-                                                <label class="form-label" for="title">Judul<span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" id="title" name="title" class="form-control"
-                                                    placeholder="Judul" value="{{ $setting->title }}" required />
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="title">Judul<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" id="title" name="title"
+                                                            class="form-control" placeholder="Judul"
+                                                            value="{{ $setting->title }}" required />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="sub_title">Sub Judul<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" id="sub_title" name="sub_title"
+                                                            class="form-control" placeholder="Sub Judul"
+                                                            value="{{ $setting->sub_title }}" required />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="btn_title">Teks Di Tombol<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" id="btn_title" name="btn_title"
+                                                            class="form-control" placeholder="Sub Judul"
+                                                            value="{{ $setting->btn_title }}" required />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="home_paginate">
+                                                            Jumlah Kategori Ditampilkan Didepan
+                                                            <span class="text-danger">*</span></label>
+                                                        <input type="number" min="2" id="home_paginate"
+                                                            name="home_paginate" class="form-control"
+                                                            placeholder="Sub Judul" value="{{ $setting->home_paginate }}"
+                                                            required />
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="form-group">
-                                                <label class="form-label" for="sub_title">Sub Judul<span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" id="sub_title" name="sub_title" class="form-control"
-                                                    placeholder="Sub Judul" value="{{ $setting->sub_title }}" required />
-                                            </div>
 
-                                            <div class="form-group">
-                                                <label class="form-label">Foto Latar Belakang
-                                                    <span class="badge bg-primary" id="deskripsi_foto"
-                                                        onclick='viewImage(`{{ $setting->image }}`, `Foto Latar Belakang`)'>
-                                                        Lihat
-                                                    </span>
-                                                </label>
-                                                <input type="file" accept="image/*" id="image" name="image"
-                                                    class="form-control" />
-                                            </div>
                                         </form>
                                         <div style="clear: both"></div>
                                         <button type="submit" form="setting_form" class="btn btn-rounded btn-md btn-info"
-                                            data-toggle="tooltip" title="Simpan Setting" id="setting_btn_submit">
+                                            data-toggle="tooltip" title="Simpan Setting">
                                             <li class="fas fa-save mr-1"></li> Simpan
                                         </button>
                                     </div>

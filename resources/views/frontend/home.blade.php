@@ -312,20 +312,23 @@
         </section>
     @endif
 
-    @if (true)
+    @php
+        $k = 'setting.produk.kategori';
+    @endphp
+    @if (settings()->get("$k.visible"))
         <section class="layout-pt-lg layout-pb-lg">
             <div data-anim-wrap class="container">
                 <div class="row y-gap-20 justify-between items-end">
                     <div class="col-lg-6" data-anim-child="slide-right delay-1">
                         <div class="sectionTitle ">
-                            <h2 class="sectionTitle__title">Kategori Produk</h2>
-                            <p class="sectionTitle__text">Daftar Kategori Produk</p>
+                            <h2 class="sectionTitle__title ">{{ settings()->get("$k.title") }}</h2>
+                            <p class="sectionTitle__text ">{{ settings()->get("$k.sub_title") }}</p>
                         </div>
                     </div>
 
                     <div class="col-auto" data-anim-child="slide-left delay-2">
                         <a href="{{ url('produk') }}" class="button -icon -green-1 text-white">
-                            Semua Produk
+                            {{ settings()->get("$k.btn_title") }}
                             <i class="icon-arrow-top-right text-13 ml-10"></i>
                         </a>
                     </div>
@@ -334,7 +337,7 @@
                 <div class="row y-gap-50 pt-60 lg:pt-50">
                     @foreach ($produk_kategories as $i => $kategori)
                         <div class="col-xl-3 col-lg-4 col-sm-6" data-anim-child="slide-right delay-{{ $i + 3 }}">
-                            <a href="{{ url("produk/kategori/$kategori->slug") }}" class="categoryCard -type-2">
+                            <a href="{{ url("produk?kategori=$kategori->slug") }}" class="categoryCard -type-2">
                                 <div class="categoryCard__image mr-20">
                                     <img src="{{ asset("$produk_kategori_folder/$kategori->foto") }}"
                                         alt="{{ $kategori->nama }}"
@@ -356,9 +359,15 @@
                 </div>
             </div>
         </section>
+    @else
+        <section class="layout-pt-lg" data-anim-wrap>
+        </section>
     @endif
 
-    @if (true)
+    @php
+        $k = 'setting.produk';
+    @endphp
+    @if (settings()->get("$k.visible"))
         <section class="layout-pt-lg layout-pb-lg section-bg">
             <div class="section-bg__item bg-light-6"></div>
 
@@ -366,9 +375,15 @@
                 <div class="row y-gap-15 justify-between items-center" data-anim-child="slide-right delay-1">
                     <div class="col-lg-6">
                         <div class="sectionTitle ">
-                            <h2 class="sectionTitle__title ">Produk Terbaru</h2>
-                            <p class="sectionTitle__text ">Daftar Produk Terbaru Kami.</p>
+                            <h2 class="sectionTitle__title ">{{ settings()->get("$k.title") }}</h2>
+                            <p class="sectionTitle__text ">{{ settings()->get("$k.sub_title") }}</p>
                         </div>
+                    </div>
+                    <div class="col-auto" data-anim-child="slide-left delay-2">
+                        <a href="{{ url('produk') }}" class="button -icon -green-1 text-white">
+                            {{ settings()->get("$k.btn_title", 'Lihat Semua Produk') }}
+                            <i class="icon-arrow-top-right text-13 ml-10"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -391,11 +406,14 @@
                                                 </div>
                                                 <div class="d-flex justify-between py-10 px-10 absolute-full-center z-3">
                                                     <div>
-                                                        <div class="px-15 rounded-200 bg-green-1">
-                                                            <span class="text-11 lh-1 uppercase fw-500 text-dark-1">
-                                                                {{ is_null($produk->kategori) ? '' : $produk->kategori->nama }}
-                                                            </span>
-                                                        </div>
+                                                        @if (!is_null($produk->kategori))
+                                                            <a href="{{ url('produk?kategori=' . $produk->kategori->slug) }}"
+                                                                class="px-15 rounded-200 bg-green-1">
+                                                                <span class="text-11 lh-1 uppercase fw-500 text-white">
+                                                                    {{ $produk->kategori->nama }}
+                                                                </span>
+                                                            </a>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
@@ -408,7 +426,7 @@
                                                 <div class="coursesCard-footer">
                                                     <div class="coursesCard-footer__author">
                                                         <a target="_blank"
-                                                            href="https://api.whatsapp.com/send?phone=6281322728628&text=Saya tertarik dengan {{ $produk->nama }}">
+                                                            href="https://api.whatsapp.com/send?phone={{ settings()->get('setting.produk.no_whatsapp') }}&text=Saya tertarik dengan {{ $produk->nama }}">
                                                             <i class="fab fa-whatsapp text-success"
                                                                 style="font-size: 1.5em"></i>
                                                             Whatsapp
