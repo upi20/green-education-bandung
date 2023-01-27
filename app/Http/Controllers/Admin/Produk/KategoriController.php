@@ -58,6 +58,7 @@ class KategoriController extends Controller
             }
 
             $model->foto = $foto;
+            $model->keterangan = $request->keterangan;
             $model->nama = $request->nama;
             $model->save();
             return response()->json();

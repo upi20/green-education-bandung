@@ -283,7 +283,7 @@
         const can_delete = {{ $can_delete ? 'true' : 'false' }};
         const is_admin = {{ $is_admin ? 'true' : 'false' }};
         const table_html = $('#tbl_main');
-        let isUbah = true;
+        let isEdit = true;
         const image_url = '{{ asset($image_folder) }}';
         $(document).ready(function() {
             // datatable ====================================================================================
@@ -408,7 +408,7 @@
                             showConfirmButton: false,
                             timer: 1500
                         })
-                        isUbah = true;
+                        isEdit = true;
 
                     },
                     error: function(data) {
@@ -486,7 +486,7 @@
             $('#lihat-foto').hide();
             $('#foto').attr('required', '');
             resetErrorAfterInput();
-            isUbah = false;
+            isEdit = false;
             return true;
         }
 
@@ -502,7 +502,7 @@
                     id
                 },
                 success: (data) => {
-                    isUbah = true;
+                    isEdit = true;
                     $('#modal-default-title').html("Ubah Produk");
                     $('#modal-default').modal('show');
                     $('#id').val(data.id);
