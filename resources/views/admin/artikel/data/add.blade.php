@@ -1,20 +1,20 @@
 @extends('templates.admin.master')
 @php
-$is_edit = isset($edit);
-$min = $is_edit ? 2 : 1;
-$id = $is_edit ? $artikel->id : '';
-$route = $is_edit ? route(h_prefix('update', $min)) : route(h_prefix('insert', $min));
-$nama = $is_edit ? $artikel->nama : '';
-$date = $is_edit ? explode(' ', $artikel->date)[0] : '';
-$slug = $is_edit ? $artikel->slug : '';
-$excerpt = $is_edit ? $artikel->excerpt : '';
-$detail = $is_edit ? $artikel->detail : '';
-$detail = $is_edit ? $artikel->detail : '';
-$status = $is_edit ? $artikel->status : 1;
-$status = [$status == 0 ? 'checked' : '', $status == 1 ? 'checked' : ''];
-
-$kategori = isset($kategori) ? $kategori : [];
-$tag = isset($tag) ? $tag : [];
+    $is_edit = isset($edit);
+    $min = $is_edit ? 2 : 1;
+    $id = $is_edit ? $artikel->id : '';
+    $route = $is_edit ? route(h_prefix('update', $min)) : route(h_prefix('insert', $min));
+    $nama = $is_edit ? $artikel->nama : '';
+    $date = $is_edit ? explode(' ', $artikel->date)[0] : '';
+    $slug = $is_edit ? $artikel->slug : '';
+    $excerpt = $is_edit ? $artikel->excerpt : '';
+    $detail = $is_edit ? $artikel->detail : '';
+    $detail = $is_edit ? $artikel->detail : '';
+    $status = $is_edit ? $artikel->status : 1;
+    $status = [$status == 0 ? 'checked' : '', $status == 1 ? 'checked' : ''];
+    
+    $kategori = isset($kategori) ? $kategori : [];
+    $tag = isset($tag) ? $tag : [];
 @endphp
 @section('content')
     <div class="card">
@@ -189,13 +189,13 @@ $tag = isset($tag) ? $tag : [];
                     myVideo: function(context) {
                         var ui = $.summernote.ui;
                         var button = ui.button({
-                            contents: '<i class="fa fa-video-camera"/>',
+                            contents: '<i class="fab fa-youtube"></i>',
                             tooltip: 'video',
                             click: function() {
                                 var div = document.createElement('div');
                                 div.classList.add('embed-container');
                                 var iframe = document.createElement('iframe');
-                                var src = prompt('Enter video url:');
+                                var src = prompt('Masukan Link Video Youtube:');
                                 src = youtube_parser(src);
                                 iframe.src =
                                     `https://www.youtube.com/embed/${src}?autoplay=1&fs=1&iv_load_policy=&showinfo=1&rel=0&cc_load_policy=1&start=0&modestbranding&end=0&controls=1`;
