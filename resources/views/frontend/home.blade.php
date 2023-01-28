@@ -74,10 +74,10 @@
                     style="opacity: 0.7; background-size: contain;background-repeat: inherit;"></div>
             </div>
             <div class="bg-green-1">
-                <div class="container pb-90 pt-60">
-                    <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
+                <div class="container pb-90 pt-40">
+                    <p class="text-30 md:text-30 text-white" data-anim-child="slide-up delay-1" style="line-height: 35px">
                         {{ settings()->get("$k.deskripsi1") }}
-                    </h2>
+                    </p>
                 </div>
             </div>
         </section>
@@ -89,11 +89,12 @@
             <div class="row">
                 <div class="col-lg-6 description-2"></div>
                 <div class="col-lg-6">
-                    <div class="bg-green-1 pl-lg-60 pt-60 pb-90">
+                    <div class="bg-green-1 pl-lg-60 pt-40 pb-90">
                         <div style="max-width: 720px" class="container-lg">
-                            <h2 class="text-30md:text-30 text-white" data-anim-child="slide-up delay-1">
+                            <p class="text-30 md:text-30 text-white" data-anim-child="slide-up delay-1"
+                                style="line-height: 35px">
                                 {{ settings()->get("$k.deskripsi2") }}
-                            </h2>
+                            </p>
                         </div>
                     </div>
                 </div>
