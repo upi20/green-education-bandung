@@ -242,7 +242,7 @@
                         name: 'id',
                         render(data, type, full, meta) {
                             return `
-                                <button type="button" class="btn btn-rounded btn-info btn-sm" title="Delete Data" onClick="detail('${data}')">
+                                <button type="button" class="btn btn-rounded btn-info btn-sm" title="Hapus Data" onClick="detail('${data}')">
                                 <i class="fas fa-eye" aria-hidden="true"></i>
                                 </button>
                                 `;
@@ -274,7 +274,7 @@
                                 onClick="editFunc(this)">
                                 <i class="fas fa-edit"></i> Ubah
                                 </button>
-                                <button type="button" class="btn btn-rounded btn-danger btn-sm" title="Delete Data" onClick="deleteFunc('${data}')">
+                                <button type="button" class="btn btn-rounded btn-danger btn-sm" title="Hapus Data" onClick="deleteFunc('${data}')">
                                 <i class="fas fa-trash"></i> Hapus
                                 </button>
                                 `;
@@ -284,10 +284,14 @@
                 ],
                 order: [
                     [4, 'asc']
-                ]
+                ],
+                language: {
+                    url: datatable_indonesia_language_url
+                }
             });
 
             new_table.on('draw.dt', function() {
+                tooltip_refresh();
                 var PageInfo = table_html.DataTable().page.info();
                 new_table.column(0, {
                     page: 'current'

@@ -51,7 +51,7 @@
                                         <div style="clear: both"></div>
                                         <button type="submit" form="setting_form" class="btn btn-rounded btn-md btn-info"
                                             data-toggle="tooltip" title="Simpan Setting" id="setting_btn_submit">
-                                            <li class="fas fa-save mr-1"></li> Save Changes
+                                            <li class="fas fa-save mr-1"></li> Simpan Perubahan
                                         </button>
                                     </div>
                                 </div>
@@ -97,9 +97,7 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
-                                <th>Keterangan</th>
-                                <th>Icon</th>
+                                <th>Kontak</th>
                                 <th>Link</th>
                                 <th>Urutan</th>
                                 <th>Status</th>
@@ -120,7 +118,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
-                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Close" class="btn-close"
+                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Tutup" class="btn-close"
                         data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
@@ -166,11 +164,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary" id="btn-save" form="MainForm">
-                        <li class="fas fa-save mr-1"></li> Save changes
+                        <li class="fas fa-save mr-1"></li> Simpan Perubahan
                     </button>
                     <button class="btn btn-light" data-bs-dismiss="modal">
                         <i class="fas fa-times"></i>
-                        Close
+                        Tutup
                     </button>
                 </div>
             </div>
@@ -231,18 +229,16 @@
                     {
                         data: 'nama',
                         name: 'nama',
-                    },
-                    {
-                        data: 'keterangan',
-                        name: 'keterangan',
-                    },
-                    {
-                        data: 'icon',
-                        name: 'icon'
+                        render(data, type, full, meta) {
+                            return `${data}<br><small>${full.keterangan}</small>`;
+                        },
                     },
                     {
                         data: 'url',
-                        name: 'url'
+                        name: 'url',
+                        render(data, type, full, meta) {
+                            return `${data}<br><small><i class="${full.icon} ms-0 me-2"></i>${full.icon}</small>`;
+                        },
                     },
                     {
                         data: 'order',
@@ -250,29 +246,36 @@
                     },
                     {
                         data: 'status_str',
-                        name: 'status'
+                        name: 'status',
+                        render(data, type, full, meta) {
+                            const class_ = full.status == 1 ? 'success' : 'danger';
+                            return `<i class="fas fa-circle text-${class_} ms-0 me-2"></i>${data}`;
+                        },
+                        className: 'text-nowrap'
                     },
                     ...(can_update || can_delete ? [{
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data" onClick="editFunc('${data}')">
-                                <i class="fas fa-edit"></i> Ubah
-                                </button>` : '';
-                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Hapus
-                                </button>` : '';
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${data}')">
+                                <i class="fas fa-edit"></i></button>` : '';
+                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
+                                <i class="fas fa-trash"></i></button>` : '';
                             return btn_update + btn_delete;
                         },
                         orderable: false
                     }] : []),
                 ],
                 order: [
-                    [5, 'asc']
-                ]
+                    [3, 'asc']
+                ],
+                language: {
+                    url: datatable_indonesia_language_url
+                }
             });
 
             new_table.on('draw.dt', function() {
+                tooltip_refresh();
                 var PageInfo = table_html.DataTable().page.info();
                 new_table.column(0, {
                     page: 'current'
@@ -292,7 +295,7 @@
                 e.preventDefault();
                 resetErrorAfterInput();
                 var formData = new FormData(this);
-                setBtnLoading('#btn-save', 'Save Changes');
+                setBtnLoading('#btn-save', 'Simpan Perubahan');
                 const route = ($('#id').val() == '') ?
                     "{{ route(h_prefix('insert')) }}" :
                     "{{ route(h_prefix('update')) }}";
@@ -313,7 +316,7 @@
                         Swal.fire({
                             position: 'center',
                             icon: 'success',
-                            title: 'Data saved successfully',
+                            title: 'Data berhasil disimpan',
                             showConfirmButton: false,
                             timer: 1500
                         })
@@ -336,7 +339,7 @@
                     },
                     complete: function() {
                         setBtnLoading('#btn-save',
-                            '<li class="fas fa-save mr-1"></li> Save changes',
+                            '<li class="fas fa-save mr-1"></li> Simpan Perubahan',
                             false);
                     }
                 });
@@ -348,7 +351,7 @@
                     e.preventDefault();
                     resetErrorAfterInput();
                     var formData = new FormData(this);
-                    setBtnLoading('#setting_btn_submit', 'Save Changes');
+                    setBtnLoading('#setting_btn_submit', 'Simpan Perubahan');
                     $.ajax({
                         type: "POST",
                         url: "{{ route(h_prefix('setting')) }}",
@@ -363,7 +366,7 @@
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'Data saved successfully',
+                                title: 'Data berhasil disimpan',
                                 showConfirmButton: false,
                                 timer: 1500
                             })
@@ -385,7 +388,7 @@
                         },
                         complete: function() {
                             setBtnLoading('#setting_btn_submit',
-                                '<li class="fas fa-save mr-1"></li> Save changes',
+                                '<li class="fas fa-save mr-1"></li> Simpan Perubahan',
                                 false);
                         }
                     });
@@ -394,7 +397,7 @@
         });
 
         function add() {
-            if (!isEdit) return false;
+            if (!isUbah) return false;
             $('#MainForm').trigger("reset");
             $('#modal-default-title').html("Tambah {{ $page_attr['title'] }}");
             $('#modal-default').modal('show');
@@ -446,8 +449,8 @@
 
         function deleteFunc(id) {
             swal.fire({
-                title: 'Are you sure?',
-                text: "Are you sure you want to proceed ?",
+                title: 'Apakah anda yakin?',
+                text: "Apakah anda yakin akan menghapus data ini ?",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonText: 'Yes'
@@ -473,7 +476,7 @@
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: '{{ $page_attr['title'] }} deleted successfully',
+                                title: 'Berhasil Menghapus Data',
                                 showConfirmButton: false,
                                 timer: 1500
                             })

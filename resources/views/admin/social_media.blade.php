@@ -57,11 +57,9 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
-                                <th>Icon</th>
+                                <th>Sosial Media</th>
                                 <th>Url</th>
                                 <th>No Urut</th>
-                                <th>Keterangan</th>
                                 <th>Status</th>
                                 {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
                             </tr>
@@ -77,7 +75,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
-                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Close" class="btn-close"
+                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Tutup" class="btn-close"
                         data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
@@ -97,7 +95,7 @@
                         <div class="form-group">
                             <label class="form-label" for="url">Link <span class="text-danger">*</span></label>
                             <input type="url" class="form-control" id="url" name="url"
-                                placeholder="Link Social Media" required="" />
+                                placeholder="Link Sosial Media" required="" />
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="order">Nomor Urut <span
@@ -123,11 +121,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary" id="btn-save" form="MainForm">
-                        <li class="fas fa-save mr-1"></li> Save changes
+                        <li class="fas fa-save mr-1"></li> Simpan Perubahan
                     </button>
                     <button class="btn btn-light" data-bs-dismiss="modal">
                         <i class="fas fa-times"></i>
-                        Close
+                        Tutup
                     </button>
                 </div>
             </div>
@@ -183,26 +181,21 @@
                     },
                     {
                         data: 'nama',
-                        name: 'nama'
-                    },
-                    {
-                        data: 'icon',
-                        name: 'icon',
+                        name: 'nama',
                         render(data, type, full, meta) {
-                            return `<i class="${data}"></i> <span>${data}</span>`;
+                            return `${data}<br><small>${full.keterangan}</small>`;
                         },
                     },
                     {
                         data: 'url',
-                        name: 'url'
+                        name: 'url',
+                        render(data, type, full, meta) {
+                            return `${data}<br><small><i class="${full.icon}"></i> <span>${full.icon}</span></small>`;
+                        },
                     },
                     {
                         data: 'order',
                         name: 'order'
-                    },
-                    {
-                        data: 'keterangan',
-                        name: 'keterangan'
                     },
                     {
                         data: 'status_str',
@@ -218,7 +211,7 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" data-toggle="tooltip" title="Ubah Data"
                                 data-id="${full.id}"
                                 data-nama="${full.nama}"
                                 data-url="${full.url}"
@@ -227,22 +220,24 @@
                                 data-keterangan="${full.keterangan}"
                                 data-order="${full.order}"
                                 onClick="editFunc(this)">
-                                <i class="fas fa-edit"></i> Ubah
-                                </button>` : '';
-                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Hapus
-                                </button>` : '';
+                                <i class="fas fa-edit"></i></button>` : '';
+                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
+                                <i class="fas fa-trash"></i></button>` : '';
                             return btn_update + btn_delete;
                         },
                         orderable: false
                     }] : []),
                 ],
                 order: [
-                    [4, 'asc']
-                ]
+                    [3, 'asc']
+                ],
+                language: {
+                    url: datatable_indonesia_language_url
+                }
             });
 
             new_table.on('draw.dt', function() {
+                tooltip_refresh();
                 var PageInfo = table_html.DataTable().page.info();
                 new_table.column(0, {
                     page: 'current'
@@ -262,7 +257,7 @@
                 e.preventDefault();
                 resetErrorAfterInput();
                 var formData = new FormData(this);
-                setBtnLoading('#btn-save', 'Save Changes');
+                setBtnLoading('#btn-save', 'Simpan Perubahan');
                 const route = ($('#id').val() == '') ?
                     "{{ route(h_prefix('insert')) }}" :
                     "{{ route(h_prefix('update')) }}";
@@ -283,7 +278,7 @@
                         Swal.fire({
                             position: 'center',
                             icon: 'success',
-                            title: 'Data saved successfully',
+                            title: 'Data berhasil disimpan',
                             showConfirmButton: false,
                             timer: 1500
                         })
@@ -306,7 +301,7 @@
                     },
                     complete: function() {
                         setBtnLoading('#btn-save',
-                            '<li class="fas fa-save mr-1"></li> Save changes',
+                            '<li class="fas fa-save mr-1"></li> Simpan Perubahan',
                             false);
                     }
                 });
@@ -315,16 +310,15 @@
 
         function add() {
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Tambah Social Media");
+            $('#modal-default-title').html("Tambah Sosial Media");
             $('#modal-default').modal('show');
             $('#id').val('');
             resetErrorAfterInput();
         }
 
-
         function editFunc(datas) {
             const data = datas.dataset;
-            $('#modal-default-title').html("Ubah Social Media");
+            $('#modal-default-title').html("Ubah Sosial Media");
             $('#modal-default').modal('show');
             $('#MainForm').trigger("reset");
             console.log(data);
@@ -339,8 +333,8 @@
 
         function deleteFunc(id) {
             swal.fire({
-                title: 'Are you sure?',
-                text: "Are you sure you want to proceed ?",
+                title: 'Apakah anda yakin?',
+                text: "Apakah anda yakin akan menghapus data ini ?",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonText: 'Yes'
@@ -366,7 +360,7 @@
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'Social Media  deleted successfully',
+                                title: 'Berhasil Menghapus Data',
                                 showConfirmButton: false,
                                 timer: 1500
                             })

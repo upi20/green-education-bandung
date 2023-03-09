@@ -9,7 +9,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">Tabel {{ $page_attr['title'] }}</h3>
+                    <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
                 </div>
                 <div class="card-body">
                     @if ($can_setting)
@@ -87,7 +87,7 @@
                                         <div style="clear: both"></div>
                                         <button type="submit" form="setting_form" class="btn btn-rounded btn-md btn-info"
                                             data-toggle="tooltip" title="Simpan Setting" id="setting_btn_submit">
-                                            <li class="fas fa-save mr-1"></li> Save Changes
+                                            <li class="fas fa-save mr-1"></li> Simpan Perubahan
                                         </button>
                                     </div>
                                 </div>
@@ -180,10 +180,14 @@
                 ],
                 order: [
                     [4, 'desc']
-                ]
+                ],
+                language: {
+                    url: datatable_indonesia_language_url
+                }
             });
 
             new_table.on('draw.dt', function() {
+                tooltip_refresh();
                 var PageInfo = table_html.DataTable().page.info();
                 new_table.column(0, {
                     page: 'current'
@@ -198,7 +202,7 @@
                     e.preventDefault();
                     resetErrorAfterInput();
                     var formData = new FormData(this);
-                    setBtnLoading('#setting_btn_submit', 'Save Changes');
+                    setBtnLoading('#setting_btn_submit', 'Simpan Perubahan');
                     $.ajax({
                         type: "POST",
                         url: "{{ route(h_prefix('setting')) }}",
@@ -235,7 +239,7 @@
                         },
                         complete: function() {
                             setBtnLoading('#setting_btn_submit',
-                                '<li class="fas fa-save mr-1"></li> Save changes',
+                                '<li class="fas fa-save mr-1"></li> Simpan Perubahan',
                                 false);
                         }
                     });

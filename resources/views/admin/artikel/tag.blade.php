@@ -10,7 +10,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">Tabel {{ $page_attr['title'] }}</h3>
+                    <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
                     @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-success btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="add()" data-target="#modal-default">
@@ -57,7 +57,6 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama</th>
-                                <th>Slug</th>
                                 <th>Artikel</th>
                                 <th>Status</th>
                                 {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
@@ -74,7 +73,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
-                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Close" class="btn-close"
+                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Tutup" class="btn-close"
                         data-bs-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
@@ -83,13 +82,13 @@
                         <input type="hidden" name="id" id="id">
                         <div class="form-group">
                             <label class="form-label" for="nama">Nama <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="nama" name="nama"
-                                placeholder="Enter Nama" required="" />
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama"
+                                required="" />
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="slug">Slug <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="slug" name="slug"
-                                placeholder="Enter Nama" required="" />
+                            <input type="text" class="form-control" id="slug" name="slug" placeholder="Nama"
+                                required="" />
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="status">Status</label>
@@ -103,11 +102,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary" id="btn-save" form="MainForm">
-                        <li class="fas fa-save mr-1"></li> Save changes
+                        <li class="fas fa-save mr-1"></li> Simpan Perubahan
                     </button>
                     <button class="btn btn-light" data-bs-dismiss="modal">
                         <i class="fas fa-times"></i>
-                        Close
+                        Tutup
                     </button>
                 </div>
             </div>
@@ -160,11 +159,10 @@
                     },
                     {
                         data: 'nama',
-                        name: 'nama'
-                    },
-                    {
-                        data: 'slug',
-                        name: 'slug'
+                        name: 'nama',
+                        render(data, type, full, meta) {
+                            return `${data}<br><small>${full.slug}</small>`;
+                        },
                     },
                     {
                         data: 'artikel',
@@ -184,17 +182,15 @@
                         data: 'id',
                         name: 'id',
                         render(data, type, full, meta) {
-                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
+                            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1" data-toggle="tooltip" title="Ubah Data"
                                 data-id="${full.id}"
                                 data-nama="${full.nama}"
                                 data-status="${full.status}"
                                 data-slug="${full.slug}"
                                 onClick="editFunc(this)">
-                                <i class="fas fa-edit"></i> Ubah
-                                </button>` : '';
-                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" title="Delete Data" onClick="deleteFunc('${data}')">
-                                <i class="fas fa-trash"></i> Hapus
-                                </button>` : '';
+                                <i class="fas fa-edit"></i></button>` : '';
+                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
+                                <i class="fas fa-trash"></i></button>` : '';
                             return btn_update + btn_delete;
                         },
                         orderable: false
@@ -202,10 +198,14 @@
                 ],
                 order: [
                     [1, 'asc']
-                ]
+                ],
+                language: {
+                    url: datatable_indonesia_language_url
+                }
             });
 
             new_table.on('draw.dt', function() {
+                tooltip_refresh();
                 var PageInfo = table_html.DataTable().page.info();
                 new_table.column(0, {
                     page: 'current'
@@ -232,7 +232,7 @@
                 e.preventDefault();
                 resetErrorAfterInput();
                 var formData = new FormData(this);
-                setBtnLoading('#btn-save', 'Save Changes');
+                setBtnLoading('#btn-save', 'Simpan Perubahan');
                 const route = ($('#id').val() == '') ? "{{ route(h_prefix('insert')) }}" :
                     "{{ route(h_prefix('update')) }}";
                 $.ajax({
@@ -252,7 +252,7 @@
                         Swal.fire({
                             position: 'center',
                             icon: 'success',
-                            title: 'Data saved successfully',
+                            title: 'Data berhasil disimpan',
                             showConfirmButton: false,
                             timer: 1500
                         })
@@ -275,7 +275,7 @@
                     },
                     complete: function() {
                         setBtnLoading('#btn-save',
-                            '<li class="fas fa-save mr-1"></li> Save changes',
+                            '<li class="fas fa-save mr-1"></li> Simpan Perubahan',
                             false);
                     }
                 });
@@ -284,7 +284,7 @@
 
         function add() {
             $('#MainForm').trigger("reset");
-            $('#modal-default-title').html("Tambah Tag");
+            $('#modal-default-title').html("Tambah {{ $page_attr['title'] }}");
             $('#modal-default').modal('show');
             $('#id').val('');
             resetErrorAfterInput();
@@ -293,7 +293,7 @@
 
         function editFunc(datas) {
             const data = datas.dataset;
-            $('#modal-default-title').html("Ubah Tag");
+            $('#modal-default-title').html("Ubah {{ $page_attr['title'] }}");
             $('#modal-default').modal('show');
             $('#MainForm').trigger("reset");
             $('#id').val(data.id);
@@ -304,8 +304,8 @@
 
         function deleteFunc(id) {
             swal.fire({
-                title: 'Are you sure?',
-                text: "Are you sure you want to proceed ?",
+                title: 'Apakah anda yakin?',
+                text: "Apakah anda yakin akan menghapus data ini ?",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonText: 'Yes'
@@ -331,7 +331,7 @@
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'Tag  deleted successfully',
+                                title: 'Berhasil Menghapus Data',
                                 showConfirmButton: false,
                                 timer: 1500
                             })

@@ -164,7 +164,7 @@
                                 href="{{ url(h_prefix_uri('edit')) }}/${data}" >
                                 <i class="fas fa-edit"></i> Ubah
                                 </a>` : '';
-                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm my-1" title="Delete Data" onClick="deleteFunc('${data}')">
+                            const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm my-1" title="Hapus Data" onClick="deleteFunc('${data}')">
                                 <i class="fas fa-trash"></i> Hapus
                                 </button>` : '';
                             return btn_update + btn_delete;
@@ -173,11 +173,15 @@
                     }] : []),
                 ],
                 order: [
-                    [5, 'desc']
-                ]
+                    [3, 'desc']
+                ],
+                language: {
+                    url: datatable_indonesia_language_url
+                }
             });
 
             new_table.on('draw.dt', function() {
+                tooltip_refresh();
                 var PageInfo = table_html.DataTable().page.info();
                 new_table.column(0, {
                     page: 'current'

@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    private $folder_logo = '/assets/setting/admin/logo';
-    private $folder_meta_logo = '/assets/setting/admin/meta';
+    private $folder_logo = 'assets/setting/admin/logo';
+    private $folder_meta_logo = 'assets/setting/admin/meta';
 
     public function index(Request $request)
     {
@@ -40,7 +40,7 @@ class AdminController extends Controller
         if ($image = $request->file($key)) {
             // delete foto
             if ($current) {
-                $path = public_path("$this->folder_logo/$current");
+                $path = public_path("$current");
                 delete_file($path);
             }
 
@@ -60,7 +60,7 @@ class AdminController extends Controller
         if ($image = $request->file($key)) {
             // delete foto
             if ($current) {
-                $path = public_path("$this->folder_logo/$current");
+                $path = public_path("$current");
                 delete_file($path);
             }
 
@@ -81,7 +81,7 @@ class AdminController extends Controller
         if ($image = $request->file($key)) {
             // delete foto
             if ($current) {
-                $path = public_path("$this->folder_logo/$current");
+                $path = public_path("$current");
                 delete_file($path);
             }
 
@@ -101,7 +101,7 @@ class AdminController extends Controller
         if ($image = $request->file($key)) {
             // delete foto
             if ($current) {
-                $path = public_path("$this->folder_logo/$current");
+                $path = public_path("$current");
                 delete_file($path);
             }
 
@@ -130,7 +130,7 @@ class AdminController extends Controller
             // delete foto
             $folder = $this->folder_meta_logo;
             if ($current) {
-                $path = public_path("$folder/$current");
+                $path = public_path("$current");
                 delete_file($path);
             }
 
