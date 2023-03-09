@@ -10,7 +10,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-md-flex flex-row justify-content-between">
-                    <h3 class="card-title">Tabel {{ $page_attr['title'] }}</h3>
+                    <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
                     @if ($can_insert)
                         <a class="btn btn-rounded btn-success btn-sm" href="{{ route(h_prefix('add')) }}"
                             data-bs-effect="effect-scale">
