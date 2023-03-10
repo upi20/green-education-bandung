@@ -173,7 +173,7 @@
                     }] : []),
                 ],
                 order: [
-                    [3, 'desc']
+                    [5, 'desc']
                 ],
                 language: {
                     url: datatable_indonesia_language_url
