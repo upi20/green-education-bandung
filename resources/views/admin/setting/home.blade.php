@@ -21,7 +21,7 @@
                     </label>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="{{ $name }}-form">
+                    <form class="form-horizontal" id="{{ $name }}-form" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="form-label" for="{{ $s("$name.video_title") }}">Nama Video
                                 <span class="text-danger">*</span></label>
@@ -64,7 +64,7 @@
                     </label>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="{{ $name }}-form">
+                    <form class="form-horizontal" id="{{ $name }}-form" enctype="multipart/form-data">
                         {{-- deskripsi 1 --}}
                         <div class="form-group">
                             <label class="form-label">Foto Deskripsi 1
@@ -129,7 +129,7 @@
                     </label>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="{{ $name }}-form">
+                    <form class="form-horizontal" id="{{ $name }}-form" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="form-label" for="{{ $s("$name.title") }}">Judul
                                 <span class="text-danger">*</span></label>
@@ -187,7 +187,7 @@
                     </label>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="{{ $name }}-form">
+                    <form class="form-horizontal" id="{{ $name }}-form" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="form-label" for="{{ $s("$name.title") }}">Judul
                                 <span class="text-danger">*</span></label>
@@ -237,7 +237,7 @@
                     </label>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="{{ $name }}-form">
+                    <form class="form-horizontal" id="{{ $name }}-form" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="form-label" for="{{ $s("$name.title") }}">Judul
                                 <span class="text-danger">*</span></label>
