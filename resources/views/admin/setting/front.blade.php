@@ -73,6 +73,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="form-label" for="{{ set_front('app.no_whatsapp') }}">No Whatsapp
+                                <span class="text-danger">*</span></label>
+                            <input type="number" id="{{ set_front('app.no_whatsapp') }}" name="no_whatsapp"
+                                class="form-control" placeholder="Ex: 6285987321050"
+                                value="{{ settings()->get(set_front('app.no_whatsapp')) }}" required />
+                        </div>
 
                         <div class="form-group">
                             <label class="form-label" for="{{ set_front('app.copyright') }}">Copyright
@@ -101,9 +108,9 @@
                         <div class="form-group">
                             <label class="form-label" for="{{ set_front('meta.author') }}">Author
                                 <span class="text-danger">*</span></label>
-                            <input type="text" id="{{ set_front('meta.author') }}" name="author" class="form-control"
-                                placeholder="Meta Author" value="{{ settings()->get(set_front('meta.author')) }}"
-                                required />
+                            <input type="text" id="{{ set_front('meta.author') }}" name="author"
+                                class="form-control" placeholder="Meta Author"
+                                value="{{ settings()->get(set_front('meta.author')) }}" required />
                         </div>
 
                         <div class="form-group">

@@ -30,6 +30,7 @@ class FrontController extends Controller
         settings()->set(set_front('app.title'), $request->title)->save();
         settings()->set(set_front('app.copyright'), $request->copyright)->save();
         settings()->set(set_front('app.preloader'), !is_null($request->preloader))->save();
+        settings()->set(set_front('app.no_whatsapp'), $request->no_whatsapp)->save();
 
         // logo
         // dark mode
