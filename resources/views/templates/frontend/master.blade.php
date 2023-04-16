@@ -247,7 +247,8 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
 
             <div class="bottom-left-container">
                 <a class="button -green-5 p-20 text-white fw-bold" id="whatsapp-container"
-                    href="https://api.whatsapp.com/send?phone=6281322728628" target="_blank">
+                    href="https://api.whatsapp.com/send?phone={{ settings()->get(set_front('app.no_whatsapp')) }}"
+                    target="_blank">
                     <i class="fab fa-whatsapp" style="font-size: 1.5em"></i>
                 </a>
 
