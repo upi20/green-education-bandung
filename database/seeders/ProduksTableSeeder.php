@@ -21,8 +21,8 @@ class ProduksTableSeeder extends Seeder
         \DB::table('produks')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'kategori_id' => 1,
+                'id' => '1',
+                'kategori_id' => '1',
                 'nama' => 'Produk Kategori A A',
                 'slug' => NULL,
                 'foto' => '20230127222743.jpg',
@@ -33,8 +33,8 @@ class ProduksTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'id' => 2,
-                'kategori_id' => 1,
+                'id' => '2',
+                'kategori_id' => '1',
                 'nama' => 'Produk Kategori A B',
                 'slug' => NULL,
                 'foto' => '20230127222757.jpg',
@@ -45,8 +45,8 @@ class ProduksTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => 3,
-                'kategori_id' => 1,
+                'id' => '3',
+                'kategori_id' => '1',
                 'nama' => 'Produk Kategori A C',
                 'slug' => NULL,
                 'foto' => '20230127222819.jpg',
@@ -57,8 +57,8 @@ class ProduksTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 4,
-                'kategori_id' => 2,
+                'id' => '4',
+                'kategori_id' => '2',
                 'nama' => 'Produk Kategori B A',
                 'slug' => NULL,
                 'foto' => '20230127223220.jpg',
@@ -69,8 +69,8 @@ class ProduksTableSeeder extends Seeder
             ),
             4 => 
             array (
-                'id' => 5,
-                'kategori_id' => 2,
+                'id' => '5',
+                'kategori_id' => '2',
                 'nama' => 'Produk Kategori B B',
                 'slug' => NULL,
                 'foto' => '20230127223237.jpg',
@@ -81,8 +81,8 @@ class ProduksTableSeeder extends Seeder
             ),
             5 => 
             array (
-                'id' => 6,
-                'kategori_id' => 2,
+                'id' => '6',
+                'kategori_id' => '2',
                 'nama' => 'Produk Kategori B C',
                 'slug' => NULL,
                 'foto' => '20230127223251.jpg',
@@ -93,7 +93,7 @@ class ProduksTableSeeder extends Seeder
             ),
             6 => 
             array (
-                'id' => 7,
+                'id' => '7',
                 'kategori_id' => NULL,
                 'nama' => 'Produk Kategori D A',
                 'slug' => NULL,
