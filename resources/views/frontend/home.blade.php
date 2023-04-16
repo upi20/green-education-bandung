@@ -16,7 +16,7 @@
                             <h1 data-anim-child="slide-up delay-1" class="text-white">
                                 PROGRAM PENDIDIKAN <br> LINGKUNGAN HIDUP
                             </h1>
-                            <img src="{{ asset('assets/templates/frontend/logo.png') }}" alt="" class="mt-20 mb-20">
+                            <img data-src="{{ asset('assets/templates/frontend/logo.png') }}" alt="logo" class="mt-20 mb-20 lazy">
 
                             <h1 data-anim-child="slide-up delay-2" class="masthead__title text-white">
                                 GREEN EDUCATION BANDUNG
@@ -41,7 +41,7 @@
                                 <div class="carousel-inner">
                                     @foreach ($home_sliders as $slider)
                                         <div class="carousel-item  @if ($loop->first) active @endif">
-                                            <img src="{{ "$home_slider_url/$slider->foto" }}" alt="{{ $slider->nama }}">
+                                            <img data-src="{{ "$home_slider_url/$slider->foto" }}" alt="{{ $slider->nama }}" class="lazy">
                                         </div>
                                     @endforeach
                                 </div>
@@ -133,7 +133,7 @@
                             <div class="swiper-slide" data-anim-child="slide-left delay-{{ $i + 2 }}">
                                 <div class="teamCard -type-2 bg-white shadow-4" style="min-height: 325px; border: 0">
                                     <div class="teamCard__content pt-25">
-                                        <img src="{{ "$struktur_url/$struktur->foto" }}" alt="{{ $struktur->nama }}"
+                                        <img data-src="{{ "$struktur_url/$struktur->foto" }}" class="lazy" alt="{{ $struktur->nama }}"
                                             style=" margin: auto; position: relative; margin: auto; width: 150px; height: 150px; max-height: 150px; border-radius: 150px; object-fit: cover; object-position: center; -webkit-border-radius: 150px; -moz-border-radius: 150px;">
                                         <h4 class="teamCard__title text-17 lh-15 fw-500 mt-12 text-center">
                                             {{ $struktur->nama }}
@@ -193,7 +193,7 @@
 
                 <div class="row y-gap-30 items-center" data-anim-child="slide-right delay-3">
                     <div class="col-xl-5 offset-xl-1 col-lg-6">
-                        <img class="w-1/1" src="{{ url(settings()->get("$k.visi_image")) }}" style="border-radius: 8px"
+                        <img class="w-1/1 lazy" data-src="{{ url(settings()->get("$k.visi_image")) }}" style="border-radius: 8px"
                             alt="image">
                     </div>
 
@@ -213,7 +213,7 @@
                     </div>
 
                     <div class="col-xl-5 offset-xl-1 col-lg-6 order-lg-2 order-1" data-anim-child="slide-right delay-2">
-                        <img class="w-1/1" src="{{ url(settings()->get("$k.misi_image")) }}" style="border-radius: 8px"
+                        <img class="w-1/1 lazy" data-src="{{ url(settings()->get("$k.misi_image")) }}" style="border-radius: 8px"
                             alt="image">
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                             <div class="swiper-slide">
                                 <div data-anim="slide-left delay-3" class="eventCard -type-1">
                                     <div class="eventCard__img">
-                                        <img src="{{ "https://drive.google.com/uc?export=view&id={$galery->foto_id_gdrive}" }}"
+                                        <img data-src="{{ "https://drive.google.com/uc?export=view&id={$galery->foto_id_gdrive}" }}" class="lazy"
                                             alt="{{ $galery->nama }}"
                                             style="width: 100%; height: 250px; object-fit: cover;">
                                     </div>
@@ -340,7 +340,7 @@
                         <div class="col-xl-3 col-lg-4 col-sm-6" data-anim-child="slide-right delay-{{ $i + 3 }}">
                             <a href="{{ url("produk?kategori=$kategori->slug") }}" class="categoryCard -type-2">
                                 <div class="categoryCard__image mr-20">
-                                    <img src="{{ asset("$produk_kategori_folder/$kategori->foto") }}"
+                                    <img data-src="{{ asset("$produk_kategori_folder/$kategori->foto") }}" class="lazy"
                                         alt="{{ $kategori->nama }}"
                                         style="margin: auto; position: relative; margin: auto; width: 80px; height: 80px; border-radius: 4px; object-fit: cover; object-position: center;">
                                 </div>
@@ -400,7 +400,7 @@
                                         <div class="coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
                                             <div class="relative">
                                                 <div class="coursesCard__image overflow-hidden rounded-8">
-                                                    <img class="w-1/1" src="{{ asset("$produk_folder/$produk->foto") }}"
+                                                    <img class="w-1/1 lazy" data-src="{{ asset("$produk_folder/$produk->foto") }}"
                                                         alt="{{ $produk->nama }}"
                                                         style="margin: auto; position: relative; margin: auto; width: 265px; height: 185px; border-radius: 4px; object-fit: cover; object-position: center;">
                                                     <div class="coursesCard__image_overlay rounded-8"></div>
@@ -493,7 +493,7 @@
                                     $foto = $a->foto ? asset($a->foto) : 'https://i.ytimg.com/vi/' . $get_id_yt . '/sddefault.jpg';
                                 @endphp
                                 <div class="blogCard__image">
-                                    <img src="{{ $foto }}" alt="{{ $a->nama }}"
+                                    <img data-src="{{ $foto }}" alt="{{ $a->nama }}" class="lazy"
                                         style="width: 100%; height: 300px; object-fit: cover;">
                                 </div>
                                 <div class="blogCard__content">
@@ -572,13 +572,13 @@
     {{-- Terima Kasih --}}
     @if (settings()->get("$k.visible"))
         <section class="bg-green-3 text-center" data-anim-wrap style="height: 720px">
-            <img src="{{ asset(settings()->get("$k.image")) }}" alt=""
+            <img data-src="{{ asset(settings()->get("$k.image")) }}" alt="terima kasih" class="lazy"
                 style="height: 100%;
             object-fit: cover; /* cover, contain, fill, scale-down */
             object-position: center;">
 
             <div style="position: absolute;margin-top: -720px;width: 100%;" data-anim-child="slide-top delay-1">
-                <img src="{{ asset(settings()->get("$k.image_logo")) }}" alt=""
+                <img data-src="{{ asset(settings()->get("$k.image_logo")) }}" alt="terima-kasih" class="lazy"
                     style="margin-top:60px; width: 150px" id="image-thank">
                 <h1 class="text-white mt-25">{{ settings()->get("$k.title") }}</h1>
             </div>

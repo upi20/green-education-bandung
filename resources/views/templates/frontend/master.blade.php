@@ -268,6 +268,7 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
     {{-- <script src="{{ asset('assets/templates/frontend/assets/leaflet1.7.1/dist/leaflet.js') }}"></script> --}}
     <script src="{{ asset('assets/templates/frontend/js/vendors.js') }}"></script>
     <script src="{{ asset('assets/templates/frontend/js/main_v2.js') }}"></script>
+    <script src="{{ asset('assets/templates/frontend/js/jquery.lazy-master/jquery.lazy.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
@@ -282,6 +283,9 @@ $compact = array_merge($compact, compact('page_attr_title', 'search_master_key',
             preload_container.delay(750).fadeOut('slow');
             refresh_margin_top();
             preload_finish = true;
+            $('.lazy').Lazy({
+                scrollDirection: 'vertical',
+            });
         });
 
         (function pulse(back) {
